@@ -1,0 +1,53 @@
+# Operational human intervention is a failure
+
+Version: 0.2 | Updated: 2026-09-09 | Status: Founder-directed requirement; enforcement not implemented
+
+## Founder requirement
+
+**Every operational human ask is a failure. The system must find a way to handle operations without human intervention.**
+
+This requirement was explicitly supplied by the founder. It governs the design target and classification of operational outcomes now; it is not merely an optional proposed preference.
+
+## Definition and accounting
+
+An operational human ask is any request that a person diagnose, decide, approve, execute, repair, or supply missing routine information needed to complete ordinary business work. Asking the founder to deploy, resolve an ordinary ticket, rerun a script, repair a tool, or approve an already-authorized action is an autonomy failure.
+
+Count the ask when it is issued, even if the person does not respond or the system later recovers. Count actual human execution separately. Record bootstrap/manual setup events too; do not hide them to claim complete autonomy.
+
+Board direction about purpose, new capital authority, ownership, or amendments is governance. Customer choices and external vendor service delivery are external inputs, not an internal human workforce. Record those dependencies explicitly. Do not relabel routine work as a board decision, customer choice, or vendor dependency to improve the metric.
+
+## Autonomous resolution ladder
+
+1. Diagnose using authoritative records, context, and available tools.
+2. Retry transient failures within bounded cost and time limits.
+3. Repair or reconfigure within existing permissions.
+4. Use an approved alternate tool, provider, workflow, or qualified AI function.
+5. Reduce scope or redesign the method while preserving the authorized outcome.
+6. Roll back, queue for a known dependency, or enter a defined safe state.
+7. Create an owned remediation task, schedule a bounded retry where useful, and continue independent work.
+
+A safe pause is an unresolved or failed operation, not a success. The target is successful autonomous completion, not simply zero questions.
+
+## Non-bypass rule
+
+This requirement does not permit forging consent, bypassing access controls, exceeding budgets, impersonating the board, hiding failures, unsafe physical execution, or uncontrolled replication.
+
+If a provider or platform requires an account-owner action that cannot be delegated, prepare the smallest executable setup or decision packet. Record the human dependency and resulting autonomy failure rather than pretending it was automated. Account authorization must still be real.
+
+## Remediation and verification
+
+Each failure record contains task, timestamp, ask, human action if any, root cause, attempted automated remedies, missing capability, impact, owner, corrective action, and recurrence test. Distinct asks remain counted even when linked to one root-cause incident.
+
+Close remediation only when the previously blocked scenario succeeds autonomously under the same constraints and negative cases still respect permission limits.
+
+## Metrics and graduation
+
+Target operational human asks = 0 and human execution minutes = 0. Report asks per 100 eligible operations, raw asks, blocked operations, autonomous verified completion, recurrence rate, and resolution time together.
+
+The denominator is all eligible ordinary operations started in the window, including failed and blocked work. Show unfinished cohorts separately and reconcile them later. Zero eligible operations means the rate is unavailable.
+
+No venture graduates as fully autonomous while an operational ask remains in its adopted observation window, or while a routine operation depends on human execution. Repeat a clean observation window after remediation. Numeric business and reliability targets still apply.
+
+## Change history
+
+- 0.2 — 2026-09-09: Added to the blueprint-aligned foundation.
