@@ -1,6 +1,6 @@
 # Unilogistix OpenBao foundation
 
-Version: 0.1 | Updated: 2026-09-09 | Status: Bootstrap deployed and access-tested
+Version: 0.2 | Updated: 2026-09-09 | Status: Bootstrap deployed and access-tested
 
 ## Placement
 
@@ -30,18 +30,28 @@ token file. The script reads credentials internally and prints only test results
 It creates or reconciles only the named Unilogistix mount, policy and role.
 Do not supply token values as command arguments or publish them.
 
+## Operational controls verified
+
+- Declarative file audit enabled through SIGHUP without sealing the shared vault.
+- Audit rotation tested; canary request logged; sampled issuer and runtime token values absent from raw logs.
+- Logrotate retains fourteen rotations, with daily rotation and a 50 MB size condition evaluated when logrotate runs. This is not a hard disk-usage cap.
+- Restricted issuer identity renews its 24-hour periodic lease and issues single-use AppRole credentials. A systemd timer runs every two minutes.
+- Runtime canary tokens are stored root-only in `/run/unilogistix/bootstrap.token`, mode 0600. Bootstrap issuer custody is a root-only persistent file, not distributed trust.
+- Simulated endpoint failure removes the runtime credential; the next successful service execution restores delivery.
+- Raft snapshot saved and copied to a second host in protected storage. A disposable same-version vault accepted the snapshot and recovered its original 3-of-5 sealed state. The live vault was not sealed or restored.
+
 ## Outstanding before production credentials
 
-The inspected shared service has no audit device. Audit logging and retention,
-backup/restore verification for the new data, independent recovery, operational
-admin custody, and automatic workload identity delivery remain unfinished.
-The existing transport is HTTP inside Tailscale; direct TLS is not configured.
-This bootstrap does not implement a secret-handling action gateway, rotation,
-or unattended role credential delivery. Those controls need their own evidence.
+Full restored-vault unseal is **not tested**: access to the distributed shares remains incomplete. Snapshot capture and transfer are currently manual execution by the agent, not scheduled recovery automation. The snapshot predates the last credential renewal and is not a substitute for ongoing backups.
+
+The issuer expires if it cannot renew for 24 hours; recovery after that requires re-issuance by an authorized administrator. Shared operational-admin custody remains unchanged. Remote durable audit collection, disk-capacity monitoring, autonomous recovery, an action gateway, and provider-key rotation remain unfinished.
+
+The transport is HTTP inside Tailscale; direct TLS is not configured. No provider credentials have been imported. The credential broker serves only the non-sensitive bootstrap canary, not production workloads.
 
 The older lab installer and test scripts in the local workspace are unfinished
 experiments; this deployment did not use them.
 
 ## Change history
 
+- 0.2 — 2026-09-09: Added audit, rotation, automatic bootstrap delivery, outage tests, and partial restore evidence.
 - 0.1 — 2026-09-09: Created isolated mount and role; passed live authorization tests.
