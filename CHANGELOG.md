@@ -1,6 +1,6 @@
 # Changelog
 
-Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
+Version: 1.1 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
 
 ## 0.7 — 2026-09-09
 
@@ -60,7 +60,13 @@ Prepared the first eleven-document governance proposal from the founder's origin
 - Added the review disposition and adoption packet; detailed rules remain proposals and actual business activation remains gated.
 - Earlier publication-pending entries below are historical: checkpoint edf006c was successfully published and verified before this follow-up manuscript.
 
+## Operating-readiness review — 2026-09-09
+
+Preserved the new advisory source and reconciled its earlier edf006c baseline with the 98e333e chapter publication. Added seven readiness gates, ten unrun lifecycle cases, a version-bound packet, required-check execution/bypass/stale-worker cases, merchandise shipping applicability and expanded chapter traceability. No runtime changes or trial authorization inferred.
+
 ## Change history
+
+- 1.1 — 2026-09-09: Incorporated operating-readiness review requirements and preserved documentary/operating evidence boundaries.
 
 - 1.0 — 2026-09-09: Completed ten-book manuscript coverage and integrated the reporting review; adoption and activation remain separate.
 

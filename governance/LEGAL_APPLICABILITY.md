@@ -1,6 +1,6 @@
 # US and Illinois legal applicability register
 
-Version: 0.4 | Updated: 2026-09-09 | Status: Source-backed baseline; actual-business applicability and deadlines pending facts
+Version: 0.5 | Updated: 2026-09-09 | Status: Source-backed baseline; actual-business applicability and deadlines pending facts
 
 ## Basis
 
@@ -24,6 +24,8 @@ triggers; they do not declare that every listed law applies to every venture.
 | LEG-008 | Textile labeling for covered products, including towels | [FTC textile/wool labeling guide](https://www.ftc.gov/business-guidance/resources/threading-your-way-through-labeling-requirements-under-textile-wool-acts) | R40/R50 with R38 | Conditional for LondonRue example; verify fiber content, origin and responsible business identity before covered goods are offered; preserve supplier and approved-label evidence |
 | LEG-009 | Consumer automatic-renewal contracts within statutory coverage | [Illinois Automatic Contract Renewal Act](https://ilga.gov/Legislation/ILCS/Articles?ActID=2363&Chapter=BUSINESS+TRANSACTIONS&ChapterID=67&MajorTopic=BUSINESS+AND+EMPLOYMENT) | R50/R46/R51 | Conditional; verify current effective terms, consent, notice and cancellation requirements before enabling renewal; no universal notice deadline inferred |
 | LEG-010 | Business tax supporting records | [IRS recordkeeping guidance](https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep) | R44/R49 | Preserve records supporting income, expenses and returns; assign retention by record category and applicable rule, with holds |
+
+| LEG-011 | Merchandise ordered online, by mail or telephone within rule coverage | [FTC merchandise-order rule](https://www.ftc.gov/legal-library/browse/rules/mail-internet-or-telephone-order-merchandise-rule) | R50/R37/R41 with R38/R48 | Conditional for actual selling arrangement; verify supported shipment promise, applicable default time, delay consent and refund handling before offers/orders; retain promise, stock/supplier basis, notices, consent and settlement evidence |
 
 These three additional sources were checked on 2026-09-09. FTC guidance lists towels among covered household textiles and describes fiber, origin and responsible-business labeling; care-label rules for clothing are separate and are not automatically imposed on towels here. Illinois sources may contain changes not yet effective: R50 records the effective law and any relevant Public Act when activating a contract. IRS guidance supports retaining transaction evidence; this document does not impose a guessed universal retention period.
 
@@ -50,7 +52,13 @@ Applicable entries create an owned calendar obligation and evidence task. Condit
 
 Contracts/renewals, consumer remedies, privacy, intellectual property, licenses, accessibility, municipality, employment/external-provider arrangements and any regulated activity each require a scoped applicability determination. This is the completed reusable procedure, not a claim that ten starting sources exhaust every law for an unspecified future business.
 
+## Merchandise shipment and delay applicability
+
+LEG-011 was checked against the official FTC rule summary on 2026-09-09. For covered orders, the seller needs a reasonable basis for the advertised shipment time; the summary states a 30-day default when no time is stated, and delay consent or refund when shipment cannot meet the promise. R50 verifies detailed applicability, exceptions and notice/refund timing for the actual arrangement before activation. Shipping and delivery promises are distinct; do not advertise unsupported delivery dates. R37 tracks the deadline, R38 substantiates supply, R41 owns the remedy and R48 checks settlement. A policy draft is no proof that an actual seller complies.
+
 ## Change history
+
+- 0.5 — 2026-09-09: Incorporated operating-readiness review requirements and preserved documentary/operating evidence boundaries.
 
 - 0.4 — 2026-09-09: Completed ten-book manuscript coverage and integrated the reporting review; adoption and activation remain separate.
 

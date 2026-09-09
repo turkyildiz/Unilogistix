@@ -1,6 +1,6 @@
 # Master index
 
-Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
+Version: 1.1 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
 
 Canonical current documents are listed below. The supplied blueprint and archived draft are historical references; they do not silently override later founder instructions.
 
@@ -150,7 +150,14 @@ Canonical current documents are listed below. The supplied blueprint and archive
 - [Reporting-review disposition](governance/REVIEW_DISPOSITION.md) and [18 control acceptance cases](governance/CONTROL_REGISTER.md).
 - [Scope/adoption packet](governance/ADOPTION_PACKET.md) and [document completion evidence](evidence/document-completion-2026-09-09.md).
 
+## Operating-readiness review
+
+- [Review disposition, seven gates and connected trial](governance/OPERATING_READINESS.md).
+- [Version-bound readiness packet](templates/operating-readiness.md).
+
 ## Change history
+
+- 1.1 — 2026-09-09: Incorporated operating-readiness review requirements and preserved documentary/operating evidence boundaries.
 
 - 1.0 — 2026-09-09: Completed ten-book manuscript coverage and integrated the reporting review; adoption and activation remain separate.
 

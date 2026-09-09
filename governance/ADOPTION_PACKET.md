@@ -1,6 +1,6 @@
 # Document scope and adoption packet
 
-Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft; adoption and activation pending
+Version: 1.1 | Updated: 2026-09-09 | Status: Complete draft; adoption and activation pending
 
 ## Reviewable deliverable
 
@@ -34,6 +34,12 @@ These values live in the private [business-instance profile](../templates/busine
 
 The chapter manuscript is complete for review. Detailed adoption remains pending, and actual-business legal applicability remains conditional where facts are absent. Runtime tests, deployment, configuration, purchases, filings and customer operation were excluded. Structural validation and documentary scenario review are recorded in [completion evidence](../evidence/document-completion-2026-09-09.md); they cannot substitute for independent operating proof.
 
+## Operating-readiness review
+
+The [readiness review disposition and seven gates](OPERATING_READINESS.md) acknowledge the review’s earlier baseline and preserve its valid operating-evidence requirements. The current manuscript covers the chapters deferred at that baseline; independent acceptance of substantive adequacy and actual policy adoption remain separate. The [readiness packet](../templates/operating-readiness.md) is the required consolidated record for any later scoped trial/pilot recommendation. Receiving this advisory review does not change today’s documentation-only scope.
+
 ## Change history
+
+- 1.1 — 2026-09-09: Incorporated operating-readiness review requirements and preserved documentary/operating evidence boundaries.
 
 - 1.0 — 2026-09-09: Completed the documentary specification and integrated the reporting-lines board review; runtime proof remains separate.

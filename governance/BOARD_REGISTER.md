@@ -1,6 +1,6 @@
 # Board direction and activation register
 
-Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
+Version: 1.1 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
 
 ## Recorded founder direction
 
@@ -64,7 +64,15 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - All ten books now have 307 written chapter entries. See the [adoption packet](ADOPTION_PACKET.md) for exact scope and outstanding activation settings.
 - Document checkpoint edf006c17486cfcaf4e83c067d363a70d29f6f3d was published to main and read back. A subsequent manuscript publication is document work only.
 
+## Operating-readiness review received
+
+- F-019: Supplied Unilogistix_Operating_Readiness_Board_Review_2026-09-09.md as another review. Receipt authorizes document consideration under the existing documentation/publication scope; it is not adoption of the suggested resolution or permission to implement, spend, test externally or launch.
+- The source reviewed edf006c; the completed manuscript was already published at 98e333e. [Disposition](OPERATING_READINESS.md) records that difference and retains seven pending readiness gates, ten unrun lifecycle cases and the consolidated readiness packet.
+- No actual business, including LondonRue, is activated by this record.
+
 ## Change history
+
+- 1.1 — 2026-09-09: Incorporated operating-readiness review requirements and preserved documentary/operating evidence boundaries.
 
 - 1.0 — 2026-09-09: Completed ten-book manuscript coverage and integrated the reporting review; adoption and activation remain separate.
 

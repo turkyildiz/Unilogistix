@@ -1,6 +1,6 @@
 # Engineering & Software Development — Complete Chapter Manual
 
-Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft manuscript; adoption and operational activation pending
+Version: 1.1 | Updated: 2026-09-09 | Status: Complete draft manuscript; adoption and operational activation pending
 
 ## Reading and authority
 
@@ -356,6 +356,14 @@ R17 owns mobile implementation under R03, with R20 code review, R21 independent 
 
 R17 cannot keep signing credentials in source, treat a simulator-only result as device coverage, or assume store acceptance proves functional quality. R35 retains affected customer cases; R26 coordinates incidents. Required human account-owner acts remain authentic and are recorded under the autonomy policy.
 
+## Required verification must execute
+
+For chapter 21 CI/CD and chapter 22 deployment, R25 must verify the expected check manifest, trusted producer, exact commit/artifact, required test execution and accepted outcome. A missing, skipped or neutral required verification cannot satisfy this business release contract merely because the provider permits merging. R21 owns independent acceptance; R23/R60 review protected criteria and administrator/bypass paths. Ordinary builders cannot change this contract through their own release.
+
+GitHub documents its merge-check semantics and selectable trusted check source in [protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches), and distinguishes check states in [status checks](https://docs.github.com/en/pull-requests/reference/status-checks). Sources checked 2026-09-09. Run GOV-T19/T20 from the [control register](../../governance/CONTROL_REGISTER.md) only under a future authorized implementation/test milestone.
+
 ## Change history
+
+- 1.1 — 2026-09-09: Incorporated operating-readiness review requirements and preserved documentary/operating evidence boundaries.
 
 - 1.0 — 2026-09-09: Completed all blueprint chapters as a reviewable manuscript, with concrete responsibilities, procedures, acceptance evidence and failure handling.

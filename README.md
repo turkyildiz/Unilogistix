@@ -1,6 +1,6 @@
 # UNI / Unilogistix
 
-Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
+Version: 1.1 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
 
 **A reusable AI operating system that develops and operates businesses through dedicated business instances.**
 
@@ -57,7 +57,13 @@ Build on Cloudflare, GitHub, Vercel, Supabase, Fireworks.ai, multiple on-prem se
 
 Read the [reporting-review disposition](governance/REVIEW_DISPOSITION.md), [decision-rights charter](governance/DECISION_RIGHTS.md), [control acceptance register](governance/CONTROL_REGISTER.md) and [scope/adoption packet](governance/ADOPTION_PACKET.md). The books are complete drafts for review; detailed adoption, business-specific legal applicability and runtime control evidence remain distinct.
 
+## Operating readiness
+
+The [operating-readiness review disposition](governance/OPERATING_READINESS.md) consolidates seven business-specific gates and ten unrun lifecycle trial cases. Manuscript coverage is present; actual adoption, independent readiness evidence and live activation remain pending.
+
 ## Change history
+
+- 1.1 — 2026-09-09: Incorporated operating-readiness review requirements and preserved documentary/operating evidence boundaries.
 
 - 1.0 — 2026-09-09: Completed ten-book manuscript coverage and integrated the reporting review; adoption and activation remain separate.
 

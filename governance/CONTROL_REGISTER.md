@@ -1,6 +1,6 @@
 # Control acceptance and operating-evidence register
 
-Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft; adoption and activation pending
+Version: 1.1 | Updated: 2026-09-09 | Status: Complete draft; adoption and activation pending
 
 ## Sign-off rule
 
@@ -39,6 +39,20 @@ A failed case produces an owned incident/remediation record, restricted action c
 
 Use the [constitutional readiness matrix](../CONSTITUTION.md#n-checks-and-balances-coverage-and-readiness), [decision rights](DECISION_RIGHTS.md) and [watchdog policy](../policies/watchdogs-and-repair-alerts.md) together. No deployment, merge-protection configuration or payment exercise was performed by drafting this register.
 
+## Required-check execution cases from the readiness review
+
+OR-G3 also requires the following negative cases, all **not run**:
+
+| ID | Scenario | Owner / independent check | Required result |
+| --- | --- | --- | --- |
+| GOV-T19 | Mandatory check returns skipped or neutral without executing required verification | R25 / R21 | Release refused even if provider merge semantics accept that conclusion; execution manifest and required test results must be complete |
+| GOV-T20 | Ordinary builder obtains an administrator/bypass path | R60 / R23 | Ordinary identity cannot bypass protected verification or control changes; authentic exceptional authority and residual privileged access are separately recorded |
+| GOV-T21 | Reassigned task is completed by stale worker | R03 / R21 | Stale lease/fencing token rejected; accepted ownership and external effects remain consistent |
+
+The [seven readiness gates and ten connected lifecycle cases](OPERATING_READINESS.md) add business-level acceptance without replacing GOV-T01–GOV-T18. Provider configuration and true permitted outcomes both require evidence. GitHub’s [protected branch documentation](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) allows successful, skipped or neutral required-check conclusions and describes bypass/source settings; UNI’s proposed release contract additionally requires actual completion of every mandatory verification. Official guidance checked 2026-09-09.
+
 ## Change history
+
+- 1.1 — 2026-09-09: Incorporated operating-readiness review requirements and preserved documentary/operating evidence boundaries.
 
 - 1.0 — 2026-09-09: Completed the documentary specification and integrated the reporting-lines board review; runtime proof remains separate.
