@@ -1,6 +1,10 @@
 # Master architecture
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Draft specification
+Version: 0.3 | Updated: 2026-09-09 | Status: Draft specification
+
+## System identity
+
+Unilogistix is the reusable master framework, not a legal parent company. Each actual business receives an isolated instance from discovery onward, specialized with its own brand, rules, mandate and records. Shared control services express only explicitly delegated technical authority. See the [system and business model](governance/SYSTEM_AND_BUSINESS_MODEL.md).
 
 ## System boundaries
 
@@ -69,5 +73,7 @@ See [Book 2](books/BOOK-02-AI-OPERATING-SYSTEM/README.md), [Book 7](books/BOOK-0
 Build on Cloudflare, GitHub, Vercel, Supabase, Fireworks.ai, multiple on-prem servers, and Hetzner as reported available by the founder. Reuse suitable capacity, minimize cost per verified outcome, and bring genuinely new purchases outside delegation to the board. See [the stack plan](integrations/EXISTING_STACK.md) and [cost-efficiency policy](policies/cost-efficiency.md).
 
 ## Change history
+
+- 0.3 — 2026-09-09: Applied the founder's reusable-framework/business-instance model; Unilogistix is not an actual company.
 
 - 0.2 — 2026-09-09: Established the master-blueprint structure and reconciled the original company vision.

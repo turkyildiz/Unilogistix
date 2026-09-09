@@ -1,6 +1,6 @@
 # Security, incidents, and continuity
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Draft specification
+Version: 0.7 | Updated: 2026-09-09 | Status: Draft specification
 
 ## Access and trust boundaries
 
@@ -11,6 +11,12 @@ Treat customer inputs, repository content from untrusted contributors, supplier 
 Validate consequential actions at an enforcement layer outside the model. Log authorization failures and protect the audit trail from routine agent edits.
 
 ## Incidents
+
+Apply the proposed [watchdog and repair-alert policy](watchdogs-and-repair-alerts.md)
+for severity, acknowledgment/progress timers, persistent incident visibility,
+fallback delivery, AI repair ownership and independent closure. A log message or
+notification receipt alone does not satisfy incident response. Critical business
+operation requires an adopted and verified alert-delivery profile.
 
 Classify incidents by impact on customers, money, data, physical safety, and service availability. Define numeric alert thresholds and severity targets before production activation.
 
@@ -50,5 +56,7 @@ Store test evidence with the release record. A policy statement or a successful 
 Apply [the autonomy policy](autonomy.md). Routine blockers use AI recovery first. Required board governance remains authentic; any unavoidable operational human ask is recorded as a failure and receives remediation.
 
 ## Change history
+
+- 0.7 — 2026-09-09: Specified independent failure detection, urgent repeat/fallback alerts and verified repair; operating thresholds and channel activation remain proposed.
 
 - 0.2 — 2026-09-09: Aligned with the master blueprint and founder autonomy requirement.

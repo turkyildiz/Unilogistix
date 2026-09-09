@@ -1,18 +1,23 @@
 # Venture lifecycle and replication
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Draft specification
+Version: 0.3 | Updated: 2026-09-09 | Status: Draft specification
+
+## Framework and business identity
+
+Unilogistix is the reusable master operating framework, never an actual company. Each actual business receives its own configured instance for development and operation. “Parent” below refers to technical origin or authorized supervision, not presumed legal ownership. See the [system and business model](../governance/SYSTEM_AND_BUSINESS_MODEL.md).
 
 ## Stages and evidence
 
 | Stage | Required output | Exit condition |
 | --- | --- | --- |
 | Intake | Idea brief, customer, problem, intended outcome, constraints | Mandate authorizes discovery |
+| Instantiate for discovery | Pinned framework copy, business identity, isolated records and discovery mandate | Instance limited to its authorized discovery scope |
 | Discovery | Demand evidence, alternatives, feasibility, dependency and cost estimates | Predefined validation thresholds met |
 | Build | Working product, tests, operations plan, support and pricing model | Acceptance and assurance checks pass |
 | Launch | Controlled production rollout, customer terms, monitoring, rollback | Launch scope authorized and checks pass |
 | Operate | Real customer outcomes, maintenance, support, reconciled economics | Sustained viability criteria met |
 | Graduate | Evidence packet and independent review | Every graduation gate passes |
-| Replicate and transfer | Dedicated venture runtime and verified handover | New runtime operates and rollback is tested |
+| Transfer or expand dedicated operation | Verified handover or expanded responsibilities for the existing business instance | Receiving scope operates and rollback is tested |
 | Portfolio operation | Ongoing oversight, improvements, financial reporting | Continue, recover, pivot, or close |
 
 Failed gates return the venture to an earlier stage, trigger a bounded pivot, or lead to closure. A new name or cloned runtime must not erase a failed venture's history.
@@ -38,7 +43,7 @@ No numeric thresholds are silently supplied by this document. Until thresholds, 
 
 Replication is a business deployment event, not unrestricted self-propagation.
 
-1. Verify graduation evidence and the active portfolio authorization.
+1. Verify authority for the intended stage and business instance. Initial discovery instances need a discovery mandate; graduation evidence is required for graduation or transfers that claim mature autonomous operation.
 2. Allocate a unique venture ID, budget, accounts or accounting boundaries, resource quotas, and accountable AI owner.
 3. Deploy a pinned and verified operating-system version in an isolated environment.
 4. Provision new least-privilege credentials; never copy parent secrets.
@@ -56,7 +61,7 @@ The parent must not leave an existing venture without support to pursue a new on
 
 A pivot inside the existing purpose and limits may be autonomous. A broader mandate requires a board decision.
 
-Pause acquisition and new commitments when predefined stop conditions are met. Prepare customer notices, refunds or fulfillment, data disposition, supplier termination, asset handling, and final reconciliation. Execute closure within delegated authority; reserve permanent parent-company closure for the board. Keep required records and document unresolved obligations.
+Pause acquisition and new commitments when predefined stop conditions are met. Prepare customer notices, refunds or fulfillment, data disposition, supplier termination, asset handling, and final reconciliation. Execute closure within delegated authority; reserve permanent business closure outside delegation and master-framework retirement for the relevant board/founder. Retiring the framework must not abandon operating businesses. Keep required records and document unresolved obligations.
 
 ## Zero-human graduation gate
 
@@ -67,5 +72,7 @@ The founder requires every operational human ask to count as a failure. Graduati
 Apply [the autonomy policy](autonomy.md). Routine blockers use AI recovery first. Required board governance remains authentic; any unavoidable operational human ask is recorded as a failure and receives remediation.
 
 ## Change history
+
+- 0.3 — 2026-09-09: Applied the founder's reusable-framework/business-instance model; Unilogistix is not an actual company.
 
 - 0.2 — 2026-09-09: Aligned with the master blueprint and founder autonomy requirement.

@@ -1,0 +1,1068 @@
+{
+  "repository": "turkyildiz/Unilogistix",
+  "review_date": "2026-09-09",
+  "reviewed_commit": "1f77d908f424afffecd556d7244f5c44e655e89d",
+  "status": "Proposed analysis backlog; no GitHub issues or code changes created",
+  "priority_definitions": {
+    "P0": "Before consequential unattended operation",
+    "P1": "Before first-business autonomy graduation",
+    "P2": "Before expanded venture or physical scope"
+  },
+  "issues": [
+    {
+      "id": "UNI-001",
+      "title": "Activate bounded standing mandates",
+      "priority": "P0",
+      "accountable_ai_role": "Governance",
+      "depends_on": [],
+      "evidence": [
+        "R01",
+        "R02",
+        "R26"
+      ],
+      "current_gap": "Budget, production authority, first-product mandate, authenticated board channel, and detailed adoption are not activated in the register.",
+      "implementation": [
+        "Implement authenticated board resolutions with exact scope, version, expiry, revocation and immutable evidence.",
+        "Compile mandates into enforceable per-action, daily, recurring and portfolio limits. Cover routine releases, marketing, support remedies, approved vendor use and continuity explicitly."
+      ],
+      "acceptance_tests": [
+        "An in-scope release/refund executes after automated gates without a new founder ask.",
+        "An expired mandate, forged board message, or missing monetary cap denies execution and creates a truthful blocked record."
+      ],
+      "proposed_paths": [
+        "governance/mandates/",
+        "schemas/mandate.schema.json",
+        "services/governance/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-002",
+      "title": "Run an unattended durable orchestrator",
+      "priority": "P0",
+      "accountable_ai_role": "Operations / Engineering",
+      "depends_on": [
+        "UNI-001"
+      ],
+      "evidence": [
+        "R03",
+        "R08"
+      ],
+      "current_gap": "The operating layer is a specification; start_uni.py is an interactive bootstrap launcher, explicitly not the selected unattended design.",
+      "implementation": [
+        "Deploy supervised durable workflows with leases, checkpoints, deadlines, bounded retries, concurrency quotas and failure queues.",
+        "Keep operational state outside chat context; separate company workflow execution from customer product uptime."
+      ],
+      "acceptance_tests": [
+        "Kill a worker after an external action; restart and reconcile without repeating the effect.",
+        "Missed scheduled work is recovered after downtime and no task becomes ownerless."
+      ],
+      "proposed_paths": [
+        "services/orchestrator/",
+        "workers/",
+        "tests/recovery/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-003",
+      "title": "Create authoritative records and reliable events",
+      "priority": "P0",
+      "accountable_ai_role": "Data / Engineering",
+      "depends_on": [
+        "UNI-002"
+      ],
+      "evidence": [
+        "R03",
+        "R13"
+      ],
+      "current_gap": "Task, customer, payment and knowledge contracts exist in prose, not as a demonstrated integrated operational store.",
+      "implementation": [
+        "Implement versioned schemas and migrations for tenants, mandates, tasks, tool actions, reviews, customers, tickets, feedback, experiments, releases and obligations.",
+        "Use a transactional outbox/inbox, signature validation, deduplication, replay handling and correlation IDs; assign exactly one source of truth per entity."
+      ],
+      "acceptance_tests": [
+        "Duplicated, delayed and out-of-order events converge to the correct business state.",
+        "A database commit followed by process loss does not lose its outbound event."
+      ],
+      "proposed_paths": [
+        "schemas/",
+        "db/migrations/",
+        "services/events/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-004",
+      "title": "Enforce tool actions outside the model",
+      "priority": "P0",
+      "accountable_ai_role": "Security / Platform",
+      "depends_on": [
+        "UNI-001",
+        "UNI-003",
+        "UNI-030"
+      ],
+      "evidence": [
+        "R25",
+        "R17",
+        "R18"
+      ],
+      "current_gap": "The tool gateway, live authorization and atomic spending enforcement are not implemented.",
+      "implementation": [
+        "Expose typed business actions rather than unrestricted shell, SQL or payment tools. Check identity, tenant, mandate, limits, resource, recipient, policy version and revocation on execution.",
+        "Reserve budget atomically; bind approval and idempotency to the exact action; reconcile uncertain provider success before retrying."
+      ],
+      "acceptance_tests": [
+        "Concurrent individually valid requests cannot exceed their combined budget.",
+        "Injected customer instructions cannot change a destination, read another tenant, obtain secrets or expand permissions."
+      ],
+      "proposed_paths": [
+        "services/action-gateway/",
+        "tests/authorization/",
+        "tests/idempotency/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-005",
+      "title": "Deliver and recover production workload identities",
+      "priority": "P0",
+      "accountable_ai_role": "Platform / Security",
+      "depends_on": [
+        "UNI-001"
+      ],
+      "evidence": [
+        "R05",
+        "R07",
+        "R09",
+        "R10"
+      ],
+      "current_gap": "Automated credentials now serve the bootstrap canary only; a 24-hour issuer-renewal outage still needs administrator re-issuance.",
+      "implementation": [
+        "Bind short-lived identities to actual services and environments, with scoped permissions and audited credential delivery.",
+        "Implement board-authorized re-bootstrap after issuer expiry, host loss and machine replacement without exposing recovery authority to normal workers."
+      ],
+      "acceptance_tests": [
+        "A canary-authorized identity cannot become a production workload identity.",
+        "A simulated outage longer than the issuer period and subsequent host replacement recover under the same standing authority without a person repairing credentials."
+      ],
+      "proposed_paths": [
+        "infrastructure/identity/",
+        "infrastructure/openbao/",
+        "tests/identity/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-006",
+      "title": "Finish vault audit, backup and recovery",
+      "priority": "P0",
+      "accountable_ai_role": "Security / Reliability",
+      "depends_on": [
+        "UNI-005"
+      ],
+      "evidence": [
+        "R05",
+        "S03"
+      ],
+      "current_gap": "File audit and rotation are reported verified, but remote durable audit, capacity monitoring, scheduled backups and full restored-vault unseal/read remain unfinished.",
+      "implementation": [
+        "Schedule protected backups with retention and independent off-site storage; test complete restoration and application reads.",
+        "Monitor disk, audit health and credential age; validate failure behavior with the actual deployed OpenBao version. Review direct TLS and the shared-administrator trust boundary."
+      ],
+      "acceptance_tests": [
+        "A disposable replacement vault unseals and serves the expected recovered records, not merely accepts a snapshot.",
+        "Disk exhaustion, audit sink blockage and backup failure produce bounded recovery or explicit safe failure without silent loss."
+      ],
+      "proposed_paths": [
+        "infrastructure/openbao/",
+        "infrastructure/backups/",
+        "tests/disaster-recovery/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-007",
+      "title": "Install enforced and unattended CI",
+      "priority": "P0",
+      "accountable_ai_role": "Engineering",
+      "depends_on": [
+        "UNI-001",
+        "UNI-005"
+      ],
+      "evidence": [
+        "R04",
+        "R11",
+        "R23",
+        "S01",
+        "S02"
+      ],
+      "current_gap": "GitHub reported main unprotected, no required checks, an empty ruleset list and zero Actions runs at inspection.",
+      "implementation": [
+        "Add real workflows for foundation checks, setup tests, runtime tests, dependency/security review and acceptance evidence.",
+        "Enforce required checks from trusted identities, prevent routine direct pushes and force pushes, pin actions and isolate untrusted builds. Use a scoped GitHub App for autonomous PR creation where GITHUB_TOKEN would require workflow approval."
+      ],
+      "acceptance_tests": [
+        "A broken change and an unauthorized direct push are rejected by the provider configuration.",
+        "An AI-created PR automatically starts required CI and passes or fails without a human approval click."
+      ],
+      "proposed_paths": [
+        ".github/workflows/ci.yml",
+        ".github/workflows/security.yml",
+        "infrastructure/github/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-008",
+      "title": "Replace assertion-dependent security verification",
+      "priority": "P0",
+      "accountable_ai_role": "Engineering / Security",
+      "depends_on": [],
+      "evidence": [
+        "R06",
+        "R07",
+        "S04"
+      ],
+      "current_gap": "Bootstrap denial validation and canary calls use assert; optimized Python can remove those checks and even the canary request.",
+      "implementation": [
+        "Replace security-relevant assertions with explicit checks that always execute and raise typed errors.",
+        "Refactor scripts behind callable entry points; mock provider failures and test normal and optimized execution. Keep outcome evidence distinct from PASS text."
+      ],
+      "acceptance_tests": [
+        "HTTP 403 is accepted as an expected denial; 401, 404, 429 and 500 are not mislabeled as a passing denial.",
+        "A failed canary never produces PASS or publishes a runtime credential under normal Python, -O or PYTHONOPTIMIZE."
+      ],
+      "proposed_paths": [
+        "infrastructure/openbao/bootstrap.py",
+        "infrastructure/openbao/credential-refresh.py",
+        "tests/openbao/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-009",
+      "title": "Make AI roles executable and evaluable",
+      "priority": "P0",
+      "accountable_ai_role": "AI Platform",
+      "depends_on": [
+        "UNI-002",
+        "UNI-004"
+      ],
+      "evidence": [
+        "R03",
+        "R20",
+        "R14"
+      ],
+      "current_gap": "Departments and roles specify accountability but do not provide deployed workers or measured agent capability.",
+      "implementation": [
+        "Create a versioned registry for model, prompt, tool schema, permissions, data access, cost limits and evaluation results.",
+        "Start with coordinator, product/research, builder, independent verifier, growth, customer operations, finance and reliability/security responsibilities; instantiate workers only when needed."
+      ],
+      "acceptance_tests": [
+        "A worker cannot claim a role without passing that role's required evaluations and receiving its scoped identity.",
+        "Verifier credentials and protected checks are inaccessible to the author of the change being verified."
+      ],
+      "proposed_paths": [
+        "agents/registry/",
+        "evaluations/",
+        "workers/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-010",
+      "title": "Automate reviewed release and rollback",
+      "priority": "P0",
+      "accountable_ai_role": "Engineering / Reliability",
+      "depends_on": [
+        "UNI-007",
+        "UNI-009",
+        "UNI-023"
+      ],
+      "evidence": [
+        "R11",
+        "R23",
+        "S02"
+      ],
+      "current_gap": "An executable build-review-release-observe-rollback path is not demonstrated.",
+      "implementation": [
+        "Build immutable artifacts and promote the same digest through staging and production after independent checks and standing-mandate validation.",
+        "Add preview tests, migration compatibility tests, canary/feature-flag rollout, business guardrails, autonomous rollback and post-release evidence."
+      ],
+      "acceptance_tests": [
+        "A staged regression triggers rollback and preserves customer data and outstanding obligations.",
+        "The builder cannot replace a reviewed artifact, approve itself or disable the trusted release gate."
+      ],
+      "proposed_paths": [
+        ".github/workflows/release.yml",
+        "services/release-controller/",
+        "tests/releases/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-011",
+      "title": "Implement customer identity, CRM and consent",
+      "priority": "P1",
+      "accountable_ai_role": "Customer Operations / Data",
+      "depends_on": [
+        "UNI-003",
+        "UNI-004",
+        "UNI-021"
+      ],
+      "evidence": [
+        "R12",
+        "R16"
+      ],
+      "current_gap": "Customer lifecycle responsibilities exist, but CRM, identity and communication-provider operation are not verified.",
+      "implementation": [
+        "Build canonical customer/organization records, entitlements, consent, lifecycle states, approved terms, promises and contact history.",
+        "Connect company-owned email/chat channels with delivery receipts, threading, suppression lists and idempotent sends."
+      ],
+      "acceptance_tests": [
+        "The same customer remains linked across lead, purchase, onboarding, support and renewal.",
+        "Unsubscribing suppresses pending marketing sends while necessary service notices follow their separate permitted policy."
+      ],
+      "proposed_paths": [
+        "services/customers/",
+        "services/crm/",
+        "integrations/communications/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-012",
+      "title": "Implement billing and finance administration",
+      "priority": "P1",
+      "accountable_ai_role": "Finance",
+      "depends_on": [
+        "UNI-003",
+        "UNI-004",
+        "UNI-005",
+        "UNI-011"
+      ],
+      "evidence": [
+        "R18",
+        "R12",
+        "S07",
+        "S08"
+      ],
+      "current_gap": "Billing, accounting and payment integrations are unselected/unverified; financial control requirements are prose.",
+      "implementation": [
+        "Implement product catalog, entitlements, orders/subscriptions, invoices, collections, credits, cancellations, refunds, chargeback handling and reconciliation.",
+        "Separate collected cash, revenue, reservations, fees, liabilities and forecasts; enforce counterparty and account-change controls."
+      ],
+      "acceptance_tests": [
+        "A duplicated webhook and a timeout after a successful charge cannot produce duplicate charges, refunds or entitlements.",
+        "Cancellation, failed renewal and disputes reconcile correctly and do not silently erase obligations."
+      ],
+      "proposed_paths": [
+        "services/billing/",
+        "services/finance/",
+        "integrations/payments/",
+        "tests/finance/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-013",
+      "title": "Operate a measured marketing function",
+      "priority": "P1",
+      "accountable_ai_role": "Growth",
+      "depends_on": [
+        "UNI-010",
+        "UNI-011",
+        "UNI-012",
+        "UNI-015",
+        "UNI-020"
+      ],
+      "evidence": [
+        "R12",
+        "R16",
+        "S05"
+      ],
+      "current_gap": "Marketing is described but no connected campaign execution or acquisition-outcome loop is demonstrated.",
+      "implementation": [
+        "Implement segment research, evidence-backed positioning, content production, claim checking, website publication and one approved acquisition channel first.",
+        "Track campaign/cohort attribution through activation and contribution; enforce spending, consent, sender authentication, unsubscribe, bounce and complaint policies; pause acquisition when support or reliability guardrails breach."
+      ],
+      "acceptance_tests": [
+        "An authorized campaign is planned, published, attributed, evaluated and paused or adjusted without routine founder approval.",
+        "A claim without evidence and a send to a suppressed recipient are blocked before publication."
+      ],
+      "proposed_paths": [
+        "services/growth/",
+        "workflows/business/campaign/",
+        "tests/growth/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-014",
+      "title": "Close sales and onboarding loops",
+      "priority": "P1",
+      "accountable_ai_role": "Sales / Customer Success",
+      "depends_on": [
+        "UNI-011",
+        "UNI-012",
+        "UNI-022"
+      ],
+      "evidence": [
+        "R12",
+        "R16"
+      ],
+      "current_gap": "A customer can be discussed in the blueprint without an implemented offer-to-activated-service workflow.",
+      "implementation": [
+        "Implement qualification, approved offers/discounts, terms acceptance, checkout handoff, onboarding, activation checks and stalled-onboarding recovery.",
+        "Persist commitments and service entitlements; never allow sales text to create an unsupported feature or service guarantee."
+      ],
+      "acceptance_tests": [
+        "An eligible customer completes purchase and reaches the first useful product outcome automatically.",
+        "A failed payment, unsupported requirement or stalled setup triggers a bounded alternative rather than a false completed sale."
+      ],
+      "proposed_paths": [
+        "services/sales/",
+        "workflows/business/onboarding/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-015",
+      "title": "Resolve customer issues, not merely answer",
+      "priority": "P1",
+      "accountable_ai_role": "Customer Operations",
+      "depends_on": [
+        "UNI-009",
+        "UNI-011",
+        "UNI-012",
+        "UNI-022"
+      ],
+      "evidence": [
+        "R12",
+        "R16"
+      ],
+      "current_gap": "Support policies define ownership and identity checks but there is no demonstrated ticket-to-resolution runtime.",
+      "implementation": [
+        "Implement authenticated ticket intake, severity, SLA clocks, telemetry-backed diagnosis, approved remedies, service recovery and engineering handoff.",
+        "Require evidence of resolution, customer follow-up, reopen handling and backlog monitoring; route ordinary escalation to qualified AI functions."
+      ],
+      "acceptance_tests": [
+        "A routine issue reaches a verified remedy, appropriate communication and an auditable closure without human operational work.",
+        "A social-engineering request for another account or an excessive refund fails, and an unanswered ticket cannot age silently."
+      ],
+      "proposed_paths": [
+        "services/support/",
+        "workflows/business/support-resolution/",
+        "tests/support/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-016",
+      "title": "Turn customer feedback into evidence",
+      "priority": "P1",
+      "accountable_ai_role": "Product / Customer Success",
+      "depends_on": [
+        "UNI-003",
+        "UNI-015",
+        "UNI-020"
+      ],
+      "evidence": [
+        "R13",
+        "R14"
+      ],
+      "current_gap": "Feedback is a chapter and an improvement input, not an operational evidence pipeline.",
+      "implementation": [
+        "Ingest tickets, surveys, churn, lost sales, reviews and permitted product telemetry into provenance-bearing feedback records.",
+        "Redact private data, identify duplicates, distinguish defect/request/confusion/abuse, reproduce where possible, and prioritize by severity, affected cohorts, expected impact and cost."
+      ],
+      "acceptance_tests": [
+        "Repeated reports of one defect create one linked root issue while retaining each customer's history.",
+        "A malicious instruction in feedback cannot become policy, a secret request or an authorized code change."
+      ],
+      "proposed_paths": [
+        "services/feedback/",
+        "schemas/feedback.schema.json",
+        "tests/feedback/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-017",
+      "title": "Release learning through controlled experiments",
+      "priority": "P1",
+      "accountable_ai_role": "Product / AI Quality",
+      "depends_on": [
+        "UNI-009",
+        "UNI-010",
+        "UNI-016"
+      ],
+      "evidence": [
+        "R13",
+        "R14"
+      ],
+      "current_gap": "Baseline/challenger evaluation, canary adoption and rollback are specified but not implemented.",
+      "implementation": [
+        "Separate learning into reviewed knowledge/SOP updates, workflow/prompt/model updates and product changes; do not train directly on arbitrary raw tickets.",
+        "Use held-out regression cases, cost/quality/safety guardrails, versioned experiments, appropriately designed customer measurement and rollback. Close the loop by notifying affected customers."
+      ],
+      "acceptance_tests": [
+        "A change that improves one score but leaks data, worsens resolution or exceeds cost is rejected.",
+        "A released improvement traces back to feedback, test evidence, deployment and measured customer outcome; a bad challenger rolls back."
+      ],
+      "proposed_paths": [
+        "services/experiments/",
+        "evaluations/holdout/",
+        "workflows/business/feedback-to-release/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-018",
+      "title": "Recover from incidents autonomously",
+      "priority": "P0",
+      "accountable_ai_role": "Reliability / Operations",
+      "depends_on": [
+        "UNI-002",
+        "UNI-004",
+        "UNI-006",
+        "UNI-010"
+      ],
+      "evidence": [
+        "R17",
+        "R03"
+      ],
+      "current_gap": "No demonstrated executable incident-response and recovery operating loop covers the company.",
+      "implementation": [
+        "Implement SLO-based alerts, incident ownership, bounded retries, provider failover within mandate, rollback, circuit breakers and financial reconciliation.",
+        "Add runbooks for queue stalls, model outage, provider changes, expired credentials, disk pressure, failed migrations and compromised workloads."
+      ],
+      "acceptance_tests": [
+        "A model/provider outage invokes an approved alternative within the same data and spending boundaries.",
+        "A failed repair does not recurse indefinitely, exceed budget, or relabel a safe pause as successful completion."
+      ],
+      "proposed_paths": [
+        "services/reliability/",
+        "runbooks/",
+        "tests/chaos/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-019",
+      "title": "Monitor and stop the company independently",
+      "priority": "P0",
+      "accountable_ai_role": "Security / Governance",
+      "depends_on": [
+        "UNI-001",
+        "UNI-004",
+        "UNI-005"
+      ],
+      "evidence": [
+        "R17",
+        "R26"
+      ],
+      "current_gap": "Board shutdown, independent monitoring and descendant revocation remain specifications.",
+      "implementation": [
+        "Deploy a watchdog outside the orchestrator's failure and permission domain; use independent heartbeat, queue-age and customer-path checks.",
+        "Give the board an authenticated suspension/revocation path covering scheduled jobs, gateways, deployment, payments and descendants. Define funded continuity and expiry behavior."
+      ],
+      "acceptance_tests": [
+        "Killing or compromising the orchestrator does not disable board suspension or monitoring.",
+        "Revocation stops queued consequential actions and later descendants; routine service recovery follows valid runbooks without inventing authority."
+      ],
+      "proposed_paths": [
+        "services/watchdog/",
+        "services/board-control/",
+        "tests/revocation/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-020",
+      "title": "Instrument truthful operating outcomes",
+      "priority": "P0",
+      "accountable_ai_role": "Operations / Intelligence",
+      "depends_on": [
+        "UNI-003"
+      ],
+      "evidence": [
+        "R02",
+        "R15"
+      ],
+      "current_gap": "KPI definitions exist without live source instrumentation or adopted thresholds.",
+      "implementation": [
+        "Connect source events to dashboards for autonomy, aged backlog, SLA, uptime, acquisition, activation, retention, money and cost per accepted outcome.",
+        "Use fixed business-operation definitions, include failed and blocked cases, keep retries separate and reconcile unfinished cohorts."
+      ],
+      "acceptance_tests": [
+        "Zero traffic shows unavailable rather than 100% autonomy.",
+        "An unanswered human ask, a blocked operation and a later reopened ticket remain visible and cannot be excluded to improve results."
+      ],
+      "proposed_paths": [
+        "services/observability/",
+        "dashboards/",
+        "tests/metrics/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-021",
+      "title": "Enforce tenant privacy and knowledge boundaries",
+      "priority": "P0",
+      "accountable_ai_role": "Security / Data",
+      "depends_on": [
+        "UNI-003",
+        "UNI-005"
+      ],
+      "evidence": [
+        "R13",
+        "R16",
+        "S06"
+      ],
+      "current_gap": "Data isolation and retention are specified but not demonstrated against deployed stores and retrieval.",
+      "implementation": [
+        "Implement database grants and row policies, storage/search access checks, scoped service actions and data classification.",
+        "Keep raw customer/location/financial data out of public GitHub; propagate deletion, supersession and access revocation to derived indexes and caches under adopted retention rules."
+      ],
+      "acceptance_tests": [
+        "An authenticated customer and a support worker cannot retrieve another tenant's data through tables, views, storage or search.",
+        "A revoked/deleted or superseded knowledge record cannot continue guiding consequential work through a stale index."
+      ],
+      "proposed_paths": [
+        "db/policies/",
+        "services/knowledge/",
+        "tests/tenancy/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-022",
+      "title": "Build one bounded, supported first product",
+      "priority": "P1",
+      "accountable_ai_role": "Product",
+      "depends_on": [
+        "UNI-001",
+        "UNI-010",
+        "UNI-021"
+      ],
+      "evidence": [
+        "R19",
+        "R12"
+      ],
+      "current_gap": "Safe Goes is a GPS-tracking candidate, not an activated product mandate or supported service.",
+      "implementation": [
+        "Fix a narrow initial customer, supported use case, value proposition, acceptance criteria, price assumptions and support obligation.",
+        "Use simulated devices/test identities first; graduate real location/device use only after authorization, retention, misuse and isolation tests."
+      ],
+      "acceptance_tests": [
+        "A test account receives and views authorized location, gets an auditable geofence event and loses access after revocation.",
+        "A customer can reach a useful outcome; a successful demo alone cannot activate live tracking, buying or launch."
+      ],
+      "proposed_paths": [
+        "products/safe-goes/",
+        "tests/product-acceptance/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-023",
+      "title": "Reproduce infrastructure and recover deployments",
+      "priority": "P0",
+      "accountable_ai_role": "Platform",
+      "depends_on": [
+        "UNI-006",
+        "UNI-007"
+      ],
+      "evidence": [
+        "R05",
+        "R10",
+        "R11"
+      ],
+      "current_gap": "Scripts and live setup reports do not yet demonstrate a complete rebuildable environment and service recovery system.",
+      "implementation": [
+        "Commit sanitized infrastructure configuration, service units, timer configuration and deployment dependencies; retain secrets separately.",
+        "Record artifact/configuration digests, backup inventories, resource placement, capacity and recovery objectives; test reconstruction on a replacement environment."
+      ],
+      "acceptance_tests": [
+        "A replacement environment can be rebuilt from reviewed code and authorized secrets without undocumented workstation state.",
+        "The restored service passes its customer-path tests within the board-adopted recovery objectives."
+      ],
+      "proposed_paths": [
+        "infrastructure/",
+        "deploy/",
+        "tests/rebuild/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-024",
+      "title": "Schedule all recurring business obligations",
+      "priority": "P1",
+      "accountable_ai_role": "Operations / Finance",
+      "depends_on": [
+        "UNI-003",
+        "UNI-012",
+        "UNI-015"
+      ],
+      "evidence": [
+        "R12",
+        "R17",
+        "R18"
+      ],
+      "current_gap": "The repository does not demonstrate a durable calendar of operational commitments and their completion evidence.",
+      "implementation": [
+        "Track renewals, subscription cancellations, domain/certificate expiry, provider deprecations, vulnerability patches, monthly close, retention jobs and adopted compliance deadlines.",
+        "Assign owner, authority, funding, due date, retry policy and proof of completion to each obligation."
+      ],
+      "acceptance_tests": [
+        "A missed execution after downtime is caught up without duplicating a payment or filing.",
+        "Product closure or parent downtime cannot silently discard support, cancellation, data-retention or funded customer obligations."
+      ],
+      "proposed_paths": [
+        "services/obligations/",
+        "workflows/business/scheduled-operations/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-025",
+      "title": "Graduate, replicate and retire ventures safely",
+      "priority": "P2",
+      "accountable_ai_role": "Portfolio",
+      "depends_on": [
+        "UNI-018",
+        "UNI-019",
+        "UNI-022",
+        "UNI-024",
+        "UNI-028"
+      ],
+      "evidence": [
+        "R14",
+        "R17"
+      ],
+      "current_gap": "Controlled venture replication is a future lifecycle specification, not evidence of repeatable independent operation.",
+      "implementation": [
+        "Template an isolated product instance with scoped identity, budget, data, support and metrics only after a first venture meets graduation gates.",
+        "Test handover and retirement, preserve liabilities and revocation, and prevent uncontrolled self-replication."
+      ],
+      "acceptance_tests": [
+        "A second venture cannot access the first venture's private records or exceed the portfolio cap.",
+        "A transfer or shutdown preserves obligations and parent/board control."
+      ],
+      "proposed_paths": [
+        "services/portfolio/",
+        "templates/product-runtime/",
+        "tests/venture-lifecycle/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-026",
+      "title": "Certify autonomy with representative evidence",
+      "priority": "P1",
+      "accountable_ai_role": "Independent Assurance",
+      "depends_on": [
+        "UNI-013",
+        "UNI-014",
+        "UNI-015",
+        "UNI-017",
+        "UNI-018",
+        "UNI-019",
+        "UNI-020",
+        "UNI-021",
+        "UNI-024",
+        "UNI-028"
+      ],
+      "evidence": [
+        "R02",
+        "R15",
+        "R17"
+      ],
+      "current_gap": "No adopted observation window and no demonstrated real-business autonomy evidence support graduation.",
+      "implementation": [
+        "Build an acceptance suite covering business, reliability, security, finance and autonomy failures, plus a sustained observation run.",
+        "Require zero ordinary human asks/work, business/reliability thresholds, a representative scenario mix and at least one complete applicable customer billing lifecycle. Proposed numeric thresholds require board adoption."
+      ],
+      "acceptance_tests": [
+        "Simulated customers are labeled synthetic and cannot establish real demand, retention or financial viability.",
+        "A routine founder repair resets the clean observation window; a safety pause remains blocked/failed rather than autonomous success."
+      ],
+      "proposed_paths": [
+        "tests/company-acceptance/",
+        "evidence/autonomy/",
+        "dashboards/autonomy/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-027",
+      "title": "Generate status from current evidence",
+      "priority": "P1",
+      "accountable_ai_role": "Knowledge / Assurance",
+      "depends_on": [
+        "UNI-007",
+        "UNI-020"
+      ],
+      "evidence": [
+        "R21",
+        "R24",
+        "R01",
+        "R05"
+      ],
+      "current_gap": "Older overview/activation language lags newer publication and vault work; the validator checks documentation structure, not live capability.",
+      "implementation": [
+        "Add capability records linking specification, implementation, deployed artifact, test run, environment, freshness and accountable owner.",
+        "Generate status summaries and detect stale claims; distinguish configured, authenticated, tested, deployed and autonomous."
+      ],
+      "acceptance_tests": [
+        "A changed implementation or expired test invalidates its prior ready status.",
+        "A Markdown heading or configured MCP entry can never alone mark a business capability operational."
+      ],
+      "proposed_paths": [
+        "schemas/capability.schema.json",
+        "services/evidence/",
+        "scripts/validate_capabilities.py"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-028",
+      "title": "Prove business viability as well as automation",
+      "priority": "P1",
+      "accountable_ai_role": "Product / Finance",
+      "depends_on": [
+        "UNI-012",
+        "UNI-020",
+        "UNI-022"
+      ],
+      "evidence": [
+        "R12",
+        "R15",
+        "R18"
+      ],
+      "current_gap": "There are no activated demand, margin, retention, reserve or stop thresholds for the initial venture.",
+      "implementation": [
+        "Tie product experiments to observed customer value, acquisition, activation, renewal, support cost and fully allocated operating cost.",
+        "Keep technical autonomy and commercial viability as separate scorecards; set stop/pivot rules and funded service-continuity obligations."
+      ],
+      "acceptance_tests": [
+        "High content output or many closed tickets cannot substitute for customer value and retained revenue.",
+        "An unprofitable or harmful acquisition experiment stops within its mandate while existing commitments remain serviced."
+      ],
+      "proposed_paths": [
+        "services/business-intelligence/",
+        "products/metrics/",
+        "tests/business-guardrails/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-029",
+      "title": "Account for physical and external dependencies",
+      "priority": "P2",
+      "accountable_ai_role": "Operations / Product",
+      "depends_on": [
+        "UNI-022",
+        "UNI-024"
+      ],
+      "evidence": [
+        "R02",
+        "R16",
+        "R19"
+      ],
+      "current_gap": "Hardware manufacture, installation, return and physical repair are not demonstrated autonomous capabilities.",
+      "implementation": [
+        "Record supplier/customer/account-owner dependencies explicitly; use auditable authorized interfaces and permitted device actions.",
+        "Keep software simulation separate from physical validation; do not count outsourcing routine internal work to people as autonomous execution."
+      ],
+      "acceptance_tests": [
+        "An unavailable installation or repair capability blocks the relevant operation instead of claiming completion.",
+        "A device action outside authorized scope is denied independently of the planner."
+      ],
+      "proposed_paths": [
+        "integrations/suppliers/",
+        "products/device-contracts/",
+        "tests/hardware-boundaries/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    },
+    {
+      "id": "UNI-030",
+      "title": "Protect the enforcement trust boundary",
+      "priority": "P0",
+      "accountable_ai_role": "Security / Governance",
+      "depends_on": [
+        "UNI-001",
+        "UNI-005"
+      ],
+      "evidence": [
+        "R17",
+        "R20",
+        "R25"
+      ],
+      "current_gap": "There is no demonstrated boundary preventing ordinary builders or self-improvement from rewriting their own safety and approval controls.",
+      "implementation": [
+        "Separate builder, reviewer, release, finance, governance and recovery identities; use protected policy/verification artifacts with a distinct release path.",
+        "Prevent operational roles from editing board identity, increasing budgets, replacing required tests, spoofing trusted check results or disabling audit."
+      ],
+      "acceptance_tests": [
+        "A malicious PR that changes its acceptance test, disables a guard or forges a reviewer cannot pass the independently protected gate.",
+        "Changing models or prompts cannot increase tool permissions or erase evidence."
+      ],
+      "proposed_paths": [
+        "services/policy-enforcement/",
+        "infrastructure/trust-boundaries/",
+        "tests/control-integrity/"
+      ],
+      "status": "Proposed; not implemented by this audit"
+    }
+  ],
+  "sources": {
+    "R01": {
+      "path": "governance/BOARD_REGISTER.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/governance/BOARD_REGISTER.md"
+    },
+    "R02": {
+      "path": "policies/autonomy.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/policies/autonomy.md"
+    },
+    "R03": {
+      "path": "books/BOOK-02-AI-OPERATING-SYSTEM/README.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/books/BOOK-02-AI-OPERATING-SYSTEM/README.md"
+    },
+    "R04": {
+      "path": ".github/workflows/README.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/.github/workflows/README.md"
+    },
+    "R05": {
+      "path": "infrastructure/openbao/README.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/infrastructure/openbao/README.md"
+    },
+    "R06": {
+      "path": "infrastructure/openbao/bootstrap.py",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/infrastructure/openbao/bootstrap.py"
+    },
+    "R07": {
+      "path": "infrastructure/openbao/credential-refresh.py",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/infrastructure/openbao/credential-refresh.py"
+    },
+    "R08": {
+      "path": "scripts/start_uni.py",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/scripts/start_uni.py"
+    },
+    "R09": {
+      "path": "integrations/README.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/integrations/README.md"
+    },
+    "R10": {
+      "path": "integrations/EXISTING_STACK.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/integrations/EXISTING_STACK.md"
+    },
+    "R11": {
+      "path": "books/BOOK-05-ENGINEERING/README.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/books/BOOK-05-ENGINEERING/README.md"
+    },
+    "R12": {
+      "path": "books/BOOK-06-BUSINESS-OPERATIONS/README.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/books/BOOK-06-BUSINESS-OPERATIONS/README.md"
+    },
+    "R13": {
+      "path": "books/BOOK-07-KNOWLEDGE-MEMORY-INTELLIGENCE/README.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/books/BOOK-07-KNOWLEDGE-MEMORY-INTELLIGENCE/README.md"
+    },
+    "R14": {
+      "path": "books/BOOK-10-EVOLUTION/README.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/books/BOOK-10-EVOLUTION/README.md"
+    },
+    "R15": {
+      "path": "dashboards/README.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/dashboards/README.md"
+    },
+    "R16": {
+      "path": "policies/product-and-customers.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/policies/product-and-customers.md"
+    },
+    "R17": {
+      "path": "policies/security-and-continuity.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/policies/security-and-continuity.md"
+    },
+    "R18": {
+      "path": "policies/financial-policy.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/policies/financial-policy.md"
+    },
+    "R19": {
+      "path": "products/safe-goes/README.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/products/safe-goes/README.md"
+    },
+    "R20": {
+      "path": "books/BOOK-03-ORGANIZATION/README.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/books/BOOK-03-ORGANIZATION/README.md"
+    },
+    "R21": {
+      "path": "scripts/validate_foundation.py",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/scripts/validate_foundation.py"
+    },
+    "R22": {
+      "path": "scripts/test_setup_mcp.py",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/scripts/test_setup_mcp.py"
+    },
+    "R23": {
+      "path": "workflows/github-change.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/workflows/github-change.md"
+    },
+    "R24": {
+      "path": "ROADMAP.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/ROADMAP.md"
+    },
+    "R25": {
+      "path": "RULEBOOK.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/RULEBOOK.md"
+    },
+    "R26": {
+      "path": "CONSTITUTION.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/CONSTITUTION.md"
+    },
+    "R27": {
+      "path": "README.md",
+      "url": "https://github.com/turkyildiz/Unilogistix/blob/1f77d908f424afffecd556d7244f5c44e655e89d/README.md"
+    },
+    "S01": {
+      "title": "GitHub \u2014 GITHUB_TOKEN, workflow-trigger and approval behavior",
+      "url": "https://docs.github.com/en/actions/concepts/security/github_token"
+    },
+    "S02": {
+      "title": "GitHub \u2014 Secure use reference",
+      "url": "https://docs.github.com/en/actions/reference/security/secure-use"
+    },
+    "S03": {
+      "title": "OpenBao \u2014 Audit devices",
+      "url": "https://openbao.org/docs/audit/"
+    },
+    "S04": {
+      "title": "Python \u2014 The assert statement",
+      "url": "https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement"
+    },
+    "S05": {
+      "title": "Google \u2014 Email sender guidelines",
+      "url": "https://support.google.com/mail/answer/81126?hl=en"
+    },
+    "S06": {
+      "title": "Supabase \u2014 Row Level Security",
+      "url": "https://supabase.com/docs/guides/database/postgres/row-level-security"
+    },
+    "S07": {
+      "title": "Stripe \u2014 Webhooks",
+      "url": "https://docs.stripe.com/webhooks"
+    },
+    "S08": {
+      "title": "Stripe \u2014 Idempotent requests",
+      "url": "https://docs.stripe.com/api/idempotent_requests"
+    },
+    "S09": {
+      "title": "Cloudflare \u2014 Workflows",
+      "url": "https://developers.cloudflare.com/workflows/"
+    }
+  }
+}

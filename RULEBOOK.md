@@ -1,6 +1,6 @@
 # Agent and system rulebook
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Draft specification
+Version: 0.4 | Updated: 2026-09-09 | Status: Draft specification
 
 ## Required controls
 
@@ -21,6 +21,11 @@ Version: 0.2 | Updated: 2026-09-09 | Status: Draft specification
 
 ## Implementation evidence
 
+Apply the [constitutional responsibility schedule](CONSTITUTION.md#constitutional-agent-responsibility-schedule),
+including inherited role duties and mandatory separation of authorship, checking,
+execution and reconciliation. Role titles do not enlarge a mandate. Each enabled
+business responsibility needs an assigned qualified owner and accepted handoffs.
+
 Rules are design requirements until implemented. Release records must identify the enforcement layer and tests proving consequential controls. A Markdown file cannot enforce a payment limit, branch protection, customer isolation, or shutdown.
 
 Use [policies](policies/README.md) for detailed controls and [templates](templates/README.md) for records.
@@ -30,5 +35,7 @@ Use [policies](policies/README.md) for detailed controls and [templates](templat
 **Every operational human ask is a failure.** Ordinary work must use autonomous resolution and recovery. Count unavoidable asks, actual human execution, and unresolved operations honestly. Reserved board authority does not permit relabeling routine operational decisions. See [the autonomy policy](policies/autonomy.md).
 
 ## Change history
+
+- 0.4 — 2026-09-09: Linked the constitutional agent responsibility schedule and recorded its draft review status.
 
 - 0.2 — 2026-09-09: Established the master-blueprint structure and reconciled the original company vision.

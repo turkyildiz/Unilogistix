@@ -1,6 +1,10 @@
 # Business Operations
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
+Version: 0.5 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
+
+## Business-instance scope
+
+These functions operate inside each actual business instance; Unilogistix is their reusable framework, never an actual company. The founder's LondonRue towel example requires supplier, inventory, fulfillment and returns coverage alongside digital commerce. See [autonomous marketing](AUTONOMOUS-MARKETING.md) for the full acquisition-to-customer-outcome loop and [business-to-framework CI/CD](../../workflows/business-to-framework-learning.md) for reusable improvements.
 
 ## Complete lifecycle
 
@@ -23,6 +27,11 @@ Apply [financial policy](../../policies/financial-policy.md): approved accounts 
 Accounting, billing, and applicable obligations need configured provider and jurisdiction arrangements before live use. No provider or accounting treatment is selected by this book.
 
 ## Business reviews
+
+The proposed [operating assurance policy](../../policies/operating-assurance.md)
+adds direct customer self-service, verified first value, evidence-backed commercial
+packets, consistent customer commitments and explainable customer/product economics.
+Supplier procurement remains distinct from supporting a customer's buying process.
 
 Review demand, conversion, retention, customer complaints, support backlog, margins, cash obligations, and concentration risks. Compare outcomes against the predeclared experiment or product targets.
 
@@ -78,5 +87,9 @@ These chapter headings preserve the blueprint's expansion plan. This initial boo
 Apply [cost-efficiency policy](../../policies/cost-efficiency.md): reuse suitable existing resources, measure total cost per verified outcome, preserve reliability and zero-human operations, and reserve new purchases beyond delegated limits for the board. Provider availability is not a spending cap.
 
 ## Change history
+
+- 0.5 — 2026-09-09: Incorporated the additional operating-assurance proposals for review; adoption and implementation remain separate.
+
+- 0.3 — 2026-09-09: Linked business-instance scope, marketing and the founder-confirmed framework learning loop.
 
 - 0.2 — 2026-09-09: Added the initial operating contract and retained the blueprint chapter coverage.

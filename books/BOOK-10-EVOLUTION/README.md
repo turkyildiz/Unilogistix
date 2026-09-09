@@ -1,6 +1,10 @@
 # Evolution & Continuous Improvement
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
+Version: 0.3 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
+
+## Founder-confirmed learning scope
+
+Business experience, including LondonRue's successes and failures, must improve Unilogistix and subsequent businesses. Use the [business-to-framework CI/CD workflow](../../workflows/business-to-framework-learning.md): capture evidence, generalize, independently evaluate, release a versioned improvement, measure outcomes and distribute compatible upgrades. Business and framework release paths are connected but retain distinct authority and data scopes.
 
 ## Improvement loop
 
@@ -24,7 +28,7 @@ Meta-agents may recommend changes to prompts, agents, workflows, and policies. T
 
 New products inherit policies, agent contracts, engineering standards, support workflows, dashboards, finance controls, and permitted reusable knowledge. Add product-specific requirements and isolated records.
 
-Graduated ventures get a dedicated runtime only after the [viability and transfer gates](../../policies/venture-lifecycle.md). Preserve customer obligations and parent revocation across all descendants.
+Business instances can be created during discovery and development. The [viability and transfer gates](../../policies/venture-lifecycle.md) govern graduation and a specified handover, not initial instantiation. Preserve customer obligations and authorized suspension across instances. Unilogistix is their originating framework, not their legal parent company.
 
 Long-term and global expansion roadmaps are hypotheses reviewed against evidence, account arrangements, markets, and resource limits. Avoid unsupported five-year technology commitments.
 
@@ -78,5 +82,9 @@ Every operational human ask is a failure. Apply [the founder-directed autonomy p
 These chapter headings preserve the blueprint's expansion plan. This initial book establishes its operating contract; dedicated chapter specifications will be developed with the corresponding roadmap phase.
 
 ## Change history
+
+- 0.3 — 2026-09-09: Linked business-instance scope, marketing and the founder-confirmed framework learning loop.
+
+- 0.3 — 2026-09-09: Applied the founder's reusable-framework/business-instance model; Unilogistix is not an actual company.
 
 - 0.2 — 2026-09-09: Added the initial operating contract and retained the blueprint chapter coverage.

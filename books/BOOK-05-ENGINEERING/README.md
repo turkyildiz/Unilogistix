@@ -1,6 +1,6 @@
 # Engineering & Software Development
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
+Version: 0.5 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
 
 ## Delivery contract
 
@@ -31,6 +31,11 @@ Roll out within the authorized scope. Observe failure thresholds and revert or c
 Hardware extensions additionally follow the [product and customer policy](../../policies/product-and-customers.md).
 
 ## Acceptance
+
+The proposed [assurance rules](../../policies/operating-assurance.md) require
+compound-failure scenarios and protected evaluation, including stale restoration
+state, accepted-but-unacknowledged external actions and degraded monitoring.
+Simulation results must be labeled separately from live operating evidence.
 
 Demonstrate a representative change with passing relevant checks, independent review, denied unauthorized production access, and a recoverable release. CI and branch protection are planned controls until configured and tested.
 
@@ -74,5 +79,7 @@ Every operational human ask is a failure. Apply [the founder-directed autonomy p
 These chapter headings preserve the blueprint's expansion plan. This initial book establishes its operating contract; dedicated chapter specifications will be developed with the corresponding roadmap phase.
 
 ## Change history
+
+- 0.5 — 2026-09-09: Incorporated the additional operating-assurance proposals for review; adoption and implementation remain separate.
 
 - 0.2 — 2026-09-09: Added the initial operating contract and retained the blueprint chapter coverage.

@@ -1,6 +1,6 @@
 # Agent Library
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
+Version: 0.4 | Updated: 2026-09-09 | Status: Constitutional role contracts drafted; runtime bindings and detailed chapters incomplete
 
 ## Specification and lifecycle
 
@@ -30,7 +30,7 @@ Retirement prevents new assignments, resolves or transfers active work, revokes 
 
 ## Initial library
 
-[CEO/orchestrator](../../agents/ceo-orchestrator.md) and [independent reviewer](../../agents/independent-reviewer.md) are starter specifications. Other families remain explicit roadmap work, not falsely claimed deployed workers.
+[The constitution](../../CONSTITUTION.md#constitutional-agent-responsibility-schedule) now specifies all 60 role responsibility contracts for review. The [CEO/orchestrator](../../agents/ceo-orchestrator.md) and [independent reviewer](../../agents/independent-reviewer.md) remain starter runtime-specification documents. Map runtime configurations to the constitutional role IDs and their shared obligations; qualification, tools, models and deployment evidence remain activation work. None of these documents claims deployed workers.
 
 ## Autonomous operation requirement
 
@@ -78,5 +78,7 @@ Every operational human ask is a failure. Apply [the founder-directed autonomy p
 These chapter headings preserve the blueprint's expansion plan. This initial book establishes its operating contract; dedicated chapter specifications will be developed with the corresponding roadmap phase.
 
 ## Change history
+
+- 0.4 — 2026-09-09: Replaced the missing-role description with the canonical 60-role constitutional schedule while preserving runtime/specification distinctions.
 
 - 0.2 — 2026-09-09: Added the initial operating contract and retained the blueprint chapter coverage.

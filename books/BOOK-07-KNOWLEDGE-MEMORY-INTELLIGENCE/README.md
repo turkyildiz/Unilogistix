@@ -1,6 +1,6 @@
 # Knowledge, Memory & Intelligence
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
+Version: 0.3 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
 
 ## Sources of truth
 
@@ -19,6 +19,10 @@ Knowledge records include ID, source, author or importer, observation date, vers
 Validate source and sensitivity before ingestion. Enforce access before indexing and at retrieval. Keep private product data isolated; a shared lesson must be sanitized and authorized for reuse.
 
 Retrieval returns provenance, date, and version alongside content. Mark stale or conflicting records and consult the source for consequential decisions. A copied prompt is not an approved prompt release.
+
+## Master and business memory
+
+Keep each business's operational memory separate from reusable Unilogistix framework knowledge. Every meaningful business outcome is considered for learning; record the disposition and promote validated reusable lessons through [business-to-framework CI/CD](../../workflows/business-to-framework-learning.md). "Company memory" below means the relevant actual business context, not an incorporated Unilogistix parent.
 
 ## Decision history and learning
 
@@ -65,5 +69,7 @@ Every operational human ask is a failure. Apply [the founder-directed autonomy p
 These chapter headings preserve the blueprint's expansion plan. This initial book establishes its operating contract; dedicated chapter specifications will be developed with the corresponding roadmap phase.
 
 ## Change history
+
+- 0.3 — 2026-09-09: Linked business-instance scope, marketing and the founder-confirmed framework learning loop.
 
 - 0.2 — 2026-09-09: Added the initial operating contract and retained the blueprint chapter coverage.

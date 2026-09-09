@@ -1,14 +1,30 @@
 # Organization & Departments
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
+Version: 0.6 | Updated: 2026-09-09 | Status: Responsibility and reporting schedules drafted; detailed procedures and runtime incomplete
 
 ## Organization model
 
 Founder → AI executive accountability → department responsibilities → specialist execution. Departments are interfaces and ownership boundaries; instantiate agents only when useful work requires them.
 
-The CEO owns portfolio coordination; CTO owns technical architecture and engineering; COO owns reliable business operations; CFO owns financial administration within limits; CMO owns truthful growth and acquisition.
+Each actual business's R01 executive coordinates that business. R03 CTO owns technical delivery; R02 COO owns operations; R04 CFO owns financial administration; R05 CMO owns growth; R06 owns product. R55 maintains the master framework under founder/framework governance, not legal parent-company authority.
+
+The [constitutional reporting table](../../CONSTITUTION.md#m-reporting-lines-and-independent-oversight)
+assigns all 60 roles. R07 governance coordinates protected review and controls;
+R52 audit reports directly to actual founder/governance. Code review, QA, security
+assurance and financial verification are outside the operational executive's
+override authority. Operating managers receive findings and own repairs; they
+cannot suppress or manufacture acceptance. Read the
+[checks-and-balances matrix](../../CONSTITUTION.md#n-checks-and-balances-coverage-and-readiness)
+for the required evidence and remaining readiness requirements.
 
 ## Functional coverage
+
+The [constitution's responsibility schedule](../../CONSTITUTION.md#constitutional-agent-responsibility-schedule)
+is the canonical assignment of 60 role contracts across executive coordination,
+research/design, engineering, growth/customer service, physical goods, finance,
+legal/privacy/audit and framework learning. Each contract specifies trigger,
+deliverable, authority boundary, handoff/failure owner and measures. No separate
+permanent worker is implied by each role.
 
 Product and research own customer problems, requirements, market and competitive evidence. Engineering covers architecture, frontend, backend, data, AI/ML, UX/UI, QA, security, and DevOps/SRE.
 
@@ -76,5 +92,9 @@ Every operational human ask is a failure. Apply [the founder-directed autonomy p
 These chapter headings preserve the blueprint's expansion plan. This initial book establishes its operating contract; dedicated chapter specifications will be developed with the corresponding roadmap phase.
 
 ## Change history
+
+- 0.6 — 2026-09-09: Established explicit operating, framework and protected oversight reporting lines; linked all-role reporting and control readiness.
+
+- 0.4 — 2026-09-09: Linked the completed draft constitutional role contracts, including mobile, DevOps, AP, physical goods and framework improvement.
 
 - 0.2 — 2026-09-09: Added the initial operating contract and retained the blueprint chapter coverage.

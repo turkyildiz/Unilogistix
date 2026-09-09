@@ -18,6 +18,12 @@ The blueprint defines the destination. Complete phases by evidence, not by creat
 
 ## First executable milestone
 
+The executable milestones below are future implementation work. Today's controlling
+scope is [document completion](governance/DOCUMENT_SCOPE.md). Use the corrected
+[framework/business model](governance/SYSTEM_AND_BUSINESS_MODEL.md) and
+[learning CI/CD workflow](workflows/business-to-framework-learning.md) when updating
+future implementation plans; the framework is not an actual company.
+
 After the foundation is adopted and repository writes are available, implement a small sandbox vertical slice: founder objective → durable task → specialist deliverable → independent review → proposed repository change → audit record.
 
 Use no live customers, purchases, physical actions, or production deployment for that first slice. Demonstrate failure recovery and denied unauthorized actions before adding broader tools.

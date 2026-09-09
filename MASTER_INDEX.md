@@ -1,6 +1,6 @@
 # Master index
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Foundation navigation
+Version: 0.7 | Updated: 2026-09-09 | Status: Foundation navigation
 
 Canonical current documents are listed below. The supplied blueprint and archived draft are historical references; they do not silently override later founder instructions.
 
@@ -33,6 +33,9 @@ Canonical current documents are listed below. The supplied blueprint and archive
 
 ## Governance records
 
+- [Framework and actual-business identity model](governance/SYSTEM_AND_BUSINESS_MODEL.md)
+- [Documentation scope and completion agreement](governance/DOCUMENT_SCOPE.md)
+- [US/Illinois legal applicability register](governance/LEGAL_APPLICABILITY.md)
 - [Authority — canonical location](governance/AUTHORITY.md)
 - [Autonomy failure and dependency register](governance/AUTONOMY_REGISTER.md)
 - [Board direction and activation register](governance/BOARD_REGISTER.md)
@@ -46,6 +49,10 @@ Canonical current documents are listed below. The supplied blueprint and archive
 
 ## Policies
 
+- [Watchdogs, loud alerts, fallback and verified repair](policies/watchdogs-and-repair-alerts.md)
+
+- [Connected operating assurance and proposal disposition](policies/operating-assurance.md)
+
 - [Policy library](policies/README.md)
 - [Operational human intervention is a failure](policies/autonomy.md)
 - [Financial policy](policies/financial-policy.md)
@@ -55,18 +62,26 @@ Canonical current documents are listed below. The supplied blueprint and archive
 
 ## Agents
 
+- [Reporting lines and independent oversight](CONSTITUTION.md#m-reporting-lines-and-independent-oversight)
+- [Checks-and-balances coverage and readiness](CONSTITUTION.md#n-checks-and-balances-coverage-and-readiness)
+
+- [Constitutional responsibility directory: 60 role contracts](CONSTITUTION.md#constitutional-agent-responsibility-schedule)
+
 - [Agent library](agents/README.md)
 - [CEO / Orchestrator](agents/ceo-orchestrator.md)
 - [Independent Reviewer](agents/independent-reviewer.md)
 
 ## Workflows
 
+- [Business-to-framework learning and CI/CD](workflows/business-to-framework-learning.md)
+- [Business-instance autonomous marketing](books/BOOK-06-BUSINESS-OPERATIONS/AUTONOMOUS-MARKETING.md)
 - [Workflow library](workflows/README.md)
 - [Autonomous recovery workflow](workflows/autonomous-recovery.md)
 - [GitHub change workflow](workflows/github-change.md)
 
 ## Templates
 
+- [Business-instance profile and adoption schedule](templates/business-instance.md)
 - [Operating templates](templates/README.md)
 - [Agent specification template](templates/agent-spec.md)
 - [Department contract template](templates/department.md)
@@ -104,6 +119,9 @@ Canonical current documents are listed below. The supplied blueprint and archive
 
 ## Scripts
 
+- Local-only historical runtime acceptance script: `scripts/check_runtime.py` (not part of this documentation publication).
+- [Sandbox task execution foundation](services/foundation/README.md)
+- [Current implementation evidence](evidence/implementation-2026-09-09.md)
 - [setup_mcp.py](scripts/setup_mcp.py)
 - [start_uni.py](scripts/start_uni.py)
 
@@ -119,10 +137,20 @@ Canonical current documents are listed below. The supplied blueprint and archive
 
 ## Sources and history
 
+- [Unchanged additional improvements proposal](reference/Unilogistix_Additional_Improvements_Board_Proposal.md).
+
 - [Unchanged founder master blueprint](reference/UNI_Master_Blueprint.md).
 - [Blueprint alignment decision](decisions/ADR-0001-blueprint-alignment.md).
 - [Historical archive](archive/README.md).
 
 ## Change history
+
+- 0.7 — 2026-09-09: Specified independent failure detection, urgent repeat/fallback alerts and verified repair; operating thresholds and channel activation remain proposed.
+
+- 0.6 — 2026-09-09: Added explicit reporting and checks-and-balances documentation for review.
+
+- 0.5 — 2026-09-09: Incorporated the additional operating-assurance proposals for review; adoption and implementation remain separate.
+
+- 0.4 — 2026-09-09: Linked the constitutional agent responsibility schedule and recorded its draft review status.
 
 - 0.2 — 2026-09-09: Indexed the blueprint-aligned foundation and autonomy requirements.

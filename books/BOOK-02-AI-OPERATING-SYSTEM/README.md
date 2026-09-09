@@ -1,6 +1,6 @@
 # AI Operating System
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
+Version: 0.5 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
 
 ## Runtime responsibilities
 
@@ -21,6 +21,11 @@ Intake → planned → ready → running → review → completed. Review may ro
 Workers claim renewable leases. Each external action has a stable idempotency key. Persist the result before task completion. On lease loss or restart, reconcile uncertain external effects before retrying. Apply bounded retry, timeout, queue concurrency, and cost limits.
 
 ## Routing and controls
+
+Apply the proposed [connected operating rules](../../policies/operating-assurance.md)
+for evidence-based task closure, consistent customer state, action-specific
+qualification and scheduling under a shared operation budget. Qualification is
+distinct from role title and authority; child tasks cannot expand the envelope.
 
 Route by capability, permissions, data sensitivity, evaluation results, and available budget. Escalation to a more capable model still uses the same authority. Gate tools outside the model and recheck revocations at execution.
 
@@ -62,5 +67,7 @@ Every operational human ask is a failure. Apply [the founder-directed autonomy p
 These chapter headings preserve the blueprint's expansion plan. This initial book establishes its operating contract; dedicated chapter specifications will be developed with the corresponding roadmap phase.
 
 ## Change history
+
+- 0.5 — 2026-09-09: Incorporated the additional operating-assurance proposals for review; adoption and implementation remain separate.
 
 - 0.2 — 2026-09-09: Added the initial operating contract and retained the blueprint chapter coverage.

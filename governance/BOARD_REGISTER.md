@@ -1,9 +1,25 @@
 # Board direction and activation register
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Founder direction recorded; activation incomplete
+Version: 0.7 | Updated: 2026-09-09 | Status: Founder direction recorded; activation incomplete
 
 ## Recorded founder direction
 
+- F-017: Publish the current documents to GitHub and complete all ten books. This is documentation publication/completion, not adoption of every proposed rule or authorization to deploy runtime services.
+
+
+- F-016: Asked for watchdogs that detect failures and loudly report repair needs. The draft watchdog policy now specifies severity, delivery, acknowledgment/progress escalation, independent monitoring and verified closure. Numeric defaults are proposed; no channel activation or messaging authorization is inferred.
+
+- F-015: Asked for explicit reporting relationships and whether checks and balances are complete. The constitution now proposes reporting for all 60 roles and protected oversight; control operation is not asserted without implementation evidence.
+
+- F-014: Supplied Unilogistix_Additional_Improvements_Board_Proposal.md as one more suggestion for the documents. All ten improvements are mapped into the draft operating-assurance policy and constitutional schedule; receipt is not adoption of its eight proposed board decisions, budgets or implementation sequence.
+
+- F-013: Fill out all agent responsibilities in the constitution and review their scope together. This authorizes document preparation, including the coding, review/testing, DevOps, mobile, accounting and accounts-payable responsibilities discussed. The resulting detailed role contracts remain drafts until adopted.
+
+- F-011: Unilogistix will never be an actual company. It is cloned into actual businesses to develop and operate them under their identities; LondonRue selling towels is the founder's example. This supersedes references to Unilogistix as a legal parent company and any requirement to wait for viability before initial instantiation.
+- F-012: Use everything learned from LondonRue to upgrade Unilogistix and create the next business through CI/CD. Business learning and framework improvement are part of the agreed document scope; detailed release rules remain proposals.
+
+- F-009: Today's work is company documentation, rules and regulations, completion of that document set, and explicit agreement on its scope. Runtime implementation is outside today's scope.
+- F-010: Use United States / Illinois as the company legal baseline. Entity type, registration status and customer geography are not yet supplied.
 - F-001: Build an AI company with the founder as board, no human workforce, software and hardware execution, business operations, and controlled replication into viable ventures.
 - F-002: Prepare governing documents and upload them to turkyildiz/Unilogistix.
 - F-003: Use the supplied UNI_Master_Blueprint.md as the repository standard.
@@ -19,12 +35,13 @@ Evidence source: the founder's explicit instructions in this working conversatio
 
 | Item | State |
 | --- | --- |
-| Company mission and founder role | Explicit founder direction |
+| Framework identity and founder role | Unilogistix is a reusable system, never an actual company; founder governs framework and delegates business-instance authority |
 | Blueprint structure and autonomy requirement | Explicit founder direction |
 | Detailed operating policy adoption | Not separately recorded |
 | Runtime board identity / authenticated channel / recovery | Not configured |
-| Legal identity, jurisdiction, account arrangements | Unspecified |
-| First product | Safe Goes is the blueprint candidate; mandate pending |
+| Legal identity, jurisdiction, account arrangements | No Unilogistix incorporation; US/Illinois is the starting business profile. Actual owner/entity and account arrangements are per-business schedule fields |
+| Current work scope | Documentation only; reusable framework, actual business instances and continuous learning confirmed. Detailed policy adoption and completion standard remain pending |
+| Business examples and first launch | LondonRue towels is the current founder example; Safe Goes is a historical blueprint candidate. No first-launch mandate inferred |
 | Budget, currency, reserves, caps, expiry | Unspecified; no new spending inferred |
 | Production and physical action permissions | Unspecified |
 | Business viability thresholds and observation window | Unspecified |
@@ -43,4 +60,15 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 
 ## Change history
 
+- 0.7 — 2026-09-09: Specified independent failure detection, urgent repeat/fallback alerts and verified repair; operating thresholds and channel activation remain proposed.
+
+- 0.6 — 2026-09-09: Added explicit reporting and checks-and-balances documentation for review.
+
+- 0.5 — 2026-09-09: Incorporated the additional operating-assurance proposals for review; adoption and implementation remain separate.
+
+- 0.4 — 2026-09-09: Linked the constitutional agent responsibility schedule and recorded its draft review status.
+
+- 0.3 — 2026-09-09: Recorded F-011/F-012, superseding the legal-parent assumption and confirming the learning loop.
+
+- 0.2 documentation correction — 2026-09-09: Recorded F-009 and F-010; stopped treating runtime implementation as today's scope. See [scope proposal](DOCUMENT_SCOPE.md).
 - 0.2 — 2026-09-09: Aligned with the master blueprint and founder autonomy requirement.

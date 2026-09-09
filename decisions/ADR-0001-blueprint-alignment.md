@@ -24,6 +24,13 @@ The earlier founder direction included hardware, no human workforce, and cloning
 
 ## Later founder constraints
 
+Identity and instance timing are superseded by [F-011/F-012](../governance/BOARD_REGISTER.md)
+and the [system model](../governance/SYSTEM_AND_BUSINESS_MODEL.md): Unilogistix will
+never be an actual company, business instances can exist during development, and
+their learning improves the framework and future businesses. The earlier table
+records the prior interpretation, not controlling current authority. The ten-book
+structure remains selected; substantive document completion is today's work scope.
+
 The founder subsequently required zero operational human asks, authorized necessary MCP setup, and identified existing infrastructure with cost-efficiency as a priority. These later instructions govern the alignment where they are more specific than the supplied blueprint. See [autonomy](../policies/autonomy.md), [existing stack](../integrations/EXISTING_STACK.md), and [cost policy](../policies/cost-efficiency.md).
 
 ## Consequences

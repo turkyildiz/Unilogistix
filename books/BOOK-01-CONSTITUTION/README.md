@@ -1,6 +1,6 @@
 # Company Constitution & Governance
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
+Version: 0.4 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
 
 ## Operating contract
 
@@ -9,6 +9,11 @@ The founder governs purpose and reserved decisions. The executive layer manages 
 [CONSTITUTION.md](../../CONSTITUTION.md) is the canonical constitutional text. [RULEBOOK.md](../../RULEBOOK.md) contains mandatory agent requirements. Policy details live in [policies](../../policies/README.md).
 
 ## Decision procedure
+
+The [constitutional agent responsibility schedule](../../CONSTITUTION.md#constitutional-agent-responsibility-schedule)
+contains the completed draft role contracts, common obligations, separation rules
+and cross-department scenarios. This book references that single canonical schedule;
+it does not grant an alternative set of permissions.
 
 Classify the proposed action as automatic, agent-reviewed, executive-reviewed, or founder-approved. Identify all applicable financial, security, physical, customer, and release gates. Verify that both authority and acceptance evidence exist before execution.
 
@@ -59,5 +64,7 @@ Every operational human ask is a failure. Apply [the founder-directed autonomy p
 These chapter headings preserve the blueprint's expansion plan. This initial book establishes its operating contract; dedicated chapter specifications will be developed with the corresponding roadmap phase.
 
 ## Change history
+
+- 0.4 — 2026-09-09: Linked the constitutional agent responsibility schedule and recorded its draft review status.
 
 - 0.2 — 2026-09-09: Added the initial operating contract and retained the blueprint chapter coverage.

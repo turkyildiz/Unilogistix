@@ -1,6 +1,6 @@
 # Dashboard and KPI contract
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Draft specification
+Version: 0.5 | Updated: 2026-09-09 | Status: Draft specification
 
 Initial definitions below require source instrumentation and adopted windows. No live values are claimed.
 
@@ -22,6 +22,16 @@ Owner and source mappings: COO for task/support/availability; CFO for financial 
 
 Each product mandate supplies windows, freshness, targets, exclusions, and incident thresholds. Missing data or zero denominators must display unavailable. Show stale timestamps and unfinished cohorts. Never improve autonomy metrics by dropping failed work or disguising operational asks as strategy.
 
+## Proposed operating-evidence dimensions
+
+Apply [operating assurance](../policies/operating-assurance.md): report authority,
+capability, actual operations, economics and learning separately. Show exact scope,
+source freshness, affected invalidations, unfinished obligations and uncertainty.
+A single autonomy score cannot substitute for these distinct questions. Governance
+packets link decisions to their exact authority, execution owner and measured result.
+
 ## Change history
+
+- 0.5 — 2026-09-09: Incorporated the additional operating-assurance proposals for review; adoption and implementation remain separate.
 
 - 0.2 — 2026-09-09: Added to the blueprint-aligned foundation.
