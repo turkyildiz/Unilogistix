@@ -1,6 +1,6 @@
 # Mandates, decisions, actions, and transfer records
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Draft specification
+Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
 
 ## Board resolution
 
@@ -70,6 +70,42 @@ Version: 0.2 | Updated: 2026-09-09 | Status: Draft specification
 - Proposed opportunities:
 - Reserved decisions needed, with concrete options:
 
+## Protected role assignment
+
+- Business/framework scope, role ID and single operational reporting owner:
+- Functional oversight and direct protected reporting channel:
+- Appointment authority; qualified pool and predetermined standby selection rule:
+- Authors/requesters/beneficiaries and conflict/recusal assessment:
+- Protected credentials, tests, minimum capacity and evidence custody:
+- Shared host/admin dependencies and residual independence risk:
+- Permitted decisions, execution boundaries and stop/resume rights:
+- Qualification evidence, assignment term, expiry and replacement history:
+- Reviewer/adjudicator identity and immutable prior verdict references:
+
+## Incident, exception and closure
+
+- Incident/case ID; trigger; severity; affected customers, tasks and obligations:
+- One accountable owner/commander; independent watchdog and closure verifier:
+- Detection, alert delivery, acknowledgment and progress timestamps:
+- Current mandate, applicable rule, containment and bounded retry/appeal deadline:
+- Exception requested, authority required and actual disposition; no implied waiver:
+- Root cause, repair artifact, reconciliation, retained evidence and recurrence test:
+- Human asks/execution counted; unresolved work and next review date:
+- Independent closure verdict and remaining risk:
+
+## Legal obligation and contract record
+
+- Actual business/entity, jurisdiction, product/data/market triggering facts:
+- Requirement and effective official source, verified date and verifier:
+- Applicable/conditional/not-applicable/unresolved status and rationale:
+- Accountable owner, deadline calculation, reminder and escalation schedule:
+- Contract parties, signer authority, commitments, renewal/termination terms:
+- Filing/payment/notice/performance evidence and source reconciliation:
+- Retention, legal holds, exceptions, recheck events and next review date:
+
+
 ## Change history
+
+- 1.0 — 2026-09-09: Completed ten-book manuscript coverage and integrated the reporting review; adoption and activation remain separate.
 
 - 0.2 — 2026-09-09: Aligned with the master blueprint and founder autonomy requirement.

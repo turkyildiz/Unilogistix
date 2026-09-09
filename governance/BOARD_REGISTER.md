@@ -1,6 +1,6 @@
 # Board direction and activation register
 
-Version: 0.7 | Updated: 2026-09-09 | Status: Founder direction recorded; activation incomplete
+Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
 
 ## Recorded founder direction
 
@@ -50,7 +50,7 @@ Evidence source: the founder's explicit instructions in this working conversatio
 | Infrastructure pool | GitHub private reads, Tailscale, existing OpenBao health, and SSH to its host verified; other access and capacity not fully verified |
 | Cost objective | Minimize total cost per verified outcome; additional purchases require appropriate board authority |
 | Runtime controls | Specifications only |
-| GitHub publication | Initial 403 resolved at account-connection level; foundation publication prepared |
+| GitHub publication | Checkpoint edf006c published and read back; ten-book completion is a follow-up document publication |
 
 ## Resolution procedure
 
@@ -58,7 +58,15 @@ Reference the original authenticated founder instruction, exact scope, adopted v
 
 Bootstrap human dependencies must be logged in the autonomy register. They do not become proof of operating autonomy or implicit approval for wider activities.
 
+## Latest review and manuscript
+
+- F-018: Supplied the reporting-lines/checks-and-balances board review and asked to check again. The file is now present, preserved and mapped in [review disposition](REVIEW_DISPOSITION.md). Its eight proposed board decisions remain undecided.
+- All ten books now have 307 written chapter entries. See the [adoption packet](ADOPTION_PACKET.md) for exact scope and outstanding activation settings.
+- Document checkpoint edf006c17486cfcaf4e83c067d363a70d29f6f3d was published to main and read back. A subsequent manuscript publication is document work only.
+
 ## Change history
+
+- 1.0 — 2026-09-09: Completed ten-book manuscript coverage and integrated the reporting review; adoption and activation remain separate.
 
 - 0.7 — 2026-09-09: Specified independent failure detection, urgent repeat/fallback alerts and verified repair; operating thresholds and channel activation remain proposed.
 

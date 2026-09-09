@@ -1,6 +1,6 @@
 # Changelog
 
-Version: 0.7 | Updated: 2026-09-09 | Status: Local change history
+Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
 
 ## 0.7 — 2026-09-09
 
@@ -53,7 +53,16 @@ Version: 0.7 | Updated: 2026-09-09 | Status: Local change history
 
 Prepared the first eleven-document governance proposal from the founder's original AI-company vision. Files were saved locally; the attempted GitHub write returned 403.
 
+## Completed ten-book manuscript — 2026-09-09
+
+- Completed all 307 chapter entries, with owner/trigger, procedure, acceptance and failure handling; added a linked coverage matrix.
+- Integrated all eight reporting-review gaps and 18 unrun control cases; tightened reviewer protection, CFO recusal, ordinary disputes, independent evidence and recovery state.
+- Added the review disposition and adoption packet; detailed rules remain proposals and actual business activation remains gated.
+- Earlier publication-pending entries below are historical: checkpoint edf006c was successfully published and verified before this follow-up manuscript.
+
 ## Change history
+
+- 1.0 — 2026-09-09: Completed ten-book manuscript coverage and integrated the reporting review; adoption and activation remain separate.
 
 - 0.7 — 2026-09-09: Specified independent failure detection, urgent repeat/fallback alerts and verified repair; operating thresholds and channel activation remain proposed.
 

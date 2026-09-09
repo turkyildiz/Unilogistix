@@ -1,6 +1,6 @@
 # Agent Library
 
-Version: 0.4 | Updated: 2026-09-09 | Status: Constitutional role contracts drafted; runtime bindings and detailed chapters incomplete
+Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft chapter manuscript; adoption and runtime activation pending
 
 ## Specification and lifecycle
 
@@ -75,9 +75,11 @@ Every operational human ask is a failure. Apply [the founder-directed autonomy p
 35. Agent Security
 36. Agent KPIs
 
-These chapter headings preserve the blueprint's expansion plan. This initial book establishes its operating contract; dedicated chapter specifications will be developed with the corresponding roadmap phase.
+Every listed chapter is expanded in the [complete chapter manual](CHAPTERS.md). The manuscript specifies responsibilities, procedures, acceptance evidence and failure handling; operating controls require separate activation proof.
 
 ## Change history
+
+- 1.0 — 2026-09-09: Completed all listed chapters and linked the manuscript; implementation remains outside today’s scope.
 
 - 0.4 — 2026-09-09: Replaced the missing-role description with the canonical 60-role constitutional schedule while preserving runtime/specification distinctions.
 

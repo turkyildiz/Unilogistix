@@ -1,6 +1,6 @@
 # Company Constitution & Governance
 
-Version: 0.4 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
+Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft chapter manuscript; adoption and runtime activation pending
 
 ## Operating contract
 
@@ -61,9 +61,11 @@ Every operational human ask is a failure. Apply [the founder-directed autonomy p
 20. Governance Review
 21. Appendices
 
-These chapter headings preserve the blueprint's expansion plan. This initial book establishes its operating contract; dedicated chapter specifications will be developed with the corresponding roadmap phase.
+Every listed chapter is expanded in the [complete chapter manual](CHAPTERS.md). The manuscript specifies responsibilities, procedures, acceptance evidence and failure handling; operating controls require separate activation proof.
 
 ## Change history
+
+- 1.0 — 2026-09-09: Completed all listed chapters and linked the manuscript; implementation remains outside today’s scope.
 
 - 0.4 — 2026-09-09: Linked the constitutional agent responsibility schedule and recorded its draft review status.
 

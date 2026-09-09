@@ -1,12 +1,10 @@
 # US and Illinois legal applicability register
 
-Version: 0.1 | Updated: 2026-09-09 | Status: Initial source register; applicability review incomplete
+Version: 0.4 | Updated: 2026-09-09 | Status: Source-backed baseline; actual-business applicability and deadlines pending facts
 
 ## Basis
 
-Unilogistix will never be an actual company and has no entity-formation requirement in this document set. The founder specified United States / Illinois as the starting jurisdiction profile for actual businesses operated through instances. Each business supplies its own entity type, registration status,
-operating municipality, customer markets and product data flows are not yet
-confirmed for a live business. This register begins the legal portion of the
+Unilogistix will never be an actual company and has no entity-formation requirement in this document set. The founder specified United States / Illinois as the starting jurisdiction profile for actual businesses operated through instances. Each business supplies its own entity type, registration status, operating municipality, customer markets and product data flows. These facts are not yet confirmed for a live business. This register begins the legal portion of the
 [document scope](DOCUMENT_SCOPE.md); it is not a completed compliance assessment.
 
 ## Verified starting sources
@@ -23,6 +21,11 @@ triggers; they do not declare that every listed law applies to every venture.
 | LEG-005 | Commercial email, including business-to-business messages | [FTC CAN-SPAM business guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) | Growth / Customer Operations | Define sender information, postal address, suppression and opt-out procedures before email activation |
 | LEG-006 | Personal information security, disposal and breach response within statutory coverage | [Illinois Personal Information Protection Act](https://www.ilga.gov/Legislation/ILCS/Articles?ActID=2702&ChapterID=67&Print=True) | Security / Privacy | Map covered records and events; verify detailed notification rules during policy drafting |
 | LEG-007 | Biometric identifiers/information within statutory coverage | [Illinois Biometric Information Privacy Act](https://www.ilga.gov/Legislation/ILCS/Articles?ActID=3004&ChapterID=5) | Privacy / Product / Legal | Conditional; no assumption that every image or location record is biometric information |
+| LEG-008 | Textile labeling for covered products, including towels | [FTC textile/wool labeling guide](https://www.ftc.gov/business-guidance/resources/threading-your-way-through-labeling-requirements-under-textile-wool-acts) | R40/R50 with R38 | Conditional for LondonRue example; verify fiber content, origin and responsible business identity before covered goods are offered; preserve supplier and approved-label evidence |
+| LEG-009 | Consumer automatic-renewal contracts within statutory coverage | [Illinois Automatic Contract Renewal Act](https://ilga.gov/Legislation/ILCS/Articles?ActID=2363&Chapter=BUSINESS+TRANSACTIONS&ChapterID=67&MajorTopic=BUSINESS+AND+EMPLOYMENT) | R50/R46/R51 | Conditional; verify current effective terms, consent, notice and cancellation requirements before enabling renewal; no universal notice deadline inferred |
+| LEG-010 | Business tax supporting records | [IRS recordkeeping guidance](https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep) | R44/R49 | Preserve records supporting income, expenses and returns; assign retention by record category and applicable rule, with holds |
+
+These three additional sources were checked on 2026-09-09. FTC guidance lists towels among covered household textiles and describes fiber, origin and responsible-business labeling; care-label rules for clothing are separate and are not automatically imposed on towels here. Illinois sources may contain changes not yet effective: R50 records the effective law and any relevant Public Act when activating a contract. IRS guidance supports retaining transaction evidence; this document does not impose a guessed universal retention period.
 
 ## Required expansion
 
@@ -39,7 +42,17 @@ required, exception treatment and recheck event. Pending entries remain unresolv
 Legal changes and a new product, data category, market or business model trigger
 reassessment before the affected activity is authorized.
 
+## Per-business obligation procedure
+
+R50 owns applicability intake before an entity filing, offer, new product, market, data use or material contract change. R49 supplies tax facts, R51 data facts and R40 product facts. For each LEG entry, complete the [legal obligation record](../templates/operating-records.md#legal-obligation-and-contract-record): exact effective source and requirement, triggering facts, status/rationale, owner, deadline calculation, evidence, exception/hold treatment and recheck trigger. A second qualified context verifies material determinations; authentic legally required signers remain actual authorized persons/entities.
+
+Applicable entries create an owned calendar obligation and evidence task. Conditional entries restrict activation until facts are resolved. Not-applicable entries require recorded reasons and recheck conditions. Unresolved entries never become a compliance claim. Review changed law and product facts before the affected action; overdue duties enter incident/escalation handling without silently extending legal deadlines.
+
+Contracts/renewals, consumer remedies, privacy, intellectual property, licenses, accessibility, municipality, employment/external-provider arrangements and any regulated activity each require a scoped applicability determination. This is the completed reusable procedure, not a claim that ten starting sources exhaust every law for an unspecified future business.
+
 ## Change history
+
+- 0.4 — 2026-09-09: Completed ten-book manuscript coverage and integrated the reporting review; adoption and activation remain separate.
 
 - 0.3 — 2026-09-09: Applied the founder's reusable-framework/business-instance model; Unilogistix is not an actual company.
 

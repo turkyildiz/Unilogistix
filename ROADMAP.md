@@ -1,12 +1,12 @@
 # Implementation roadmap
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Draft specification
+Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
 
 The blueprint defines the destination. Complete phases by evidence, not by creating directory names. The current scope is the documentation foundation.
 
 | Phase | Deliverable | Acceptance evidence | Current status |
 | --- | --- | --- | --- |
-| 0 — Foundation | Root documents, ten books, governance, architecture, versioning | Navigable documents, reconciled authority, scope and adoption register | Initial specifications prepared locally; publication and adoption pending |
+| 0 — Foundation | Root documents, ten books, governance, architecture, versioning | Navigable documents, reconciled authority, scope and adoption register | 307 chapter manuscripts and supporting governance drafted; checkpoint published; detailed adoption pending |
 | 1 — Agent system | Agent schemas, executive and specialist specifications, evaluation fixtures | Validated specs and simulated handoffs with permission failures | Initial contracts and two starter specs only |
 | 2 — GitHub automation | Templates, checks, protections, review and security workflows | A sample change passes required checks; unauthorized merge is blocked | Documentation and PR template only |
 | 3 — AI operating layer | Durable orchestration, memory, tools, approvals, audit | An end-to-end sandbox task survives retry, restart, revocation, and budget failure | Not implemented |
@@ -24,13 +24,13 @@ scope is [document completion](governance/DOCUMENT_SCOPE.md). Use the corrected
 [learning CI/CD workflow](workflows/business-to-framework-learning.md) when updating
 future implementation plans; the framework is not an actual company.
 
-After the foundation is adopted and repository writes are available, implement a small sandbox vertical slice: founder objective → durable task → specialist deliverable → independent review → proposed repository change → audit record.
+After the foundation is adopted and a new implementation mandate is granted, implement a small sandbox vertical slice: founder objective → durable task → specialist deliverable → independent review → proposed repository change → audit record.
 
 Use no live customers, purchases, physical actions, or production deployment for that first slice. Demonstrate failure recovery and denied unauthorized actions before adding broader tools.
 
 ## Scope discipline
 
-Do not create dozens of permanently running agents merely because the organization lists departments. Activate roles when a workflow needs them. Expand each book into detailed chapter specifications alongside the implementation it governs.
+Do not create dozens of permanently running agents merely because the organization lists departments. Activate roles when a workflow needs them. Use the completed chapter manuscripts as implementation requirements. Expand technical designs only when a later implementation mandate authorizes that work.
 
 Budgets, runtime identity, secrets, vendors, operational approval channel, and the first product mandate remain explicit configuration decisions.
 
@@ -39,5 +39,7 @@ Budgets, runtime identity, secrets, vendors, operational approval channel, and t
 Build on Cloudflare, GitHub, Vercel, Supabase, Fireworks.ai, multiple on-prem servers, and Hetzner as reported available by the founder. Reuse suitable capacity, minimize cost per verified outcome, and bring genuinely new purchases outside delegation to the board. See [the stack plan](integrations/EXISTING_STACK.md) and [cost-efficiency policy](policies/cost-efficiency.md).
 
 ## Change history
+
+- 1.0 — 2026-09-09: Completed ten-book manuscript coverage and integrated the reporting review; adoption and activation remain separate.
 
 - 0.2 — 2026-09-09: Established the master-blueprint structure and reconciled the original company vision.

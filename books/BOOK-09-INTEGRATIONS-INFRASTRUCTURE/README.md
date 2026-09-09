@@ -1,6 +1,6 @@
 # Integrations & Infrastructure
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
+Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft chapter manuscript; adoption and runtime activation pending
 
 ## Modular reference design
 
@@ -32,7 +32,7 @@ Physical integrations require validated devices, approved action limits, interlo
 
 Prove tool denial with insufficient privileges, secret isolation, quota enforcement, duplicate-event handling, gateway revocation, and restore from backup. Verify a replacement implementation can satisfy the same contract.
 
-Current GitHub read access was observed; contents-write returned a permissions error during the initial upload. Do not describe repository write capability as operational until a successful write is verified.
+The initial contents-write permission error was resolved: document checkpoint edf006c17486cfcaf4e83c067d363a70d29f6f3d was published and read back on main. This establishes the observed document publication path; protected CI, deployment and runtime controls still require their own evidence.
 
 ## Autonomous operation requirement
 
@@ -82,12 +82,14 @@ Every operational human ask is a failure. Apply [the founder-directed autonomy p
 40. Multi-Product Infrastructure
 41. Future Expansion
 
-These chapter headings preserve the blueprint's expansion plan. This initial book establishes its operating contract; dedicated chapter specifications will be developed with the corresponding roadmap phase.
+Every listed chapter is expanded in the [complete chapter manual](CHAPTERS.md). The manuscript specifies responsibilities, procedures, acceptance evidence and failure handling; operating controls require separate activation proof.
 
 ## Cost and existing capacity
 
 Apply [cost-efficiency policy](../../policies/cost-efficiency.md): reuse suitable existing resources, measure total cost per verified outcome, preserve reliability and zero-human operations, and reserve new purchases beyond delegated limits for the board. Provider availability is not a spending cap.
 
 ## Change history
+
+- 1.0 — 2026-09-09: Completed all listed chapters and linked the manuscript; implementation remains outside today’s scope.
 
 - 0.2 — 2026-09-09: Added the initial operating contract and retained the blueprint chapter coverage.

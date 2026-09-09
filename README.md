@@ -1,6 +1,6 @@
 # UNI / Unilogistix
 
-Version: 0.4 | Updated: 2026-09-09 | Status: Foundation draft; blueprint standard selected
+Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
 
 **A reusable AI operating system that develops and operates businesses through dedicated business instances.**
 
@@ -33,11 +33,11 @@ See [MCP configuration and setup scripts](integrations/README.md) and [the auton
 
 ## What exists
 
-A versioned documentation foundation, ten initial book specifications, operating contracts, policy references, templates, and a proposed Safe Goes product brief. Department names and agent specifications describe responsibilities; they do not represent deployed workers.
+A versioned documentation foundation, [ten complete draft manuscripts covering 307 chapters](books/README.md), 60 constitutional role contracts, operating policies, templates, and a historical proposed Safe Goes product brief. Department names and agent specifications describe responsibilities; they do not represent deployed workers.
 
 A [local sandbox task store](services/foundation/README.md) now implements persistent tasks, leases, bounded retries and atomic audit records. Its deterministic CLI records draft tasks; real AI execution, independent review and unattended deployment remain incomplete. See [local implementation evidence](evidence/implementation-2026-09-09.md).
 
-No live dashboard, connected billing system, production product, CI enforcement, or autonomous company has been established by this local increment. GitHub publication requires separate verification.
+No live dashboard, connected billing system, production product, CI enforcement, or autonomous company has been established by this local increment. The document checkpoint [edf006c](https://github.com/turkyildiz/Unilogistix/commit/edf006c17486cfcaf4e83c067d363a70d29f6f3d) was published and read back successfully. Publication does not establish runtime enforcement.
 
 ## Authority
 
@@ -53,7 +53,13 @@ Work follows the [GitHub operating model](workflows/github-change.md). The publi
 
 Build on Cloudflare, GitHub, Vercel, Supabase, Fireworks.ai, multiple on-prem servers, and Hetzner as reported available by the founder. Reuse suitable capacity, minimize cost per verified outcome, and bring genuinely new purchases outside delegation to the board. See [the stack plan](integrations/EXISTING_STACK.md) and [cost-efficiency policy](policies/cost-efficiency.md).
 
+## Completed manuscript review
+
+Read the [reporting-review disposition](governance/REVIEW_DISPOSITION.md), [decision-rights charter](governance/DECISION_RIGHTS.md), [control acceptance register](governance/CONTROL_REGISTER.md) and [scope/adoption packet](governance/ADOPTION_PACKET.md). The books are complete drafts for review; detailed adoption, business-specific legal applicability and runtime control evidence remain distinct.
+
 ## Change history
+
+- 1.0 — 2026-09-09: Completed ten-book manuscript coverage and integrated the reporting review; adoption and activation remain separate.
 
 - 0.4 — 2026-09-09: Linked the constitutional agent responsibility schedule and recorded its draft review status.
 

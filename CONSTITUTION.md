@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 0.7 | Updated: 2026-09-09 | Status: Responsibilities, reporting and control separation drafted for review; adoption pending
+Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
 
 ## Purpose and scope
 
@@ -31,7 +31,7 @@ Missing financial limits mean no new monetary commitment. Missing production or 
 
 ## Accountability and disputes
 
-Every venture and action has one accountable AI owner. An executor cannot approve its own material action. Reviewers record evidence and reasons; disagreement goes to the relevant executive and then the founder if unresolved or reserved.
+Every venture and action has one accountable AI owner. An executor cannot approve its own material action. Reviewers record evidence and reasons. Ordinary disagreements follow the bounded independent AI adjudication process in the [decision-rights charter](governance/DECISION_RIGHTS.md#bounded-ordinary-dispute-resolution); unresolved ordinary work stays owned and restricted. Only genuinely reserved decisions or new authority go to actual founder/governance. Unavoidable operational human asks remain counted as failures.
 
 Do not advance an action while its required authority or evidence is unresolved. Continue independent authorized work.
 
@@ -884,7 +884,16 @@ monitoring and recovery. Run adversarial and compound-failure scenarios in the
 authorized environment and retain version-bound evidence. Documentation approval
 alone does not complete any of these technical requirements.
 
+### O. Protected assurance charter and review disposition
+
+The [decision-rights charter](governance/DECISION_RIGHTS.md) supplements sections I and M: R04 has protected direct founder access for financial integrity; reviewer appointment, credentials, protected tests, minimum resources and replacement order are shielded from subjects; routine disputes use bounded independent adjudication; R52 audits assurance separately. All financial actions require conflict checks even when originated by the CFO. Restores reapply current revocation, suspension, deletion and suppression state before operation.
+
+The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new reporting-review gaps without changing the 60 role IDs. Its [18 acceptance cases](governance/CONTROL_REGISTER.md) remain unrun. These additions are proposed constitutional rules, not evidence of adoption or enforcement.
+
+
 ## Change history
+
+- 1.0 — 2026-09-09: Completed ten-book manuscript coverage and integrated the reporting review; adoption and activation remain separate.
 
 - 0.7 — 2026-09-09: Specified independent failure detection, urgent repeat/fallback alerts and verified repair; operating thresholds and channel activation remain proposed.
 

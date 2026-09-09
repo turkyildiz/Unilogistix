@@ -1,6 +1,6 @@
 # Company documentation scope and completion agreement
 
-Version: 0.5 | Updated: 2026-09-09 | Status: Core identity, business-instance and learning scope confirmed; detailed rules and completion agreement proposed
+Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
 
 ## Confirmed direction
 
@@ -133,7 +133,13 @@ creation, spending, company filings, customer operations or product launch.
 Existing local implementation files remain historical work outside this document
 deliverable. Their existence does not establish completion or adoption of any rule.
 
+## Manuscript completion state
+
+All ten books now contain the 307 substantive chapter entries, linked through the [coverage matrix](../books/COMPLETION_MATRIX.md). The [adoption packet](ADOPTION_PACKET.md) separates completed reusable manuscripts from detailed policy adoption and actual-business activation facts. The reporting review’s eight gaps and 18 acceptance cases are incorporated as proposed rules and unrun control requirements. This fulfills written chapter coverage, while the definition of complete above still requires authentic scope/adoption decisions and eventual business-specific applicability evidence where relevant.
+
 ## Change history
+
+- 1.0 — 2026-09-09: Completed ten-book manuscript coverage and integrated the reporting review; adoption and activation remain separate.
 
 - 0.5 — 2026-09-09: Incorporated the additional operating-assurance proposals for review; adoption and implementation remain separate.
 

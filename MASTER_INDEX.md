@@ -1,6 +1,6 @@
 # Master index
 
-Version: 0.7 | Updated: 2026-09-09 | Status: Foundation navigation
+Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
 
 Canonical current documents are listed below. The supplied blueprint and archived draft are historical references; they do not silently override later founder instructions.
 
@@ -143,7 +143,16 @@ Canonical current documents are listed below. The supplied blueprint and archive
 - [Blueprint alignment decision](decisions/ADR-0001-blueprint-alignment.md).
 - [Historical archive](archive/README.md).
 
+## Completed chapter manuals and review
+
+- [Ten-book library](books/README.md) and [all 307 chapter links](books/COMPLETION_MATRIX.md).
+- [Decision rights and protected assurance](governance/DECISION_RIGHTS.md).
+- [Reporting-review disposition](governance/REVIEW_DISPOSITION.md) and [18 control acceptance cases](governance/CONTROL_REGISTER.md).
+- [Scope/adoption packet](governance/ADOPTION_PACKET.md) and [document completion evidence](evidence/document-completion-2026-09-09.md).
+
 ## Change history
+
+- 1.0 — 2026-09-09: Completed ten-book manuscript coverage and integrated the reporting review; adoption and activation remain separate.
 
 - 0.7 — 2026-09-09: Specified independent failure detection, urgent repeat/fallback alerts and verified repair; operating thresholds and channel activation remain proposed.
 

@@ -1,6 +1,6 @@
 # Business Operations
 
-Version: 0.5 | Updated: 2026-09-09 | Status: Initial specification; runtime not implemented
+Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft chapter manuscript; adoption and runtime activation pending
 
 ## Business-instance scope
 
@@ -80,13 +80,15 @@ Every operational human ask is a failure. Apply [the founder-directed autonomy p
 29. Executive Review
 30. Continuous Improvement
 
-These chapter headings preserve the blueprint's expansion plan. This initial book establishes its operating contract; dedicated chapter specifications will be developed with the corresponding roadmap phase.
+Every listed chapter is expanded in the [complete chapter manual](CHAPTERS.md). The manuscript specifies responsibilities, procedures, acceptance evidence and failure handling; operating controls require separate activation proof.
 
 ## Cost and existing capacity
 
 Apply [cost-efficiency policy](../../policies/cost-efficiency.md): reuse suitable existing resources, measure total cost per verified outcome, preserve reliability and zero-human operations, and reserve new purchases beyond delegated limits for the board. Provider availability is not a spending cap.
 
 ## Change history
+
+- 1.0 — 2026-09-09: Completed all listed chapters and linked the manuscript; implementation remains outside today’s scope.
 
 - 0.5 — 2026-09-09: Incorporated the additional operating-assurance proposals for review; adoption and implementation remain separate.
 
