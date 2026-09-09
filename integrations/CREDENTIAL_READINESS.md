@@ -1,6 +1,6 @@
 # Provider credential readiness
 
-Version: 0.1 | Updated: 2026-09-09 | Status: Existing credential inventory and read-only verification
+Version: 0.2 | Updated: 2026-09-09 | Status: Existing credential inventory and read-only verification
 
 ## Method
 
@@ -21,10 +21,11 @@ Queried the existing OpenBao metadata and project policies. A process on the tru
 
 Authentication success does not prove least privilege, rotation authority, quota, billing readiness, or production readiness. Existing deployment policies include broad path wildcards; do not copy them as Unilogistix's access design.
 
-Dedicated provider credential issuance/import remains gated on recovery verification in the [OpenBao status](../infrastructure/openbao/README.md). Complete distributed-share access and a full restored-vault unseal; then define the exact resource scope and issue credentials directly into the secret store. Use interactive account login only if the existing authorized route cannot provide that scope.
+Full restored-vault unseal has now passed. Dedicated OpenBao roles and a fixed read-only checker use the existing source credentials without copying them. See [OpenBao status](../infrastructure/openbao/README.md) for tested controls and remaining shared-trust limits. Provider-side credential issuance requires a concrete workflow and scope; use account login only if the existing authorized route cannot provide it.
 
 Provider API checks follow the official [Cloudflare token verification](https://developers.cloudflare.com/api/resources/user/subresources/tokens/methods/verify/), [Vercel user endpoint](https://vercel.com/docs/rest-api/user/get-the-user), [Supabase organizations endpoint](https://supabase.com/docs/reference/api/v1-list-all-organizations), and [Fireworks accounts endpoint](https://docs.fireworks.ai/api-reference/list-accounts).
 
 ## Change history
 
+- 0.2 — 2026-09-09: Recovery passed and scoped read-only access became operational.
 - 0.1 — 2026-09-09: Inventoried existing provider credentials without publishing values or copying production keys.

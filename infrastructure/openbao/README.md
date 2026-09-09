@@ -1,6 +1,6 @@
 # Unilogistix OpenBao foundation
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Bootstrap deployed and access-tested
+Version: 0.3 | Updated: 2026-09-09 | Status: Recovery verified; scoped read-only provider access operational
 
 ## Placement
 
@@ -32,26 +32,38 @@ Do not supply token values as command arguments or publish them.
 
 ## Operational controls verified
 
-- Declarative file audit enabled through SIGHUP without sealing the shared vault.
-- Audit rotation tested; canary request logged; sampled issuer and runtime token values absent from raw logs.
-- Logrotate retains fourteen rotations, with daily rotation and a 50 MB size condition evaluated when logrotate runs. This is not a hard disk-usage cap.
-- Restricted issuer identity renews its 24-hour periodic lease and issues single-use AppRole credentials. A systemd timer runs every two minutes.
-- Runtime canary tokens are stored root-only in `/run/unilogistix/bootstrap.token`, mode 0600. Bootstrap issuer custody is a root-only persistent file, not distributed trust.
-- Simulated endpoint failure removes the runtime credential; the next successful service execution restores delivery.
-- Raft snapshot saved and copied to a second host in protected storage. A disposable same-version vault accepted the snapshot and recovered its original 3-of-5 sealed state. The live vault was not sealed or restored.
+- File audit logging enabled by configuration reload without sealing the shared vault; rotation and sampled raw-token absence checks passed.
+- Four restricted provider AppRoles read only their assigned existing credential. Cross-provider access tests returned denial. The fixed read-only checker revokes each two-minute token after use and returns status only. It rejects arbitrary provider choices and follows no HTTP redirects.
+- Cloudflare, Vercel, Supabase and Fireworks checks passed through those roles. Provider credentials remain in their existing source paths; they are not duplicated into Unilogistix.
+- Bootstrap credentials refresh every two minutes; provider checks and issuer renewal run every six hours.
+- HTTPS with certificate verification is provided by Tailscale Serve inside the tailnet. Unilogistix services use that endpoint; existing fleet HTTP consumers were not changed.
+- A disposable same-version vault accepted a snapshot, unsealed using three distributed shares in memory, and successfully read the restored canary. The live vault was never sealed or restored during this drill.
+- Snapshot capture and transfer run every six hours with a separate snapshot-only vault identity. The secondary receiver retains 28 snapshots, validates archive structure, and rejects uploads over 64 MiB.
+- The secondary SSH key is restricted to the receiver. An arbitrary-command denial test passed. NAS forced-command enforcement failed testing, so that backup key was removed from NAS and delivery moved to Shield.
+- A minute-based health timer checks vault health, credential age, successful secondary backup age, audit freshness and disk capacity. Failures produce nonzero systemd status and structured journal output.
+- A workstation watcher can unseal the known cluster after an observed process restart. It preserves same-process manual seals, requires prior healthy-cluster evidence, and honors the operator pause marker. Four simulated safety tests passed; the live healthy check passed. No deliberate production restart was performed to test it.
 
-## Outstanding before production credentials
+## Operator pause
 
-Full restored-vault unseal is **not tested**: access to the distributed shares remains incomplete. Snapshot capture and transfer are currently manual execution by the agent, not scheduled recovery automation. The snapshot predates the last credential renewal and is not a substitute for ongoing backups.
+On the vault host, create `/var/lib/unilogistix/PAUSED` to stop the provider checker and prevent automatic unseal. Removing it restores eligibility for those operations. Snapshot and health checks continue. This is a technical control; the authenticated board interface is not implemented.
 
-The issuer expires if it cannot renew for 24 hours; recovery after that requires re-issuance by an authorized administrator. Shared operational-admin custody remains unchanged. Remote durable audit collection, disk-capacity monitoring, autonomous recovery, an action gateway, and provider-key rotation remain unfinished.
+## Explicit remaining limits
 
-The transport is HTTP inside Tailscale; direct TLS is not configured. No provider credentials have been imported. The credential broker serves only the non-sensitive bootstrap canary, not production workloads.
+- Full restore was tested, but replacement-host provisioning and traffic cutover are not automatic. This is not high availability.
+- The watcher depends on this workstation being available. It does not initialize unknown vaults or recover without three reachable custodians.
+- Administrative tokens remain under existing fleet custody. A workstation authorized to SSH to all three share holders is a common trust point; distributed share files do not make those permissions an independent security quorum.
+- Issuers have renewable 24-hour leases; the backup identity has a renewable 48-hour lease. Longer outages require authorized re-issuance. The fixed checker does not autonomously create new provider accounts or rotate provider keys.
+- Audit logs remain local to the vault host, with fourteen rotations. Remote immutable audit retention and external alert delivery are not configured. A local health timer cannot report its own host's total failure.
+- Dedicated OpenBao roles are implemented; dedicated provider-side credentials are not. Existing source credentials retain their original provider permissions. The checker constrains its own operations to approved read endpoints; it is not a production deployment or spending gateway.
+- No inference spending, infrastructure purchases, customer writes, deployments or payment actions were enabled.
+
+The completed controls support bounded read-only credential use. Production write access requires a concrete workflow, resource scope, rotation method, budget where relevant, and evidence for its additional controls.
 
 The older lab installer and test scripts in the local workspace are unfinished
 experiments; this deployment did not use them.
 
 ## Change history
 
+- 0.3 — 2026-09-09: Verified full recovery, HTTPS, scoped provider access, scheduled backups and monitoring; documented residual limits.
 - 0.2 — 2026-09-09: Added audit, rotation, automatic bootstrap delivery, outage tests, and partial restore evidence.
 - 0.1 — 2026-09-09: Created isolated mount and role; passed live authorization tests.
