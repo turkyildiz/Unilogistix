@@ -1,8 +1,12 @@
 # Board direction and activation register
 
-Version: 1.3 | Updated: 2026-09-10 | Status: Complete draft manuscript; scoped runtime mandates and standing autonomy direction recorded separately
+Version: 1.4 | Updated: 2026-09-10 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-023 (2026-09-10): The founder clarified that Freightex is a platform for brokers and designated his own brokerage as its first customer. The customer's identity and detailed onboarding/data scope remain in private project records. Platform accounting, customer brokerage books and tenant identities remain separate. This designation does not itself activate billing, provider connections, historical imports or commercial launch.
+
+- F-022 (2026-09-10): The founder stated that Freightex has not launched and has no customers, and proposed that the team take it on as Unilogistix's first project. [First-project preparation](../products/freightex/README.md) records the proposed delivery scope. Hosted infrastructure and repository claims of shipped features do not establish commercial launch or data provenance. Existing Truxon/Freightex repair mandates remain in force.
 
 - F-021 (2026-09-10): The founder explicitly agreed to broad autonomy for reversible work, with explicit limits around money, destructive changes and external commitments, retaining control of consequential decisions. Existing authorizations remain in force; the agreement is not unlimited spending authority and supplies no new numeric caps. Adopted in [autonomy policy v0.3](../policies/autonomy.md). Evidence is the founder's direct agreement in this conversation, not an agent-invented signed resolution.
 
@@ -76,6 +80,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 1.4 — 2026-09-10: Recorded Freightex pre-launch status, platform business model and designated first customer; kept customer details private and detailed launch authority separate.
 
 - 1.3 — 2026-09-10: Recorded the founder's explicit F-021 autonomy agreement without inventing financial caps or expanding unrelated authority.
 - 1.2 — 2026-09-10: Recorded extended repair mandate and OpenBao implementation direction; corrected the obsolete documentation-only current-scope entry.
