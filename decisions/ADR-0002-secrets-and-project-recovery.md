@@ -1,6 +1,6 @@
 # ADR-0002: Framework secrets and project vault recovery
 
-Version: 0.1 | Updated: 2026-09-10 | Status: Founder requested implementation; existing deployment being reverified
+Version: 0.2 | Updated: 2026-09-10 | Status: Inspected fleet qualified; broader project onboarding remains scoped work
 
 ## Direction and purpose
 
@@ -10,9 +10,25 @@ Unilogistix remains a reusable framework. Secrets belong to the actual business 
 
 ## Existing deployment versus intended capability
 
-The workspace contains an existing [OpenBao foundation](../infrastructure/openbao/README.md) with a dedicated Unilogistix KV mount and AppRole mount inside the fleet service. Existing Truxon and Freightex deployment documentation describes separate secret trees in that same service. These are access-policy boundaries, not separate vault clusters or isolation against a compromised fleet administrator. The September 9 implementation claims require current verification before reuse.
+The workspace contains an existing [OpenBao foundation](../infrastructure/openbao/README.md) with a dedicated Unilogistix KV mount and AppRole mount inside the fleet service. Existing Truxon and Freightex deployment documentation describes separate secret trees in that same service. These are access-policy boundaries, not separate vault clusters or isolation against a compromised fleet administrator. Current verification confirms separate Truxon and Freightex development credentials and policies on the inspected fleet service. Hosted endpoint overrides and any external independent clusters remain outside measured coverage.
 
 Reuse a qualified existing installation before creating a duplicate. An independent project vault must have its own cluster identity, storage, seal configuration and workload identities. Placing another mount on the same cluster does not create independent disaster recovery.
+
+## Qualified implementation scope
+
+The inspected fleet was upgraded to 2.6.2 after isolated recovery and exact-image
+checks. Original storage remains preserved; production uses a separately copied
+volume selected durably by its default deployment configuration. A newly delivered
+post-upgrade snapshot passed an isolated same-version restore with original
+custody and selected authorization checks, then was pinned under separate root
+control. Health, audit freshness, credential renewal, provider checks and recorded
+schedules were verified after maintenance. See the [operational record](../infrastructure/openbao/README.md).
+
+This completes those controls for the named, privately recorded source and tested
+snapshots. It does not establish complete recovery for all company resources,
+independent administrator boundaries, external outage notification, automatic
+failover or onboarding of future vaults. Company policies and secret trees were
+preserved; no project-vault merge was performed.
 
 ## Secrets management
 
@@ -45,5 +61,7 @@ The installation is usable when current health, authenticated scoped access, neg
 - [Seal and unseal](https://openbao.org/docs/concepts/seal/) explains Shamir custody and why auto-unseal recovery depends on the seal mechanism.
 
 ## Change history
+
+- 0.2 — 2026-09-10: Recorded completed inspected-fleet upgrade and delivered-copy recovery, verified development policy separation and remaining project-coverage limits.
 
 - 0.1 — 2026-09-10: Recorded founder direction, existing shared-vault topology and proposed project recovery contract; current implementation verification remains in progress.

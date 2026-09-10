@@ -1,61 +1,63 @@
 # Unilogistix OpenBao foundation
 
-Version: 0.6 | Updated: 2026-09-10 | Status: Backup hardening deployed and delivered-copy recovery verified; live upgrade pending
+Version: 0.7 | Updated: 2026-09-10 | Status: Inspected fleet upgraded to 2.6.2; delivered post-upgrade snapshot restored and checkpoint verified
 
 ## Current verification
 
-On September 10 the configured HTTPS health endpoint returned initialized,
-unsealed and active. Secondary-host metadata showed six-hourly snapshot delivery,
-with the latest observed copy less than four hours old. These checks establish
-current health and delivery. A separately captured current snapshot subsequently
-passed the isolated restore and upgrade checks described below.
+On September 10 the inspected fleet service was upgraded to OpenBao 2.6.2 using
+an independently reviewed maintenance procedure and a pinned official image.
+Verified HTTPS health reports the expected cluster, initialized, unsealed and
+active; Docker health also passes. The upgrade addresses the version finding in
+[the OpenBao advisory](https://github.com/openbao/openbao/security/advisories/GHSA-rh46-vc3j-w2w3).
 
-The workstation recovery timer had no next run scheduled. An independently
-reviewed calendar timer is now installed and repeated scheduling was observed.
-The founder completed account authentication; host-state access and a subsequent
-scheduled service run succeeded. Scheduling is repaired. This did not require
-unsealing the live vault and does not qualify a future authentication expiry or
-full host-loss recovery.
+The original container and storage remain preserved and stopped. Production uses
+a separately copied and qualified data volume, selected durably by the default
+Compose configuration under a new project name. The old binary was never run
+against upgraded storage. Once production traffic could resume, automatic
+rollback was forbidden; reverting older authority would require reconciliation
+of any accepted writes, revocations and credentials.
 
-The deployed version requires security upgrade review against the current
-[OpenBao advisory](https://github.com/openbao/openbao/security/advisories/GHSA-rh46-vc3j-w2w3).
-The local 2.6.2 binary was installed from the official release and its archive
-checksum verified. Synthetic integration tests passed. A current encrypted
-snapshot also passed restoration with original custody on 2.4.4, followed by an
-upgrade of the restored data to 2.6.2. Both stages verified cluster identity,
-the nonsecret health canary and scoped access denials; the mount contract stayed
-unchanged. The disposable test had no external network or source data volume and
-was removed afterward. Private evidence retains the exact snapshot digest,
-reviewed harness and earlier failed attempts. This qualifies the tested snapshot
-and controls, not every credential, future backup or provider integration. The
-live vault has not been upgraded, restarted, sealed or restored in this work.
+A snapshot delivered after the upgrade passed an isolated 2.6.2 restore with
+original custody, expected cluster identity, the nonsecret canary and scoped
+access denials. The test had no external network or production data volume;
+owned-container removal and cleanup were confirmed. That exact received archive
+was pinned separately under root control and its digest and permissions rechecked.
+Earlier verified checkpoints and legacy archives remain preserved. Private
+records retain exact source identifiers, image and archive digests, reviews,
+execution evidence and failed attempts without publishing credentials.
 
-Backup review found that the existing receiver's archive-name check and rolling
-retention do not prove recoverability or preserve a separately verified recovery
-checkpoint. Hardened sender/receiver code is now deployed with a dedicated
-restricted upload account. The delivered archive's exact digest and receipt were
-independently compared, then that received copy passed the isolated restore and
-upgrade checks. The verified copy is pinned in a separate root-controlled
-checkpoint directory outside candidate retention. The upload account cannot
-traverse that directory or modify backup code/configuration.
+Health, delivery-status, credential-refresh and fixed provider checks passed.
+Health and rotation configuration now point to the active audit file rather than
+preserved rollback storage; the updated rotation rule passed a debug-only parse.
+The workstation watcher returned to its prior enabled/active state and passed;
+only the maintenance-owned pause marker was removed. The six-hour snapshot and
+five-minute delivery-status timers remain active. The legacy snapshot timer is
+disabled, with its definition and archives retained.
 
-The new six-hour snapshot timer and five-minute delivery-status timer are active
-with future deadlines. The legacy snapshot timer is disabled; its definition and
-archives are retained. Health and backup-status checks passed after cutover.
-Monitoring distinguishes fresh delivery from separately qualified recovery;
-local success does not establish continuing remote existence, external outage
-notification or an immutable checkpoint against a compromised root administrator.
+Current development credentials for Truxon and Freightex were separately verified
+against this inspected fleet service, with their distinct existing policies
+preserved. This confirms development policy separation on one observed cluster;
+it does not establish every hosted endpoint override, absence of independent
+external vaults, or complete recovery coverage for either company. No company
+credentials, policies or vaults were merged.
+
+The dedicated backup upload account cannot traverse the separately protected
+checkpoint directory or modify backup code/configuration. Delivery receipts are
+verified independently against actual stored bytes. Fresh delivery is distinct
+from a qualified restore; local monitoring does not prove continuing remote
+existence, external outage notification or immutability against a root compromise.
 
 See [ADR-0002](../../decisions/ADR-0002-secrets-and-project-recovery.md) for the
-founder's framework/project recovery scope. The existing shared cluster is one
-backup source covering multiple projects, not separate project vault instances.
+framework and project recovery contract. Completion here is limited to this
+inspected fleet and the tested snapshots and controls. Broader company readiness,
+financial repairs and future independent project vaults remain separate work.
 
 ## Placement
 
 Reuse the existing fleet OpenBao service. Unilogistix has a separate KV v2 mount,
 `unilogistix/`, and separate AppRole auth mount, `unilogistix-approle/`.
 This is policy isolation inside a shared service, not a separate security domain
-against a compromised vault administrator. No additional server was purchased.
+against a compromised vault administrator. No additional server was purchased. Current consumer coverage is limited to the verified development credentials and named operational checks above.
 
 ## Implemented basics
 
@@ -80,14 +82,14 @@ Do not supply token values as command arguments or publish them.
 
 ## Operational controls verified
 
-- File audit logging enabled by configuration reload without sealing the shared vault; rotation and sampled raw-token absence checks passed.
+- File audit logging is enabled; rotation and sampled raw-token absence checks passed.
 - Four restricted provider AppRoles read only their assigned existing credential. Cross-provider access tests returned denial. The fixed read-only checker revokes each two-minute token after use and returns status only. It rejects arbitrary provider choices and follows no HTTP redirects.
 - Cloudflare, Vercel, Supabase and Fireworks checks passed through those roles. Provider credentials remain in their existing source paths; they are not duplicated into Unilogistix.
 - Bootstrap credentials refresh every two minutes; provider checks and issuer renewal run every six hours.
 - HTTPS with certificate verification is provided by Tailscale Serve inside the tailnet. Unilogistix services use that endpoint; existing fleet HTTP consumers were not changed.
-- A disposable same-version vault accepted a snapshot, unsealed using three distributed shares in memory, and successfully read the restored canary. The live vault was never sealed or restored during this drill.
-- Snapshot capture and transfer run every six hours with a separate snapshot-only vault identity. The secondary receiver retains 28 snapshots, validates archive structure, and rejects uploads over 64 MiB.
-- The secondary SSH key is restricted to the receiver. An arbitrary-command denial test passed. NAS forced-command enforcement failed testing, so that backup key was removed from NAS and delivery moved to Shield.
+- An earlier isolated same-version drill accepted a snapshot, unsealed using three distributed shares in memory, and successfully read the restored canary. That drill did not seal or restore the live vault.
+- Snapshot capture and transfer run every six hours with a separate snapshot-only vault identity. The secondary receiver retains 28 unverified candidates, validates bounded archive structure/internal checksums, and rejects uploads over 64 MiB. Restore-qualified checkpoints are protected separately from candidate pruning.
+- The secondary SSH key is restricted to the receiver. An arbitrary-command denial test passed. An earlier receiver failed forced-command testing; its backup key was removed and delivery moved to the verified secondary receiver.
 - A minute-based health timer checks vault health, credential age, successful secondary backup age, audit freshness and disk capacity. Failures produce nonzero systemd status and structured journal output.
 - A workstation watcher can unseal the known cluster after an observed process restart. It preserves same-process manual seals, requires prior healthy-cluster evidence, and honors the operator pause marker. Four simulated safety tests passed; the live healthy check passed. No deliberate production restart was performed to test it.
 
@@ -103,14 +105,16 @@ On the vault host, create `/var/lib/unilogistix/PAUSED` to stop the provider che
 - Issuers have renewable 24-hour leases; the backup identity has a renewable 48-hour lease. Longer outages require authorized re-issuance. The fixed checker does not autonomously create new provider accounts or rotate provider keys.
 - Audit logs remain local to the vault host, with fourteen rotations. Remote immutable audit retention and external alert delivery are not configured. A local health timer cannot report its own host's total failure.
 - Dedicated OpenBao roles are implemented; dedicated provider-side credentials are not. Existing source credentials retain their original provider permissions. The checker constrains its own operations to approved read endpoints; it is not a production deployment or spending gateway.
-- No inference spending, infrastructure purchases, customer writes, deployments or payment actions were enabled.
+- No general inference-spending, infrastructure-purchase, customer-write, application-deployment or payment gateway was enabled by these credential controls. The bounded vault maintenance described above was separately authorized and completed.
 
 The completed controls support bounded read-only credential use. Production write access requires a concrete workflow, resource scope, rotation method, budget where relevant, and evidence for its additional controls.
 
-The older lab installer and test scripts in the local workspace are unfinished
-experiments; this deployment did not use them.
+Synthetic tests and current-data restore rehearsals provide different evidence.
+Neither substitutes for the measured production and delivered-copy checks above.
 
 ## Change history
+
+- 0.7 — 2026-09-10: Recorded completed fleet security upgrade, durable storage cutover, verified post-upgrade delivered-copy recovery, restored monitoring and current development-policy separation; retained broader coverage limits.
 
 - 0.6 — 2026-09-10: Deployed restricted backup delivery, verified recovery from the delivered copy, pinned its checkpoint and switched monitoring/scheduling with legacy archives preserved.
 - 0.5 — 2026-09-10: Recorded restored host access and successful current-snapshot restore/upgrade rehearsal; preserved live upgrade, backup cutover and recovery limits.
