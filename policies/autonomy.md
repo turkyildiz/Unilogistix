@@ -1,12 +1,22 @@
 # Operational human intervention is a failure
 
-Version: 0.2 | Updated: 2026-09-09 | Status: Founder-directed requirement; enforcement not implemented
+Version: 0.3 | Updated: 2026-09-10 | Status: Founder-directed requirement; implementation evidence is separate
 
 ## Founder requirement
 
 **Every operational human ask is a failure. The system must find a way to handle operations without human intervention.**
 
 This requirement was explicitly supplied by the founder. It governs the design target and classification of operational outcomes now; it is not merely an optional proposed preference.
+
+## Standing delegation
+
+On September 10 the founder explicitly agreed to broad autonomy for reversible work, with explicit limits around money, destructive changes and external commitments. See F-021 in the [board register](../governance/BOARD_REGISTER.md). This is adopted direction, not a new unlimited spending mandate.
+
+Agents should complete reversible work within the authorized objective without routine approval requests. Existing task-specific authorizations remain effective, including the qualified repair/release and OpenBao work recorded under F-020. Independent review, tenant boundaries, verification and truthful reporting remain required; reversibility does not expand access rights or authorize unrelated work.
+
+Financial actions, destructive changes and external commitments must fit an explicit existing mandate and its limits. Where a limit or mandate has not been supplied, do not invent it or infer it from the autonomy objective. Prepare a concrete, reviewable decision only when genuinely new authority is needed, while continuing independent authorized work. Do not ask again for authority already granted.
+
+No numeric spending cap, payment-release authority, new purchase, additional business launch, new external messaging channel or blanket destructive-action authority was supplied by this agreement. Per-business standing limits and escalation settings remain separate activation decisions.
 
 ## Definition and accounting
 
@@ -50,4 +60,5 @@ No venture graduates as fully autonomous while an operational ask remains in its
 
 ## Change history
 
+- 0.3 — 2026-09-10: Recorded F-021 standing delegation for reversible work and explicit limits for money, destructive changes and external commitments; preserved existing authorization.
 - 0.2 — 2026-09-09: Added to the blueprint-aligned foundation.

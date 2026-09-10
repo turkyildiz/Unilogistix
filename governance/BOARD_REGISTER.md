@@ -1,8 +1,12 @@
 # Board direction and activation register
 
-Version: 1.1 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
+Version: 1.3 | Updated: 2026-09-10 | Status: Complete draft manuscript; scoped runtime mandates and standing autonomy direction recorded separately
 
 ## Recorded founder direction
+
+- F-021 (2026-09-10): The founder explicitly agreed to broad autonomy for reversible work, with explicit limits around money, destructive changes and external commitments, retaining control of consequential decisions. Existing authorizations remain in force; the agreement is not unlimited spending authority and supplies no new numeric caps. Adopted in [autonomy policy v0.3](../policies/autonomy.md). Evidence is the founder's direct agreement in this conversation, not an agent-invented signed resolution.
+
+- F-020 (2026-09-10): The founder extended the Truxon/Freightex repair deadline without specifying a new date and requested OpenBao in Unilogistix for secrets tracking and project-vault backup support. This follows the explicit runtime repair/test/release mandate in the current conversation and supersedes the older documentation-only scope for that authorized work. [ADR-0002](../decisions/ADR-0002-secrets-and-project-recovery.md) records the implementation scope and recovery distinctions. No new purchases or completed deployment are inferred.
 
 - F-017: Publish the current documents to GitHub and complete all ten books. This is documentation publication/completion, not adoption of every proposed rule or authorization to deploy runtime services.
 
@@ -37,15 +41,16 @@ Evidence source: the founder's explicit instructions in this working conversatio
 | --- | --- |
 | Framework identity and founder role | Unilogistix is a reusable system, never an actual company; founder governs framework and delegates business-instance authority |
 | Blueprint structure and autonomy requirement | Explicit founder direction |
-| Detailed operating policy adoption | Not separately recorded |
+| Detailed operating policy adoption | Standing autonomy direction F-021 adopted; the remaining detailed policy set is not adopted by implication |
 | Runtime board identity / authenticated channel / recovery | Not configured |
 | Legal identity, jurisdiction, account arrangements | No Unilogistix incorporation; US/Illinois is the starting business profile. Actual owner/entity and account arrangements are per-business schedule fields |
-| Current work scope | Documentation only; reusable framework, actual business instances and continuous learning confirmed. Detailed policy adoption and completion standard remain pending |
+| Current work scope | Documentation foundation plus expressly authorized Truxon/Freightex review, repair, testing and qualified release, and OpenBao secrets/recovery work under F-020. Detailed adoption of the entire policy set is not inferred |
 | Business examples and first launch | LondonRue towels is the current founder example; Safe Goes is a historical blueprint candidate. No first-launch mandate inferred |
 | Budget, currency, reserves, caps, expiry | Unspecified; no new spending inferred |
-| Production and physical action permissions | Unspecified |
+| Production and physical action permissions | Truxon/Freightex qualified bug-fix releases and scoped OpenBao work expressly authorized in the current conversation; other-business launches and physical actions remain ungranted |
 | Business viability thresholds and observation window | Unspecified |
 | Operational autonomy target | Zero operational human asks and zero routine human execution |
+| Standing work delegation | Broad autonomy for reversible work within authorized objectives; explicit mandates/limits for money, destructive changes and external commitments under F-021 |
 | Portfolio / replication limits | Unspecified |
 | Infrastructure pool | GitHub private reads, Tailscale, existing OpenBao health, and SSH to its host verified; other access and capacity not fully verified |
 | Cost objective | Minimize total cost per verified outcome; additional purchases require appropriate board authority |
@@ -71,6 +76,9 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 1.3 — 2026-09-10: Recorded the founder's explicit F-021 autonomy agreement without inventing financial caps or expanding unrelated authority.
+- 1.2 — 2026-09-10: Recorded extended repair mandate and OpenBao implementation direction; corrected the obsolete documentation-only current-scope entry.
 
 - 1.1 — 2026-09-09: Incorporated operating-readiness review requirements and preserved documentary/operating evidence boundaries.
 

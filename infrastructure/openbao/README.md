@@ -1,6 +1,54 @@
 # Unilogistix OpenBao foundation
 
-Version: 0.3 | Updated: 2026-09-09 | Status: Recovery verified; scoped read-only provider access operational
+Version: 0.6 | Updated: 2026-09-10 | Status: Backup hardening deployed and delivered-copy recovery verified; live upgrade pending
+
+## Current verification
+
+On September 10 the configured HTTPS health endpoint returned initialized,
+unsealed and active. Secondary-host metadata showed six-hourly snapshot delivery,
+with the latest observed copy less than four hours old. These checks establish
+current health and delivery. A separately captured current snapshot subsequently
+passed the isolated restore and upgrade checks described below.
+
+The workstation recovery timer had no next run scheduled. An independently
+reviewed calendar timer is now installed and repeated scheduling was observed.
+The founder completed account authentication; host-state access and a subsequent
+scheduled service run succeeded. Scheduling is repaired. This did not require
+unsealing the live vault and does not qualify a future authentication expiry or
+full host-loss recovery.
+
+The deployed version requires security upgrade review against the current
+[OpenBao advisory](https://github.com/openbao/openbao/security/advisories/GHSA-rh46-vc3j-w2w3).
+The local 2.6.2 binary was installed from the official release and its archive
+checksum verified. Synthetic integration tests passed. A current encrypted
+snapshot also passed restoration with original custody on 2.4.4, followed by an
+upgrade of the restored data to 2.6.2. Both stages verified cluster identity,
+the nonsecret health canary and scoped access denials; the mount contract stayed
+unchanged. The disposable test had no external network or source data volume and
+was removed afterward. Private evidence retains the exact snapshot digest,
+reviewed harness and earlier failed attempts. This qualifies the tested snapshot
+and controls, not every credential, future backup or provider integration. The
+live vault has not been upgraded, restarted, sealed or restored in this work.
+
+Backup review found that the existing receiver's archive-name check and rolling
+retention do not prove recoverability or preserve a separately verified recovery
+checkpoint. Hardened sender/receiver code is now deployed with a dedicated
+restricted upload account. The delivered archive's exact digest and receipt were
+independently compared, then that received copy passed the isolated restore and
+upgrade checks. The verified copy is pinned in a separate root-controlled
+checkpoint directory outside candidate retention. The upload account cannot
+traverse that directory or modify backup code/configuration.
+
+The new six-hour snapshot timer and five-minute delivery-status timer are active
+with future deadlines. The legacy snapshot timer is disabled; its definition and
+archives are retained. Health and backup-status checks passed after cutover.
+Monitoring distinguishes fresh delivery from separately qualified recovery;
+local success does not establish continuing remote existence, external outage
+notification or an immutable checkpoint against a compromised root administrator.
+
+See [ADR-0002](../../decisions/ADR-0002-secrets-and-project-recovery.md) for the
+founder's framework/project recovery scope. The existing shared cluster is one
+backup source covering multiple projects, not separate project vault instances.
 
 ## Placement
 
@@ -63,6 +111,10 @@ The older lab installer and test scripts in the local workspace are unfinished
 experiments; this deployment did not use them.
 
 ## Change history
+
+- 0.6 — 2026-09-10: Deployed restricted backup delivery, verified recovery from the delivered copy, pinned its checkpoint and switched monitoring/scheduling with legacy archives preserved.
+- 0.5 — 2026-09-10: Recorded restored host access and successful current-snapshot restore/upgrade rehearsal; preserved live upgrade, backup cutover and recovery limits.
+- 0.4 — 2026-09-10: Reverified current health and backup delivery, corrected recovery scheduling, and recorded upgrade/authentication/backup-integrity work still required.
 
 - 0.3 — 2026-09-09: Verified full recovery, HTTPS, scoped provider access, scheduled backups and monitoring; documented residual limits.
 - 0.2 — 2026-09-09: Added audit, rotation, automatic bootstrap delivery, outage tests, and partial restore evidence.
