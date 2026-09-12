@@ -53,7 +53,7 @@ Teams may read other teams’ company repositories. That access is read-only. Ea
 
 When a team learns a reusable improvement, it may request a Unilogistix framework update, including a constitution change, so the next takeover inherits the lesson. That is a proposal, not self-ratification. Independent review is required. Constitutional amendments require authenticated founder/governance adoption. Accepted improvements ship in a versioned framework release. Shared lessons must exclude company-private data and credentials. F-027 still requires the constitution, this register and applicable runtime to be updated together.
 
-In every team, Sherlock and Judy are jointly responsible for keeping this constitution current with authenticated Board directives, without drift, and for proposing the implementation that does not create institutional conflict. Sherlock works with Judy. They do not self-ratify; they draft, review each other, and record the founder/governance adoption. See F-030.
+In every team, Sherlock and Judy are jointly responsible for keeping this constitution current with authenticated Board directives, without drift, and for proposing the implementation that does not create institutional conflict. Sherlock works with Judy. They do not self-ratify. If one authors a material draft, the other reviews it. If they jointly author, founder/governance adoption is the independent act; a title change is not independent review. Judy recuses from ordinary-dispute packets that turn on a clause she materially authored, unless the founder assigns her anyway. Preserve superseded wording in history. See F-030.
 
 See F-029 in the [board register](governance/BOARD_REGISTER.md).
 
