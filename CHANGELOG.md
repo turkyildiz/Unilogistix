@@ -1,6 +1,12 @@
 # Changelog
 
-Version: 1.2 | Updated: 2026-09-12 | Status: Complete draft manuscript; detailed adoption and activation pending
+Version: 1.3 | Updated: 2026-09-12 | Status: Complete draft manuscript; detailed adoption and activation pending
+
+## Founder directive alignment — 2026-09-12
+
+- Recorded F-026/F-027 in the constitution, board register and agent instructions: no four-follow-up or twenty-daily-invocation limit on ordinary Board discussion; conflict adjudication remains separate without an invented quota.
+- Made authenticated directive precedence and continuous document/runtime reconciliation explicit, preserving draft status, budgets and release gates. Runtime deployment is not claimed by this documentation change.
+- Recorded F-028 Truxon weekly windows through October 10 and Deskdev/Freightex–Homedev/Truxon ownership.
 
 ## Coordination update — 2026-09-12
 

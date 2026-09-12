@@ -1,8 +1,14 @@
 # Board direction and activation register
 
-Version: 1.6 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 1.7 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-026 (2026-09-12): The founder removed the four automatic follow-up limit from regular Board conversation and then removed the twenty-invocations-per-day discussion-worker rule: “Remove that rule as well. Thats for conflict resolution like the 4 back and fouth discussions”. These are separate from conflict-resolution exchanges. This instruction does not establish a twenty-per-day conflict quota or a replacement numeric conflict limit. Ordinary discussion must not be paused by either removed worker rule. Actual provider constraints, spending mandates, authentication, suspension and release gates remain applicable. Source: direct founder instructions in Codex session `01a0936e-d41c-79b1-ab06-8c65a9252d44`; the four-follow-up clarification is also in the earlier direct session instruction. Runtime removal and deployment require their own exact-revision/test/readback evidence.
+
+- F-027 (2026-09-12): The founder instructed “if constituion is stale after board directives. please update it” and “there should not be any drift in between”. Latest authenticated founder directives supersede conflicting stale wording within their scope. This amends the [constitutional decision hierarchy and amendment procedure](../CONSTITUTION.md#decision-hierarchy): keep the constitution, this register and applicable runtime behavior aligned with linked evidence, and keep discrepancies owned until verified resolved. Source: the same direct founder session as F-026. This records explicit direction, not wholesale adoption of the remaining draft manuscript or proof of deployed controls.
+
+- F-028 (2026-09-12): Truxon reporting uses four weekly UTC windows, end exclusive: September 12–19, September 19–26, September 26–October 3 and October 3–10; review after the fourth window, around October 10, without asserting a scheduled meeting. Board correction `a4dc65b7-0bec-4da1-be27-0982e3608eb4` was authenticated and confirmed by Maestro in private evidence (founder principal prefix `d19dfce8`; Sherlock confirmation prefix `60cb3056`, Maestro prefix `2d15d962`). This supersedes both the earlier proposed September 14 start and the single thirty-day September 12–October 12 interpretation for this Truxon schedule. It adopts a reporting cadence, not measured performance or cross-project results. The founder also specified in the direct session: “freighex is managed by Deskdev computer , truxon is managed by homedev computer”. Deskdev is assigned to manage Freightex; Homedev is assigned to manage Truxon. Actual runtime host alignment is not yet verified; an old key does not establish the current worker host, and Truxon must not depend on Deskdev. This assignment does not change project data, identity, independent-review or release boundaries.
 
 - F-025 (2026-09-12 UTC): After reviewing the takeover packet, the founder instructed “go for takeover” and explicitly requested delegation to agents. Maestro activates coordinated Truxon delivery with bounded implementation, independent verification and release-readiness assignments. The founder also authorized moving the two existing Truxon Play apps into testing; production-store publication is not inferred. Current assignments, technical evidence and testing receipts remain in private project records. Existing project release and identity boundaries continue.
 
@@ -41,7 +47,7 @@ Version: 1.6 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped r
 - F-008: Access existing project resources and credentials as needed; connect this workstation through Tailscale and configure SSH access. Credentials remain outside this repository.
 - F-005: Every operational human ask is a failure; the system should handle operations without human intervention.
 
-Evidence source: the founder's explicit instructions in this working conversation on 2026-09-09. No external approval ID or signed resolution is invented here. F-003 selects the architecture/documentation standard; F-005 establishes the autonomy requirement. Other detailed policy elaborations remain proposals.
+Evidence source for the original entries: the founder's explicit instructions in the working conversation on 2026-09-09. Later entries carry their own dates and source references. No external approval ID or signed resolution is invented here. F-003 selects the architecture/documentation standard; F-005 establishes the autonomy requirement. Other detailed policy elaborations remain proposals.
 
 ## Activation settings
 
@@ -49,8 +55,8 @@ Evidence source: the founder's explicit instructions in this working conversatio
 | --- | --- |
 | Framework identity and founder role | Unilogistix is a reusable system, never an actual company; founder governs framework and delegates business-instance authority |
 | Blueprint structure and autonomy requirement | Explicit founder direction |
-| Detailed operating policy adoption | Standing autonomy direction F-021 adopted; the remaining detailed policy set is not adopted by implication |
-| Runtime board identity / authenticated channel / recovery | Not configured |
+| Detailed operating policy adoption | Standing autonomy F-021 and scoped founder amendments F-026/F-027 recorded as current direction; the remaining detailed policy set is not adopted by implication |
+| Runtime board identity / authenticated channel / recovery | Authenticated Board direction is recorded with private evidence under F-028; identity bindings and recovery readiness remain independently evidenced per deployment, not globally certified here |
 | Legal identity, jurisdiction, account arrangements | No Unilogistix incorporation; US/Illinois is the starting business profile. Actual owner/entity and account arrangements are per-business schedule fields |
 | Current work scope | Documentation foundation plus expressly authorized Truxon/Freightex review, repair, testing and qualified release, and OpenBao secrets/recovery work under F-020. Detailed adoption of the entire policy set is not inferred |
 | Business examples and first launch | LondonRue towels is the current founder example; Safe Goes is a historical blueprint candidate. No first-launch mandate inferred |
@@ -62,10 +68,12 @@ Evidence source: the founder's explicit instructions in this working conversatio
 | Portfolio / replication limits | Unspecified |
 | Infrastructure pool | GitHub private reads, Tailscale, existing OpenBao health, and SSH to its host verified; other access and capacity not fully verified |
 | Cost objective | Minimize total cost per verified outcome; additional purchases require appropriate board authority |
-| Runtime controls | Specifications only |
+| Runtime controls | Mixed specifications and separately evidenced implementations; F-026/F-027 define current discussion behavior and alignment obligations. This document change does not certify runtime deployment |
 | GitHub publication | Checkpoint edf006c published and read back; ten-book completion is a follow-up document publication |
 
 ## Resolution procedure
+
+Apply an authenticated founder directive within its explicit scope even when an older document conflicts; promptly amend the named clauses and preserve superseded wording in history. Link the directive to the constitution, register, implementation revision, tests and live readback. Missing runtime evidence remains an owned discrepancy rather than a claim of synchronization. Do not treat ordinary Board discussion as dispute adjudication or invent a numeric conflict budget from F-026.
 
 Reference the original authenticated founder instruction, exact scope, adopted version or commit, effective time, expiry, and superseded decision. An agent-written summary is not independently authenticated approval.
 
@@ -84,6 +92,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 1.7 — 2026-09-12: Recorded F-026–F-028 discussion limits, continuous directive/document/runtime alignment, Truxon four-week reporting and machine ownership; no deployment or broad manuscript adoption claimed.
 
 - 1.6 — 2026-09-12: Recorded explicit takeover activation, agent delegation and scoped Play testing direction.
 

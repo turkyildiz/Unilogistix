@@ -1,6 +1,6 @@
 # Truxon project coordination
 
-Version: 0.2 | Updated: 2026-09-12 | Status: Takeover activated; delegated delivery work started
+Version: 0.3 | Updated: 2026-09-12 | Status: Takeover activated; delegated delivery work started
 
 ## Mandate
 
@@ -30,6 +30,12 @@ The existing TV build was promoted to internal testing and its persisted track
 state was verified. Companion testing remains subject to the initial Play Console
 publication step and completion of exact-artifact evidence. Testing availability,
 full device functionality and production readiness remain separate findings.
+
+## Reporting cadence and operating host
+
+Under F-028 in the [board register](../../governance/BOARD_REGISTER.md), Homedev is assigned to manage Truxon and Deskdev to manage Freightex. Actual runtime host alignment remains unverified; an old key does not prove the current host, and Truxon must not depend on Deskdev. Shared coordination does not merge their data, credentials or project authority.
+
+Truxon has four weekly reporting windows in UTC, each ending exclusively: September 12–19, September 19–26, September 26–October 3 and October 3–10, 2026. Review the results after the fourth window, around October 10; no scheduled meeting is asserted. This replaces both the earlier proposed September 14 start and the single thirty-day September 12–October 12 interpretation. Maintain separate operations and independent-audit evidence; the schedule does not assert a measured outcome or adopt Freightex results.
 
 ## Project boundary
 
@@ -68,6 +74,8 @@ and a private handoff plus this sanitized charter are published. Completion of
 intake does not mean completion of the underlying operational repairs.
 
 ## Change history
+
+- 0.3 — 2026-09-12: Recorded F-028 four-week reporting cadence and Homedev/Deskdev project ownership.
 
 - 0.2 — 2026-09-12: Activated takeover after founder go-ahead and started delegated repair qualification, verification and testing-readiness work.
 
