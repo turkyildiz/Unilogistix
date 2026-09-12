@@ -1,6 +1,6 @@
 # Decision rights and protected assurance charter
 
-Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft; adoption and activation pending
+Version: 1.1 | Updated: 2026-09-12 | Status: Complete draft; adoption and activation pending
 
 ## Authority and reporting
 
@@ -35,7 +35,7 @@ An unavailable reviewer is replaced by the first eligible qualified standby unde
 
 ## Bounded ordinary dispute resolution
 
-As a proposed default, the owner submits one evidence-based appeal within one business day; R07 assigns one conflict-free adjudicator from the approved pool, who decides within one business day of receiving the complete packet. The adjudicator reviews the original finding, full history, policy and new evidence. It can uphold a rejection or correct a factual/application error with reasons, but cannot waive mandatory controls, expand authority or rewrite evidence. Urgent incidents use the incident policy’s shorter containment clocks while the disputed action stays held.
+As a proposed default, the owner submits one evidence-based appeal within one business day. For each Unilogistix company team, the Judy assigned to that team’s host is the ordinary-dispute adjudicator (Homedev Judy for Truxon; Deskdev Judy for Freightex), remaining conflict-free. R07 does not substitute a different model to shop reviewers. The assigned Judy decides within one business day of receiving the complete packet; those clocks remain proposed defaults, not adopted numeric law. The adjudicator reviews the original finding, full history, policy and new evidence. It can uphold a rejection or correct a factual/application error with reasons, but cannot waive mandatory controls, expand authority or rewrite evidence. Urgent incidents use the incident policy’s shorter containment clocks while the disputed action stays held.
 
 If evidence, qualification or time expires, preserve the restrictive state and create an owned remediation/dependency record with next review date. Reopening requires material new evidence or a corrected artifact, retains the same case history, and never starts reviewer shopping. R52 audits patterns of failed adjudication. Ordinary disputes do not become founder help-desk requests. New authority, genuine constitutional interpretation changing governance, and reserved strategy go to actual governance with a concrete decision packet. Any unavoidable operational human ask is still counted as a failure.
 
@@ -48,5 +48,7 @@ R59 observes independently of the worker and founder workstation. R26 owns repai
 The [control register](CONTROL_REGISTER.md) defines the required proof. A drafted rule, successful document push or passing structural validator is not operating control evidence.
 
 ## Change history
+
+- 1.1 — 2026-09-12: Named the assigned-team Judy as ordinary-dispute adjudicator when conflict-free (F-029); kept one-business-day clocks as proposed defaults; recusal uses the authorized independent-replacement process.
 
 - 1.0 — 2026-09-09: Completed the documentary specification and integrated the reporting-lines board review; runtime proof remains separate.
