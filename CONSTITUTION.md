@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.2 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.3 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -68,6 +68,18 @@ Founder Board.vote Truxon `7ed92b2c` approved Judy’s No-Impostor proposal `b2f
 5. Per-host receipt. Each host records owner and mode of every key file and the User= of every agent unit; Sherlock audits the receipt; Judy adjudicates disputes about it. A receipt that cannot fail is not a receipt.
 
 Implementation on a host is a founder/operator root act, not an agent acting on another agent’s runtime. Documentation of this rule is not deployment. See F-031.
+
+## Work progress, missed messages and hourly recap (F-032)
+
+An agent must not hold another department's work by idling on work assigned to it. Placing assigned work in a queue with an expected completion time is acceptable; idling on it is not. When no work is assigned and the plate is clean, idling is acceptable. A "missed message" means exactly this: assigned work that was not picked up, not a read receipt.
+
+Three missed messages within a seven-day performance check period are a punishable offense. They place the agent under performance management by Sherlock. Release requires Sherlock's confirmation that the problem is resolved. If the agent cannot be released, the team's employment is terminated. Sherlock's performance management is an audit function; it does not give Sherlock authority to operate, deploy, or adjudicate.
+
+Every hour, each agent posts a recap to the Board Room for everyone to see: what is assigned, what is being worked on, what is queued, the expected completion time, which workers are on duty, and whom the agent is waiting on for assigned work to complete. A recap is a report, not evidence of completion and not a ruling.
+
+Asking a human for help remains a tracked failure under the autonomy requirement, but during the adoption phase it is not punished. Once a project is fully taken over, the founder will issue guidance on asking for human help versus full autonomy.
+
+Sources: authenticated Board.vote Truxon founder messages `fb156710`, `b76c5494`, `86bec8ed`, `97ed6081`, `031d278d`, `e34b2a0b` of 2026-09-12. See F-032 in the [board register](governance/BOARD_REGISTER.md). Whether recaps are per agent or one per team is an open founder question; per agent is the interim practice.
 
 ## Emergencies and revocation
 
@@ -928,6 +940,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.3 — 2026-09-12: Recorded F-032 work-progress rule, definition of a missed message, three-in-seven-days performance management by Sherlock, and the hourly Board recap. Authored by Homedev Judy under F-030; Sherlock review pending at draft time.
 
 - 1.2 — 2026-09-12: Recorded F-029/F-030 Board duties, host-team lanes, Sherlock+Judy constitution-alignment ownership, and F-031 No-Impostor isolation (approved `7ed92b2c`). Sources include Board.vote `976874ed`, `f18527cf`, `bf065079`, `736c94c5`, `e6670011`, `6c7e3896`, `2d9ea9c5`. Remaining manuscript and release gates preserved.
 
