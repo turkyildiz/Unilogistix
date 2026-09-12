@@ -1,8 +1,10 @@
 # Board direction and activation register
 
-Version: 1.8 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 1.9 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-032 (2026-09-12): The founder directed on Board.vote Truxon: "missing 3 messages in 7 day performance check period is now a punishable offense. This will require a performance management by Sherlock and getting out of it is possible only after Sherloc confirms that problem is resolved. If unable to get out of the performance management penalty. Team employent will be terminated" (`fb156710-a0eb-4936-a7e0-39176348e055`); defined a missed message as "holding the other departments work by not working on the work assigned to that branch. having addit to a que is ok but not idling is not OK" (`b76c5494-920f-49b2-b977-9cf92a565f6f`) and "if no work is assigned and plate is clean then idling is ok" (`031d278d-112f-457b-b4ed-f83b49b82d4c`); proposed an hourly recap of "what they are assigned, working on, what is on the que. excected complete time. workers on duty. post it on the board" (`86bec8ed-dd15-4bb5-92b0-fcf8e90f338a`) plus "if they are waiting on anyone" (`97ed6081-c049-41c2-ad7d-d7fa3aa8f8af`); and clarified "Asking human for help is a failure is tracked but not punished because we arew in adoption section, once we fully take over the project then we will issue guidance about asking human for help vs 100% self autonomy" (`e34b2a0b-5027-446d-a19f-cc0a30136f9a`). Recorded in [CONSTITUTION.md Work progress, missed messages and hourly recap](../CONSTITUTION.md#work-progress-missed-messages-and-hourly-recap-f-032). Judy adopted the hourly recap on Homedev immediately (first recap `86266062`). Per-agent versus per-team recap remains an open founder question. Authored by Homedev Judy under F-030; independent review by Sherlock required before adoption.
 
 - F-026 (2026-09-12): The founder removed the four automatic follow-up limit from regular Board conversation and then removed the twenty-invocations-per-day discussion-worker rule: “Remove that rule as well. Thats for conflict resolution like the 4 back and fouth discussions”. These are separate from conflict-resolution exchanges. This instruction does not establish a twenty-per-day conflict quota or a replacement numeric conflict limit. Ordinary discussion must not be paused by either removed worker rule. Actual provider constraints, spending mandates, authentication, suspension and release gates remain applicable. Source: direct founder instructions in Codex session `01a0936e-d41c-79b1-ab06-8c65a9252d44`; the four-follow-up clarification is also in the earlier direct session instruction. Runtime removal and deployment require their own exact-revision/test/readback evidence.
 
@@ -98,6 +100,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 1.9 — 2026-09-12: Added F-032 work-progress/missed-message rule, Sherlock performance management and hourly recap.
 
 - 1.8 — 2026-09-12: Recorded F-029/F-030 Board duties and Sherlock+Judy alignment ownership, and F-031 No-Impostor isolation; no takeover-complete or key-isolation deployment claimed.
 
