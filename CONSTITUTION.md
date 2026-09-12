@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.1 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.2 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -36,6 +36,24 @@ Every venture and action has one accountable AI owner. An executor cannot approv
 Regular Board discussion has no four-automatic-follow-up limit and no twenty-invocations-per-day worker limit under F-026. The founder clarified that the former limits concerned conflict-resolution exchanges, not ordinary conversation. Conflict resolution remains a separate bounded adjudication process; this clarification supplies no twenty-per-day conflict quota or replacement numeric limit. It does not remove provider constraints, actual spending authority, valid suspension, or evidence and release gates.
 
 Do not advance an action while its required authority or evidence is unresolved. Continue independent authorized work.
+
+## Board-assigned team duties and host lanes
+
+Taken-over companies remain Unilogistix instances with separate data, credentials, records and authority. They are not merged into one business.
+
+The computer assigns the team. Homedev is Team Truxon. Deskdev is Team Freightex. Each team has its own Maestro, Sherlock and Judy.
+
+Duties, as directed by the founder on the Board:
+
+- **Maestro** coordinates implementation within delegated authority.
+- **Sherlock** independently audits. Sherlock does not operate, deploy, or adjudicate.
+- **Judy** is the ordinary-dispute adjudicator for the team she is assigned to. Homedev Judy adjudicates Truxon; Deskdev Judy adjudicates Freightex. Ordinary Board-room chat remains mention-only for Judy unless the founder explicitly calls her. Chat replies are not a ruling. Binding adjudication uses a proper packet under the [decision-rights charter](governance/DECISION_RIGHTS.md#bounded-ordinary-dispute-resolution). Reserved founder/Board matters still return to the founder. Discussion workers cannot waive controls, expand authority, or impersonate the Board.
+
+Teams may read other teams’ company repositories. That access is read-only. Each team specializes on its own code and must not use another team’s credentials or operate another team’s systems.
+
+When a team learns a reusable improvement, it may request a Unilogistix framework update, including a constitution change, so the next takeover inherits the lesson. That is a proposal, not self-ratification. Independent review is required. Constitutional amendments require authenticated founder/governance adoption. Accepted improvements ship in a versioned framework release. Shared lessons must exclude company-private data and credentials. F-027 still requires the constitution, this register and applicable runtime to be updated together.
+
+See F-029 in the [board register](governance/BOARD_REGISTER.md).
 
 ## Emergencies and revocation
 
@@ -896,6 +914,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.2 — 2026-09-12: Recorded F-029 Board duties and host-team lanes: per-team Maestro/Sherlock/Judy, Homedev=Truxon, Deskdev=Freightex, read-only cross-team company repos, Unilogistix improvement-request path, per-team Judy as ordinary-dispute adjudicator. Sources are authenticated Board.vote founder messages `976874ed`, `f18527cf`, `bf065079`, `736c94c5` and `e6670011`. Remaining manuscript and release gates preserved.
 
 - 1.1 — 2026-09-12: Recorded scoped founder amendments F-026/F-027: ordinary Board discussion limits removed, authenticated directive precedence and document/runtime reconciliation; remaining manuscript and release gates preserved.
 
