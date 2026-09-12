@@ -1,6 +1,6 @@
 # Decision rights and protected assurance charter
 
-Version: 1.0 | Updated: 2026-09-09 | Status: Complete draft; adoption and activation pending
+Version: 1.1 | Updated: 2026-09-12 | Status: Complete draft; adoption and activation pending
 
 ## Authority and reporting
 
