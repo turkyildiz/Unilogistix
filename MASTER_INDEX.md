@@ -1,6 +1,6 @@
 # Master index
 
-Version: 1.1 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
+Version: 1.2 | Updated: 2026-09-12 | Status: Complete draft manuscript; detailed adoption and activation pending
 
 Canonical current documents are listed below. The supplied blueprint and archived draft are historical references; they do not silently override later founder instructions.
 
@@ -103,6 +103,9 @@ Canonical current documents are listed below. The supplied blueprint and archive
 
 ## Products
 
+- [Truxon project coordination](products/truxon/README.md).
+- [Freightex project](products/freightex/README.md).
+
 - [Product portfolio](products/README.md)
 - [Safe Goes — candidate product](products/safe-goes/README.md)
 
@@ -156,6 +159,8 @@ Canonical current documents are listed below. The supplied blueprint and archive
 - [Version-bound readiness packet](templates/operating-readiness.md).
 
 ## Change history
+
+- 1.2 — 2026-09-12: Indexed the founder-directed Truxon and Freightex portfolio.
 
 - 1.1 — 2026-09-09: Incorporated operating-readiness review requirements and preserved documentary/operating evidence boundaries.
 

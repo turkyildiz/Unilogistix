@@ -1,6 +1,6 @@
 # Freightex first-project preparation
 
-Version: 0.1 | Updated: 2026-09-10 | Status: Business model and first customer designated; detailed delivery scope proposed; pre-launch
+Version: 0.2 | Updated: 2026-09-12 | Status: Business model and first customer designated; detailed delivery scope proposed; pre-launch
 
 The founder clarified that Freightex is a platform for brokers, has not launched,
 and has no customers yet. He designated his own brokerage as its first customer
@@ -27,6 +27,15 @@ rewrite, provider activation or public customer announcement is inferred from
 the designation. Follow the [business-instance model](../../governance/SYSTEM_AND_BUSINESS_MODEL.md)
 and [instance adoption schedule](../../templates/business-instance.md).
 
+## Current coordination
+
+The founder confirmed September 11, 2026 (America/Chicago) that Maestro has already
+taken over Freightex coordination. This supersedes the earlier proposed-only
+coordination status above. The first-customer scope and launch evidence remain
+separate. See F-024 in the [board register](../../governance/BOARD_REGISTER.md).
+
 ## Change history
+
+- 0.2 — 2026-09-12: Recorded active Maestro coordination from direct founder clarification.
 
 - 0.1 — Recorded the first-project preparation direction and preserved the distinction between platform, customer organization and reusable framework.

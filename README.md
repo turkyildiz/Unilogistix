@@ -1,6 +1,6 @@
 # UNI / Unilogistix
 
-Version: 1.1 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
+Version: 1.2 | Updated: 2026-09-12 | Status: Complete draft manuscript; detailed adoption and activation pending
 
 **A reusable AI operating system that develops and operates businesses through dedicated business instances.**
 
@@ -20,7 +20,7 @@ The framework supports software, physical-goods businesses such as the LondonRue
 
 - [Review all agent responsibilities in the constitution](CONSTITUTION.md#constitutional-agent-responsibility-schedule): 60 drafted contracts with shared rules, handoffs, separation and LondonRue scenarios.
 
-- Current work: [complete the company documents and agree their scope](governance/DOCUMENT_SCOPE.md), using the confirmed US/Illinois legal baseline. Runtime implementation is outside today's scope.
+- Current work: Maestro coordinates [Freightex and Truxon](products/README.md), including the scoped repair and recovery mandates in the [board register](governance/BOARD_REGISTER.md). The documentation foundation and remaining adoption work are tracked in [document scope](governance/DOCUMENT_SCOPE.md).
 - [Vision](VISION.md), [manifesto](MANIFESTO.md), and [founder](FOUNDER.md).
 - [Constitution](CONSTITUTION.md) and [rulebook](RULEBOOK.md).
 - [Master architecture](MASTER_ARCHITECTURE.md) and [complete index](MASTER_INDEX.md).
@@ -62,6 +62,8 @@ Read the [reporting-review disposition](governance/REVIEW_DISPOSITION.md), [deci
 The [operating-readiness review disposition](governance/OPERATING_READINESS.md) consolidates seven business-specific gates and ten unrun lifecycle trial cases. Manuscript coverage is present; actual adoption, independent readiness evidence and live activation remain pending.
 
 ## Change history
+
+- 1.2 — 2026-09-12: Updated current work to Maestro coordination of Freightex and Truxon; removed superseded documentation-only scope.
 
 - 1.1 — 2026-09-09: Incorporated operating-readiness review requirements and preserved documentary/operating evidence boundaries.
 

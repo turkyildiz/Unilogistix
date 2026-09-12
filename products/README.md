@@ -1,8 +1,10 @@
 # Product portfolio
 
-Version: 0.4 | Updated: 2026-09-10 | Status: Project directions recorded; detailed activation remains scoped
+Version: 0.5 | Updated: 2026-09-12 | Status: Project directions recorded; detailed activation remains scoped
 
-[Freightex](freightex/README.md) is the founder-designated first-project preparation: a pre-launch platform for brokers, with the founder's own brokerage designated as its first customer. Detailed scope and commercial launch remain separate decisions.
+[Freightex](freightex/README.md) is already under Maestro's coordination. Its recorded business model is a broker platform with the founder's brokerage designated as first customer; commercial launch remains a separate status.
+
+[Truxon](truxon/README.md) joins Freightex under Maestro's coordination by direct founder instruction. Its operational intake and priorities are recorded privately; the linked charter defines scope and project boundaries.
 
 [Safe Goes](safe-goes/README.md) is a historical master-blueprint product proposal. It is not the parent UNI system and is not an authorized live venture.
 
@@ -11,6 +13,8 @@ Version: 0.4 | Updated: 2026-09-10 | Status: Project directions recorded; detail
 Every product gets its own mandate, accountable AI owner, financial boundary, data boundary, service commitments, and lifecycle evidence. Graduation follows [the venture policy](../policies/venture-lifecycle.md).
 
 ## Change history
+
+- 0.5 — 2026-09-12: Added Truxon and confirmed Freightex active coordination under Maestro.
 
 - 0.4 — 2026-09-10: Recorded Freightex first-project preparation and retained historical proposals without implying launch.
 

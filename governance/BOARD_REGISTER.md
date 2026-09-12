@@ -1,8 +1,10 @@
 # Board direction and activation register
 
-Version: 1.4 | Updated: 2026-09-10 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 1.5 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-024 (2026-09-11 America/Chicago; recorded 2026-09-12 UTC): The founder named this agent Maestro, confirmed Freightex had already been taken over, and instructed Maestro to take over Truxon, followed by “go for it.” Maestro coordinates both projects through Unilogistix. [Truxon coordination](../products/truxon/README.md) records the mandate and intake. This updates Freightex's preparation-only coordination wording; commercial activation and existing implementation, independent-review and release gates remain distinct. It supplies no new spending limit or blanket production-change approval.
 
 - F-023 (2026-09-10): The founder clarified that Freightex is a platform for brokers and designated his own brokerage as its first customer. The customer's identity and detailed onboarding/data scope remain in private project records. Platform accounting, customer brokerage books and tenant identities remain separate. This designation does not itself activate billing, provider connections, historical imports or commercial launch.
 
@@ -80,6 +82,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 1.5 — 2026-09-12: Recorded Maestro identity, active Freightex coordination and Truxon takeover under direct founder instruction.
 
 - 1.4 — 2026-09-10: Recorded Freightex pre-launch status, platform business model and designated first customer; kept customer details private and detailed launch authority separate.
 
