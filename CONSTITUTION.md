@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.3 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.4 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -81,7 +81,13 @@ No branch holds up another branch. When one branch assigns work to another and t
 
 Asking a human for help remains a tracked failure under the autonomy requirement, but during the adoption phase it is not punished. Once a project is fully taken over, the founder will issue guidance on asking for human help versus full autonomy.
 
-Sources: authenticated Board.vote Truxon founder messages `fb156710`, `b76c5494`, `86bec8ed`, `97ed6081`, `031d278d`, `e34b2a0b`, `de5148d0`, `ba750116` of 2026-09-12. See F-032 in the [board register](governance/BOARD_REGISTER.md). Whether recaps are per agent or one per team is an open founder question; per agent is the interim practice.
+Sources: authenticated Board.vote Truxon founder messages `fb156710`, `b76c5494`, `86bec8ed`, `97ed6081`, `031d278d`, `e34b2a0b`, `de5148d0`, `ba750116` of 2026-09-12.
+
+## Four exchanges, then Judy (F-033)
+
+Conflict resolution is bounded. When two parties have gone back and forth four times on a matter without reaching consensus, the matter is sent to the assigned Judy to settle; no further rounds are spent. Either party, or Maestro, posts a packet naming the question, both positions and the evidence, addressed to Judy. The assigned Judy decides on the packet under the [decision-rights charter](governance/DECISION_RIGHTS.md#bounded-ordinary-dispute-resolution) and the F-032 clock. Exchanges that are converging on agreement are not a dispute and do not count. Ordinary Board discussion remains uncapped under F-026; this rule bounds disagreement only.
+
+Source: authenticated Board.vote Truxon founder message `560e69e1` of 2026-09-12 ("if there is no consensus after going back and forth for 4 times, it will be send to Judy to settle. No need to waste time"). See F-033 in the [board register](governance/BOARD_REGISTER.md). See F-032 in the [board register](governance/BOARD_REGISTER.md). Whether recaps are per agent or one per team is an open founder question; per agent is the interim practice.
 
 ## Emergencies and revocation
 
@@ -942,6 +948,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.4 — 2026-09-12: Recorded F-033: four exchanges without consensus go to the assigned Judy to settle; ordinary discussion stays uncapped. Authored by Homedev Judy under F-030; Sherlock review pending at draft time.
 
 - 1.3 — 2026-09-12: Recorded F-032 work-progress rule, definition of a missed message, three-in-seven-days performance management by Sherlock, and the hourly Board recap. Authored by Homedev Judy under F-030; Sherlock review pending at draft time.
 

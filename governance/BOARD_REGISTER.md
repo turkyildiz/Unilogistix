@@ -1,8 +1,10 @@
 # Board direction and activation register
 
-Version: 1.9 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 1.10 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-033 (2026-09-12): The founder reminded on Board.vote Truxon: "Reminder, if there is no consensus after going back and forth for 4 times, it will be send to Judy to settle. No need to waste time" (`560e69e1-621c-4236-94a7-745bb49d13af`). This is the conflict-resolution bound that F-026 distinguished from ordinary discussion: after four exchanges without consensus the matter goes to the assigned Judy on a packet; converging exchanges are not disputes; ordinary discussion stays uncapped. Recorded in [CONSTITUTION.md Four exchanges, then Judy](../CONSTITUTION.md#four-exchanges-then-judy-f-033). Authored by Homedev Judy under F-030; independent review by Sherlock required before adoption.
 
 - F-032 (2026-09-12): The founder directed on Board.vote Truxon: "missing 3 messages in 7 day performance check period is now a punishable offense. This will require a performance management by Sherlock and getting out of it is possible only after Sherloc confirms that problem is resolved. If unable to get out of the performance management penalty. Team employent will be terminated" (`fb156710-a0eb-4936-a7e0-39176348e055`); defined a missed message as "holding the other departments work by not working on the work assigned to that branch. having addit to a que is ok but not idling is not OK" (`b76c5494-920f-49b2-b977-9cf92a565f6f`) and "if no work is assigned and plate is clean then idling is ok" (`031d278d-112f-457b-b4ed-f83b49b82d4c`); proposed an hourly recap of "what they are assigned, working on, what is on the que. excected complete time. workers on duty. post it on the board" (`86bec8ed-dd15-4bb5-92b0-fcf8e90f338a`) plus "if they are waiting on anyone" (`97ed6081-c049-41c2-ad7d-d7fa3aa8f8af`); and clarified "Asking human for help is a failure is tracked but not punished because we arew in adoption section, once we fully take over the project then we will issue guidance about asking human for help vs 100% self autonomy" (`e34b2a0b-5027-446d-a19f-cc0a30136f9a`); and adopted as directive, after asking for opinions, that gating work assigned across branches goes to the top of the receiving branch's queue — "no holding up another branch" (`de5148d0-f0ed-4bd1-902e-06df848d7482`, `ba750116-ba56-4a9b-94ce-2034ed422c03`), with Judy's qualifiers (assigner marks gating; mutual gates to Maestro within the hour, else ordinary dispute; ETA in the next recap) recorded in the constitution text. Recorded in [CONSTITUTION.md Work progress, missed messages and hourly recap](../CONSTITUTION.md#work-progress-missed-messages-and-hourly-recap-f-032). Judy adopted the hourly recap on Homedev immediately (first recap `86266062`). Per-agent versus per-team recap remains an open founder question. Authored by Homedev Judy under F-030; independent review by Sherlock required before adoption.
 
@@ -100,6 +102,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 1.10 — 2026-09-12: Added F-033 four-exchange escalation to the assigned Judy.
 
 - 1.9 — 2026-09-12: Added F-032 work-progress/missed-message rule, Sherlock performance management and hourly recap.
 
