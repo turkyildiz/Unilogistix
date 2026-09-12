@@ -1,6 +1,13 @@
 # Changelog
 
-Version: 1.1 | Updated: 2026-09-09 | Status: Complete draft manuscript; detailed adoption and activation pending
+Version: 1.2 | Updated: 2026-09-12 | Status: Complete draft manuscript; detailed adoption and activation pending
+
+## Coordination update — 2026-09-12
+
+- Activated Truxon takeover with delegated repair qualification, independent verification and mobile testing-readiness assignments under F-025.
+
+- Recorded the founder's Maestro identity and Truxon takeover direction, with Freightex already under coordination.
+- Added Truxon's project charter, updated portfolio/navigation and corrected the obsolete README current scope. Operational findings remain in private memory.
 
 ## 0.7 — 2026-09-09
 
