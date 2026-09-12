@@ -1,6 +1,6 @@
 # Truxon project coordination
 
-Version: 0.1 | Updated: 2026-09-12 | Status: Founder-directed coordination active; operational baseline recorded privately
+Version: 0.2 | Updated: 2026-09-12 | Status: Takeover activated; delegated delivery work started
 
 ## Mandate
 
@@ -16,6 +16,20 @@ independent verifiers and release responsibilities continue; a coordination hand
 does not claim that workers have received a new assignment or that a service has
 been deployed. Current task ownership and detailed findings remain in private
 project records. Existing qualified repair/release mandates remain applicable.
+
+## Activation
+
+Following the completed readiness packet, the founder instructed “go for takeover”
+and requested agent delegation. Maestro started separate assignments for operational
+repair qualification, independent verification, and mobile testing readiness.
+Each assignment has a bounded deliverable, owner and evidence path in private
+project memory. These task agents do not claim the identities of the existing
+independent auditors or establish a continuously running workforce.
+
+The existing TV build was promoted to internal testing and its persisted track
+state was verified. Companion testing remains subject to the initial Play Console
+publication step and completion of exact-artifact evidence. Testing availability,
+full device functionality and production readiness remain separate findings.
 
 ## Project boundary
 
@@ -54,5 +68,7 @@ and a private handoff plus this sanitized charter are published. Completion of
 intake does not mean completion of the underlying operational repairs.
 
 ## Change history
+
+- 0.2 — 2026-09-12: Activated takeover after founder go-ahead and started delegated repair qualification, verification and testing-readiness work.
 
 - 0.1 — 2026-09-12: Recorded the founder's Truxon takeover direction, Maestro's coordination responsibility, and evidence-based intake boundaries.
