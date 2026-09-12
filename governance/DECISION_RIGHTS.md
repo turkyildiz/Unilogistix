@@ -49,4 +49,6 @@ The [control register](CONTROL_REGISTER.md) defines the required proof. A drafte
 
 ## Change history
 
+- 1.1 — 2026-09-12: Named the assigned-team Judy as ordinary-dispute adjudicator when conflict-free (F-029); kept one-business-day clocks as proposed defaults; recusal uses the authorized independent-replacement process.
+
 - 1.0 — 2026-09-09: Completed the documentary specification and integrated the reporting-lines board review; runtime proof remains separate.
