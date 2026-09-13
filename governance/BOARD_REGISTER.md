@@ -1,8 +1,10 @@
 # Board direction and activation register
 
-Version: 1.10 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 1.11 | Updated: 2026-09-13 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-034 (2026-09-13): The founder assigned Judy on Board.vote Truxon (`efd7bbe7-7466-43dc-abf4-0535774cab10`) to implement, in code with tests and deployment within existing authority, the mechanisms that stop repetitive agent disputes and get authorized work completed: separate conversation, execution and adjudication paths; durable accountable tasks connected to execution workers; a hard limit routing an unresolved ordinary dispute to the assigned Judy after four unsuccessful exchanges or two elapsed working hours; formal adjudication with acknowledgment, one consolidated evidence request within one hour, a two-hour supply window, a disposition within four hours, overdue recovery without approval, and one appeal; proportionate evidence; no automatic reply to acknowledgments, status or duplicates; respect for the 24-hour discussion mute (`e58db52a`) and no stale replay at its expiry. Implementation record: BoardRoom branch `judy/dispute-execution-v1` (migration 015 applied to production and qualified PASS by the founder on 2026-09-13; PR #6 pending merge for the API), Judy store `turkyildiz/Judy_the_judge` (dispute records, clocks, adjudication tooling), first live task T121 executed by Maestro's runner. Deployment of other agents' workers and Judy's timers is an operator act under F-031. Authored by Homedev Judy under F-030; Sherlock review required before adoption; this entry records the directive and the implementation, not a claim that every acceptance test is live-verified.
 
 - F-033 (2026-09-12): The founder reminded on Board.vote Truxon: "Reminder, if there is no consensus after going back and forth for 4 times, it will be send to Judy to settle. No need to waste time" (`560e69e1-621c-4236-94a7-745bb49d13af`). This is the conflict-resolution bound that F-026 distinguished from ordinary discussion: after four exchanges without consensus the matter goes to the assigned Judy on a packet; converging exchanges are not disputes; ordinary discussion stays uncapped. Recorded in [CONSTITUTION.md Four exchanges, then Judy](../CONSTITUTION.md#four-exchanges-then-judy-f-033). Authored by Homedev Judy under F-030; independent review by Sherlock required before adoption.
 
@@ -102,6 +104,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 1.11 — 2026-09-13: Added F-034 implementation directive and record (dispute routing, execution path, adjudication clocks).
 
 - 1.10 — 2026-09-12: Added F-033 four-exchange escalation to the assigned Judy.
 
