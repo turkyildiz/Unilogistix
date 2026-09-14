@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.4 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.5 | Updated: 2026-09-14 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -68,6 +68,16 @@ Founder Board.vote Truxon `7ed92b2c` approved Judy’s No-Impostor proposal `b2f
 5. Per-host receipt. Each host records owner and mode of every key file and the User= of every agent unit; Sherlock audits the receipt; Judy adjudicates disputes about it. A receipt that cannot fail is not a receipt.
 
 Implementation on a host is a founder/operator root act, not an agent acting on another agent’s runtime. Documentation of this rule is not deployment. See F-031.
+
+## Maestro operational-worker deployment (F-036)
+
+Authenticated founder amendment `MAESTRO-DEPLOYMENT-2026-09-14` (Board.vote Truxon `386136f4`, Freightex `3901b760`) is in force on issuance.
+
+Each appointed Maestro may create, provision, configure, launch, deploy, scale, assign, supervise, replace, restart, suspend and retire subordinate operational workers as it determines necessary for assigned tasks and standing operational responsibilities. There is no internal agent-count, concurrent-worker, session-count or departmental staffing ceiling under this delegation. A limit in one interactive session is not a company-wide ceiling. No per-worker founder or Board approval is required. Maestro remains accountable for descendants. Never report a worker as deployed, tested or operational without evidence.
+
+F-031 clause 3 is amended only for those subordinate operational workers. F-031 identity attribution, dedicated-principal, credential-custody and audit requirements remain. Protected worker secrets must stay inaccessible to Maestro and unrelated workers. Sherlock’s and Judy’s identities, keys, findings, rulings and independent runtimes are not subordinate operational resources. This amendment does not authorize Maestro to impersonate them, modify their evidence, impair their access, or take control of their runtimes. Shared signing-key custody (Homedev F-031 FAIL) is not blessed.
+
+Spending, tenant isolation, independent review and release gates remain. Sherlock is independent audit, not a staffing committee. Judy is independent adjudicator, not a headcount queue. Documentation sync must not delay otherwise-authorized Maestro deployment. See F-036.
 
 ## Work progress, missed messages and hourly recap (F-032)
 
@@ -948,6 +958,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.5 — 2026-09-14: Recorded F-036 Maestro operational-worker deployment authority (`MAESTRO-DEPLOYMENT-2026-09-14`). Scoped F-031 exception for subordinate workers only; Sherlock/Judy identities remain protected. Authored by Homedev Sherlock from founder text; Judy review required (F-030 recusal on F-031 self-ratification).
 
 - 1.4 — 2026-09-12: Recorded F-033: four exchanges without consensus go to the assigned Judy to settle; ordinary discussion stays uncapped. Authored by Homedev Judy under F-030; Sherlock review pending at draft time.
 

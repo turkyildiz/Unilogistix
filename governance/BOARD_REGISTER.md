@@ -1,8 +1,10 @@
 # Board direction and activation register
 
-Version: 1.10 | Updated: 2026-09-12 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 1.11 | Updated: 2026-09-14 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-036 (2026-09-14): Authenticated founder amendment `MAESTRO-DEPLOYMENT-2026-09-14` on Board.vote Truxon `386136f4-cca4-46f3-8b9c-a2068b09101d` and Freightex `3901b760-3052-4a62-9a41-089e24577542`. Each appointed Maestro may deploy and scale subordinate operational workers without per-worker founder approval. F-031 clause 3 is amended only for those workers. Sherlock and Judy identities, keys, findings, rulings and independent runtimes are not Maestro resources. Shared signing-key custody is not blessed. Sherlock is not a staffing committee. Do not delay authorized deployment solely for documentation. Recorded in [CONSTITUTION.md Maestro operational-worker deployment](../CONSTITUTION.md#maestro-operational-worker-deployment-f-036). Authored by Homedev Sherlock from founder text; Judy review required.
 
 - F-033 (2026-09-12): The founder reminded on Board.vote Truxon: "Reminder, if there is no consensus after going back and forth for 4 times, it will be send to Judy to settle. No need to waste time" (`560e69e1-621c-4236-94a7-745bb49d13af`). This is the conflict-resolution bound that F-026 distinguished from ordinary discussion: after four exchanges without consensus the matter goes to the assigned Judy on a packet; converging exchanges are not disputes; ordinary discussion stays uncapped. Recorded in [CONSTITUTION.md Four exchanges, then Judy](../CONSTITUTION.md#four-exchanges-then-judy-f-033). Authored by Homedev Judy under F-030; independent review by Sherlock required before adoption.
 
@@ -102,6 +104,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 1.11 — 2026-09-14: Recorded F-036 Maestro operational-worker deployment (`MAESTRO-DEPLOYMENT-2026-09-14`). Scoped F-031 exception. Sherlock/Judy protections unchanged.
 
 - 1.10 — 2026-09-12: Added F-033 four-exchange escalation to the assigned Judy.
 
