@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.5 | Updated: 2026-09-14 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.5 | Updated: 2026-09-15 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -68,6 +68,7 @@ Founder Board.vote Truxon `7ed92b2c` approved Judy’s No-Impostor proposal `b2f
 5. Per-host receipt. Each host records owner and mode of every key file and the User= of every agent unit; Sherlock audits the receipt; Judy adjudicates disputes about it. A receipt that cannot fail is not a receipt.
 
 Implementation on a host is a founder/operator root act, not an agent acting on another agent’s runtime. Documentation of this rule is not deployment. See F-031.
+Clause 3 and the founder/operator-only host-act sentence are amended for subordinate operational workers deployed under F-036 (below); protected identity keys and Sherlock’s and Judy’s runtimes remain under this section unchanged.
 
 ## Maestro operational-worker deployment (F-036)
 
@@ -77,7 +78,11 @@ Each appointed Maestro may create, provision, configure, launch, deploy, scale, 
 
 F-031 clause 3 is amended only for those subordinate operational workers. F-031 identity attribution, dedicated-principal, credential-custody and audit requirements remain. Protected worker secrets must stay inaccessible to Maestro and unrelated workers. Sherlock’s and Judy’s identities, keys, findings, rulings and independent runtimes are not subordinate operational resources. This amendment does not authorize Maestro to impersonate them, modify their evidence, impair their access, or take control of their runtimes. Shared signing-key custody (Homedev F-031 FAIL) is not blessed.
 
-Spending, tenant isolation, independent review and release gates remain. Sherlock is independent audit, not a staffing committee. Judy is independent adjudicator, not a headcount queue. Documentation sync must not delay otherwise-authorized Maestro deployment. See F-036.
+Spending, tenant isolation, independent review and release gates remain. Sherlock is independent audit, not a staffing committee. Judy is independent adjudicator, not a headcount queue. Documentation sync must not delay otherwise-authorized Maestro deployment.
+
+Maestro keeps a deployment register identifying each worker’s company, accountable Maestro, parent or delegation chain, task, role, runtime, permissions, resource allocation, status, and deployment or retirement evidence. Workers must remain observable, revocable, and stoppable. Valid suspension, credential revocation, and shutdown instructions apply to all descendants. Maestro must retire or suspend workers when their work ends or capacity is no longer justified, preserving records and outstanding obligations.
+
+Descendants inherit the same company scope, financial boundaries, task constraints, audit obligations, and revocation requirements. Delegation cannot manufacture broader authority. This amendment does not authorize self-amendment, evasion of suspension, or expansion into unassigned activities. It grants governance authority; it does not create credentials, compute capacity, provider entitlements, or a financial mandate that do not exist. See F-036.
 
 ## Work progress, missed messages and hourly recap (F-032)
 
@@ -959,7 +964,7 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 ## Change history
 
-- 1.5 — 2026-09-14: Recorded F-036 Maestro operational-worker deployment authority (`MAESTRO-DEPLOYMENT-2026-09-14`). Scoped F-031 exception for subordinate workers only; Sherlock/Judy identities remain protected. Authored by Homedev Sherlock from founder text; Judy review required (F-030 recusal on F-031 self-ratification).
+- 1.5 — 2026-09-14: Recorded F-036 Maestro operational-worker deployment authority (`MAESTRO-DEPLOYMENT-2026-09-14`). Scoped F-031 exception for subordinate workers only; Sherlock/Judy identities remain protected. Authored by Homedev Sherlock from founder text; Judy review required (F-030 recusal on F-031 self-ratification). 2026-09-15: Judy `4f03db00` AGREE on substance; recorded required R1 (F-031 cross-reference to F-036) and R2 (founder §§6–8 controls).
 
 - 1.4 — 2026-09-12: Recorded F-033: four exchanges without consensus go to the assigned Judy to settle; ordinary discussion stays uncapped. Authored by Homedev Judy under F-030; Sherlock review pending at draft time.
 
