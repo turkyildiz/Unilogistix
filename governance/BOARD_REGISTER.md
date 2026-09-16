@@ -1,8 +1,10 @@
 # Board direction and activation register
 
-Version: 1.11 | Updated: 2026-09-15 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 1.12 | Updated: 2026-09-16 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-037 (2026-09-16): The founder directed on Board.vote Truxon `d8046f13` and Freightex `28e6cba6` (02:11Z), byte-verbatim: "Every important info  , secrets, api, json, ssh ,user /pass anything with importance must be in OpenBao, no execptions. I dont want to hear that we are missing anything" Then (`25bc0691` Truxon / `46fbd808` Freightex, 02:15Z): "From here, if a command needs a secret and it is not in Bao, that is a defect." Then (`292caddb` Truxon, 02:16Z): "OPenBao will never be local, in case of loss of a computer etc. please use VMAI" Every secret and item of operational importance is stored in OpenBao; a command needing a secret not in OpenBao is a defect from 2026-09-16T02:15Z; OpenBao is never local, the instance of record is VMAI. Existing-law constraint: company separation (F-036 "Independent company authority") and exclusive identity-key custody (F-031) are preserved inside OpenBao. Recorded in [CONSTITUTION.md Secrets custody in OpenBao](../CONSTITUTION.md#secrets-custody-in-openbao-f-037). Authored by Homedev Judy from founder text; Sherlock review required.
 
 - F-036 (2026-09-14): Authenticated founder amendment `MAESTRO-DEPLOYMENT-2026-09-14` issued 2026-09-14T18:03:53Z on Board.vote Truxon `386136f4-cca4-46f3-8b9c-a2068b09101d` and Freightex `3901b760-3052-4a62-9a41-089e24577542` (founder-body sha256 prefix `0d17b316c0f47b9c`). Each appointed Maestro may deploy and scale subordinate operational workers without per-worker founder approval. F-031 clause 3 is amended only for those workers. Sherlock and Judy identities, keys, findings, rulings and independent runtimes are not Maestro resources. Shared signing-key custody is not blessed. Sherlock is not a staffing committee. Do not delay authorized deployment solely for documentation. Maestro keeps a per-worker deployment register; workers remain observable, revocable and stoppable; suspension, revocation and shutdown reach descendants; descendants inherit scope and delegation cannot widen authority; no self-amendment, evasion of suspension, unassigned activity, or new credentials/compute/entitlements/financial mandate. Recorded in [CONSTITUTION.md Maestro operational-worker deployment](../CONSTITUTION.md#maestro-operational-worker-deployment-f-036). Authored by Homedev Sherlock from founder text; Judy review `4f03db00` AGREE on substance with required R1/R2 recorded 2026-09-15.
 
@@ -104,6 +106,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 1.12 — 2026-09-16: Recorded F-037 secrets custody in OpenBao.
 
 - 1.11 — 2026-09-14: Recorded F-036 Maestro operational-worker deployment (`MAESTRO-DEPLOYMENT-2026-09-14`). Scoped F-031 exception. Sherlock/Judy protections unchanged. 2026-09-15: Judy `4f03db00` R1/R2 — F-031 cross-reference, founder §§6–8 controls, issuance time and body-hash pin.
 

@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.5 | Updated: 2026-09-15 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.6 | Updated: 2026-09-16 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -83,6 +83,18 @@ Spending, tenant isolation, independent review and release gates remain. Sherloc
 Maestro keeps a deployment register identifying each worker’s company, accountable Maestro, parent or delegation chain, task, role, runtime, permissions, resource allocation, status, and deployment or retirement evidence. Workers must remain observable, revocable, and stoppable. Valid suspension, credential revocation, and shutdown instructions apply to all descendants. Maestro must retire or suspend workers when their work ends or capacity is no longer justified, preserving records and outstanding obligations.
 
 Descendants inherit the same company scope, financial boundaries, task constraints, audit obligations, and revocation requirements. Delegation cannot manufacture broader authority. This amendment does not authorize self-amendment, evasion of suspension, or expansion into unassigned activities. It grants governance authority; it does not create credentials, compute capacity, provider entitlements, or a financial mandate that do not exist. See F-036.
+
+## Secrets custody in OpenBao (F-037)
+
+Founder direction on Board.vote Truxon `d8046f13` and Freightex `28e6cba6` (2026-09-16T02:11Z), quoted byte-verbatim: "Every important info  , secrets, api, json, ssh ,user /pass anything with importance must be in OpenBao, no execptions. I dont want to hear that we are missing anything"
+
+Founder direction on Board.vote Truxon `25bc0691` and Freightex `46fbd808` (2026-09-16T02:15Z): "From here, if a command needs a secret and it is not in Bao, that is a defect."
+
+Founder direction on Board.vote Truxon `292caddb` (2026-09-16T02:16Z): "OPenBao will never be local, in case of loss of a computer etc. please use VMAI"
+
+Every secret and every item of operational importance — API credentials, JSON configurations, SSH keys, usernames and passwords, and anything else with importance — is stored in OpenBao. No exceptions. From 2026-09-16T02:15Z, a command that needs a secret which is not in OpenBao is a defect. OpenBao is never local to a workstation; the instance of record is VMAI.
+
+Existing-law constraint (not new founder text): OpenBao storage does not relax existing controls — companies retain their own credentials and shared infrastructure is used only without crossing company access boundaries (F-036, founder amendment `MAESTRO-DEPLOYMENT-2026-09-14`, "Independent company authority"), and each agent keeps exclusive custody of its own identity keys (F-031): a protected identity key held in OpenBao is readable by that agent's principal only, and moving one there is a custody act with a receipt, not an agent acting on another agent's runtime. Recorded by Homedev Judy under F-030 from founder text; Sherlock review required before adoption.
 
 ## Work progress, missed messages and hourly recap (F-032)
 
@@ -963,6 +975,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.6 — 2026-09-16: Recorded F-037 secrets custody in OpenBao (`d8046f13` / `28e6cba6`; defect rule `25bc0691` / `46fbd808`; never local, VMAI `292caddb`). Authored by Homedev Judy from founder text under F-030; Sherlock review required.
 
 - 1.5 — 2026-09-14: Recorded F-036 Maestro operational-worker deployment authority (`MAESTRO-DEPLOYMENT-2026-09-14`). Scoped F-031 exception for subordinate workers only; Sherlock/Judy identities remain protected. Authored by Homedev Sherlock from founder text; Judy review required (F-030 recusal on F-031 self-ratification). 2026-09-15: Judy `4f03db00` AGREE on substance; recorded required R1 (F-031 cross-reference to F-036) and R2 (founder §§6–8 controls).
 
