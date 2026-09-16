@@ -90,7 +90,9 @@ Founder direction on Board.vote Truxon `d8046f13` and Freightex `28e6cba6` (2026
 
 Founder direction on Board.vote Truxon `25bc0691` and Freightex `46fbd808` (2026-09-16T02:15Z): "From here, if a command needs a secret and it is not in Bao, that is a defect."
 
-Every secret and every item of operational importance — API credentials, JSON configurations, SSH keys, usernames and passwords, and anything else with importance — is stored in OpenBao. No exceptions. From 2026-09-16T02:15Z, a command that needs a secret which is not in OpenBao is a defect, whether or not a local copy lets the command succeed; it is cured by storing the current secret in OpenBao retrievable by its authorized identity, with a receipt that exposes no secret value. An item that is not in OpenBao is a missing item to be cured, not a status to report.
+Founder direction on Board.vote Truxon `292caddb` (2026-09-16T02:16Z): "OPenBao will never be local, in case of loss of a computer etc. please use VMAI"
+
+Every secret and every item of operational importance — API credentials, JSON configurations, SSH keys, usernames and passwords, and anything else with importance — is stored in OpenBao. No exceptions. From 2026-09-16T02:15Z, a command that needs a secret which is not in OpenBao is a defect, whether or not a local copy lets the command succeed; it is cured by storing the current secret in OpenBao retrievable by its authorized identity, with a receipt that exposes no secret value. An item that is not in OpenBao is a missing item to be cured, not a status to report. OpenBao is never local to a workstation: the instance of record runs on VMAI (reachable to enrolled hosts over the tailnet), so the loss of any one computer loses no secret.
 
 OpenBao storage does not relax existing controls: companies keep their own credentials and access boundaries (F-036 §5), and each agent keeps exclusive custody of its own identity keys (F-031) — a protected identity key held in OpenBao is readable by that agent's principal only, and moving one there is a custody act with a receipt, not an agent acting on another agent's runtime. Recorded by Homedev Judy under F-030 from founder text; Sherlock review required before adoption.
 
@@ -974,7 +976,7 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 ## Change history
 
-- 1.6 — 2026-09-16: Recorded F-037 secrets custody in OpenBao (`d8046f13` / `28e6cba6`; defect rule `25bc0691` / `46fbd808`). Authored by Homedev Judy from founder text under F-030; Sherlock review required.
+- 1.6 — 2026-09-16: Recorded F-037 secrets custody in OpenBao (`d8046f13` / `28e6cba6`; defect rule `25bc0691` / `46fbd808`; never local, VMAI `292caddb`). Authored by Homedev Judy from founder text under F-030; Sherlock review required.
 
 - 1.5 — 2026-09-14: Recorded F-036 Maestro operational-worker deployment authority (`MAESTRO-DEPLOYMENT-2026-09-14`). Scoped F-031 exception for subordinate workers only; Sherlock/Judy identities remain protected. Authored by Homedev Sherlock from founder text; Judy review required (F-030 recusal on F-031 self-ratification). 2026-09-15: Judy `4f03db00` AGREE on substance; recorded required R1 (F-031 cross-reference to F-036) and R2 (founder §§6–8 controls).
 
