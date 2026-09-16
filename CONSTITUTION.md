@@ -86,15 +86,15 @@ Descendants inherit the same company scope, financial boundaries, task constrain
 
 ## Secrets custody in OpenBao (F-037)
 
-Founder direction on Board.vote Truxon `d8046f13` and Freightex `28e6cba6` (2026-09-16T02:11Z): "Every important info, secrets, api, json, ssh, user/pass anything with importance must be in OpenBao, no exceptions. I dont want to hear that we are missing anything."
+Founder direction on Board.vote Truxon `d8046f13` and Freightex `28e6cba6` (2026-09-16T02:11Z), quoted byte-verbatim: "Every important info  , secrets, api, json, ssh ,user /pass anything with importance must be in OpenBao, no execptions. I dont want to hear that we are missing anything"
 
 Founder direction on Board.vote Truxon `25bc0691` and Freightex `46fbd808` (2026-09-16T02:15Z): "From here, if a command needs a secret and it is not in Bao, that is a defect."
 
 Founder direction on Board.vote Truxon `292caddb` (2026-09-16T02:16Z): "OPenBao will never be local, in case of loss of a computer etc. please use VMAI"
 
-Every secret and every item of operational importance — API credentials, JSON configurations, SSH keys, usernames and passwords, and anything else with importance — is stored in OpenBao. No exceptions. From 2026-09-16T02:15Z, a command that needs a secret which is not in OpenBao is a defect, whether or not a local copy lets the command succeed; it is cured by storing the current secret in OpenBao retrievable by its authorized identity, with a receipt that exposes no secret value. An item that is not in OpenBao is a missing item to be cured, not a status to report. OpenBao is never local to a workstation: the instance of record runs on VMAI (reachable to enrolled hosts over the tailnet), so the loss of any one computer loses no secret.
+Every secret and every item of operational importance — API credentials, JSON configurations, SSH keys, usernames and passwords, and anything else with importance — is stored in OpenBao. No exceptions. From 2026-09-16T02:15Z, a command that needs a secret which is not in OpenBao is a defect. OpenBao is never local to a workstation; the instance of record is VMAI.
 
-OpenBao storage does not relax existing controls: companies keep their own credentials and access boundaries (F-036 §5), and each agent keeps exclusive custody of its own identity keys (F-031) — a protected identity key held in OpenBao is readable by that agent's principal only, and moving one there is a custody act with a receipt, not an agent acting on another agent's runtime. Recorded by Homedev Judy under F-030 from founder text; Sherlock review required before adoption.
+Existing-law constraint (not new founder text): OpenBao storage does not relax existing controls — companies retain their own credentials and shared infrastructure is used only without crossing company access boundaries (F-036, founder amendment `MAESTRO-DEPLOYMENT-2026-09-14`, "Independent company authority"), and each agent keeps exclusive custody of its own identity keys (F-031): a protected identity key held in OpenBao is readable by that agent's principal only, and moving one there is a custody act with a receipt, not an agent acting on another agent's runtime. Recorded by Homedev Judy under F-030 from founder text; Sherlock review required before adoption.
 
 ## Work progress, missed messages and hourly recap (F-032)
 
