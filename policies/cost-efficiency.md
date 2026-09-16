@@ -38,6 +38,8 @@ Reserve stronger models for hard reasoning, failed bounded attempts, or required
 
 Do not reduce review or required tests just to lower model cost.
 
+Staffing, concurrent-worker caps, and Grok/Claude/Codex/Cursor model routing live in [ORCHESTRATOR.md](ORCHESTRATOR.md).
+
 ## Operating controls
 
 Use per-task, per-venture, period, recurring, and portfolio budgets with enforced limits. Right-size workers, queue background work, reclaim expired previews and temporary resources, and avoid always-on idle agents.

@@ -16,7 +16,7 @@ Keep board governance, account-owner authentication, and platform permissions au
 
 ## Existing infrastructure and cost
 
-Prefer the founder-reported Cloudflare, GitHub, Vercel, Supabase, Fireworks.ai, on-prem, and Hetzner pool. Read integrations/EXISTING_STACK.md and policies/cost-efficiency.md before provisioning or model routing. Measure total cost and capacity; do not assume existing resources are free. No new purchases beyond existing delegation without board authority.
+Prefer the founder-reported Cloudflare, GitHub, Vercel, Supabase, Fireworks.ai, on-prem, and Hetzner pool. Read integrations/EXISTING_STACK.md and policies/cost-efficiency.md before provisioning or model routing. Measure total cost and capacity; do not assume existing resources are free. No new purchases beyond existing delegation without board authority. Staffing and model routing for Grok, Claude, Codex and Cursor: read [policies/ORCHESTRATOR.md](policies/ORCHESTRATOR.md).
 
 ## Repository practice
 

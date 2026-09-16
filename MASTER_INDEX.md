@@ -128,6 +128,7 @@ Canonical current documents are listed below. The supplied blueprint and archive
 - [setup_mcp.py](scripts/setup_mcp.py)
 - [start_uni.py](scripts/start_uni.py)
 
+- [Orchestrator staffing and cost](policies/ORCHESTRATOR.md)
 - [Cost-efficiency policy](policies/cost-efficiency.md)
 
 - [Existing infrastructure and provider login](integrations/EXISTING_STACK.md)

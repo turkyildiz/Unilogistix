@@ -5,6 +5,7 @@ Version: 0.7 | Updated: 2026-09-09 | Status: Draft specification
 The [constitution](../CONSTITUTION.md) determines authority. The founder explicitly directed the [autonomy requirement](autonomy.md); other detailed operational controls remain draft pending adoption.
 
 - [Autonomy and human intervention](autonomy.md).
+- [Orchestrator staffing and cost](ORCHESTRATOR.md).
 - [Cost-efficient use of existing resources](cost-efficiency.md).
 - [Financial controls](financial-policy.md).
 - [Product and customers, including hardware](product-and-customers.md).
