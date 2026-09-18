@@ -1,9 +1,10 @@
 # Board direction and activation register
 
-Version: 1.18 | Updated: 2026-09-18 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 1.19 | Updated: 2026-09-18 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
 
+- F-044 (2026-09-18): The founder directed in the Maestro session on Gram, byte-verbatim: "No early access needed" and then "Also 25$ is ok". Recorded meaning: the early-access form and its waitlist backend are removed from dqfile.ai (contact by email instead); spend approved for Supabase Pro (about $25/month net at list price, via the Vercel Marketplace, billed to the DQFile Vercel team) as the DQFile.ai product database, since the founder's Supabase account has no free-plan project slot left. No other spend approved. Authored by Maestro (Gram) from founder text; Sherlock review required.
 - F-043 (2026-09-18): The founder directed in the Maestro session on Gram, byte-verbatim: "1 request, we can let agencies to use this as well, so we could let them add other trucking companies as well. all docs ae seperated by the trucking company but pool is all together" Recorded meaning: DQFile.ai supports agency tenants (compliance agencies / C/TPAs) that manage several carriers. Each carrier's documents stay separated by carrier (row-level isolation, carrier-revocable agency access, carrier data export). The random pool may combine the agency's client carriers as a consortium owned by the agency, which must be the Clearinghouse-registered C/TPA designated by each carrier (40.347(b), 382.711(d), 382.715(a)); DQFile itself remains software and does not own multi-carrier pools (F-040 C option 1 unchanged). Design: turkyildiz/dqfile docs/AGENCIES.md. Counsel review required on service-agent characterization. Authored by Maestro (Gram) from founder text; Sherlock review required.
 - F-042 (2026-09-18): The founder answered in the Maestro session on Gram, byte-verbatim: "dqfile.ai" (the Workspace primary domain, resolving "Maestro@dqfile.com" in the prior message; Maestro's mailbox is maestro@dqfile.ai) and then "Pro plan approved, go ahead with Vercel". Recorded meaning: spend approved for one Vercel Pro seat (about $20/month at list price) for a DQFile.ai Vercel team separate from the Truxon team, to host the dqfile.ai website (turkyildiz/dqfile `site/`). No other spend is approved. Vercel credentials for DQF live in OpenBao under `dqfile/vercel/`; the Truxon deploy token is never used for DQF (F-036). Authored by Maestro (Gram) from founder text; Sherlock review required.
 - F-041 (2026-09-18): The founder answered Maestro's mail-setup options in the Maestro session on Gram, byte-verbatim: "option 1, separate workspace for dqfile.ai" Recorded meaning: DQFile.ai gets its own Google Workspace tenant for `dqfile.ai`, separate from the `unilogistix.com` tenant, its GAM project and service account (F-036 separation). The founder creates the tenant and first admin (identity and payment are Board acts); Maestro then does DNS, GAM, groups and verification from credentials in OpenBao under `dqfile/` (F-037). Runbook: turkyildiz/dqfile docs/ops/WORKSPACE.md. Authored by Maestro (Gram) from founder text; Sherlock review required.
@@ -114,6 +115,7 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 
 ## Change history
 
+- 1.19 — 2026-09-18: Recorded F-044 early access removed; Supabase Pro spend approved for DQFile.ai.
 - 1.18 — 2026-09-18: Recorded F-043 DQFile.ai agency tenants with agency-owned consortium pools.
 - 1.17 — 2026-09-18: Recorded F-042 dqfile.ai primary domain and Vercel Pro spend approval for DQFile.ai.
 - 1.16 — 2026-09-18: Recorded F-041 separate Google Workspace tenant for dqfile.ai.
