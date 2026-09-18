@@ -1,11 +1,14 @@
 # Unilogistix and the businesses it operates
 
-Version: 0.1 | Updated: 2026-09-09 | Status: Founder-confirmed identity model; detailed operating rules proposed
+Version: 0.2 | Updated: 2026-09-18 | Status: Founder-confirmed identity model (F-047); detailed operating rules proposed
 
 ## Founder direction
 
-Unilogistix will never be an actual company. It is the reusable AI operating system
-and governing framework used to develop and operate actual businesses. The founder
+Unilogistix is the group: Aida, AOL, Truxon and Freightex are Unilogistix companies,
+and every machine the group operates is Unilogistix hardware (F-047, 2026-09-18,
+superseding v0.1's "Unilogistix will never be an actual company"). Unilogistix is
+also the reusable AI operating system and governing framework used to develop and
+operate those businesses and new ones. The founder
 gave the example of LondonRue, a business selling towels: Unilogistix clones into
 a LondonRue instance, which develops and operates as LondonRue.
 
@@ -19,7 +22,7 @@ scope restriction.
 
 | Scope | Purpose | Authority and records |
 | --- | --- | --- |
-| Unilogistix master framework | Reusable policies, role designs, workflows, knowledge standards and evaluated operating capabilities | Founder governs framework changes and permitted reuse; this is not a legal parent company |
+| Unilogistix master framework | Reusable policies, role designs, workflows, knowledge standards and evaluated operating capabilities | Founder governs framework changes and permitted reuse; Unilogistix is the group its companies belong to (F-047); each company's legal form and ownership are recorded per company, not inferred |
 | Business instance, such as LondonRue AI operations | A dedicated copy configured to develop and run one business under its identity | Business-specific mandate, brand, roles, memory, data, accounts, spending limits and reporting |
 | Actual business and its responsible owner/entity | Customer and supplier relationships, assets, products and obligations | Actual legal/account ownership and signing authority must be recorded for that business; copying software does not establish these facts |
 
@@ -105,9 +108,12 @@ products and data. Entity type, taxes, permits, customer terms and physical-good
 requirements are resolved for that business before the affected activity starts.
 
 Today completes the reusable governing documents and defines these required
-business schedules. It does not require inventing an entity for Unilogistix or
-choosing the final legal structure of the LondonRue example.
+business schedules. It does not choose the final legal structure of any company;
+each company's legal form, ownership and signing authority are recorded when the
+founder provides them (F-047).
 
 ## Change history
+
+- 0.2 — 2026-09-18: F-047: Unilogistix is the group; Aida, AOL, Truxon and Freightex are Unilogistix companies and all hardware is Unilogistix hardware. Replaced "will never be an actual company" and "not a legal parent company"; legal form still recorded per company, never inferred.
 
 - 0.1 — 2026-09-09: Recorded the founder's master-framework/business-instance distinction and LondonRue towel-business example; corrected instance creation timing.
