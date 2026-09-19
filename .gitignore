@@ -8,3 +8,11 @@ __pycache__/
 *.pem
 *.key
 config.toml.uni-backup-*
+
+# Local-only Maestro files (founder, 2026-09-18)
+MAESTRO-HANDOFF-TO-CLAUDE.md
+scripts/copy-shared-keys.sh
+scripts/mailwatch/RUNBOOK.md
+scripts/mailwatch/drafts/
+scripts/mailwatch/sent/
+.vercel/

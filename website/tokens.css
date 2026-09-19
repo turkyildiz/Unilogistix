@@ -1,0 +1,7 @@
+:root{
+  --ulx-ink:#0B0F0E; --ulx-paper:#F2F4EF; --ulx-signal:#FF4D14;
+  --ulx-carbon:#252C29; --ulx-steel:#55605B; --ulx-alloy:#9AA59F; --ulx-mist:#D6DBD3; --ulx-white:#FBFCFA;
+  --ulx-font-display:'Archivo','Helvetica Neue',sans-serif; /* weight 600, font-stretch 120%, tracking -0.03em */
+  --ulx-font-body:'IBM Plex Sans','Helvetica Neue',sans-serif;
+  --ulx-font-system:'IBM Plex Mono',ui-monospace,monospace;
+}
