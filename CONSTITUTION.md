@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.11 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.12 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -181,6 +181,11 @@ allowance cannot run Cody or bypass reviews, CI, scope or spending controls.
 Earlier clarification does not consume that final escalation. Durable history
 retains lifetime counts, cycle usage and rulings; the third cycle cannot renew.
 Implementation and qualified deployment are recorded separately in F-149.
+PR263 installs the bounded runtime, with D013 renewal inactive until the authentic
+amendment is signed. Installed isolated tests prove the bound, not live autonomy.
+The first migrated challenge encountered a local packet-preflight defect; PR264
+follow-up and incident reconciliation remain pending. See the
+[release evidence](evidence/lang-judge-cycles-2026-09-28.md).
 
 ## Constitutional agent responsibility schedule
 
@@ -1021,6 +1026,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.12 — 2026-09-28: F-149 qualified runtime release, unsigned activation boundary and pending preflight follow-up.
 
 - 1.11 — 2026-09-28: F-149 bounded recurring judge escalation and root-cause repair direction.
 
