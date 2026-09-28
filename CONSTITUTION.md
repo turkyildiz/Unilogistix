@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.6 | Updated: 2026-09-16 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.7 | Updated: 2026-09-27 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -135,6 +135,27 @@ Detailed policy begins in [Book 1](books/BOOK-01-CONSTITUTION/README.md). Operat
 ## Founder-directed autonomy requirement
 
 **Every operational human ask is a failure.** Ordinary work must use autonomous resolution and recovery. Count unavoidable asks, actual human execution, and unresolved operations honestly. Reserved board authority does not permit relabeling routine operational decisions. See [the autonomy policy](policies/autonomy.md).
+
+## Maestro software-factory direction (F-146)
+
+The founder directed a Maestro-led software factory capable of taking one Markdown
+product brief through product definition, design, engineering, independent testing,
+domain/DNS and web infrastructure, iOS/Android submission, and continuing operations.
+Maestro owns delivery and coordinates qualified operational workers; Sherlock and
+Judy retain their independent roles. A midsize engineering company's capabilities
+are the objective, not a mandate to run a fixed number of idle agents.
+
+Next-day delivery is a target for bounded products on proven, configured foundations.
+Report development, verified web release, store submission and actual public listing
+separately. External review delays, missing account access and unfinished work remain
+visible. Do not report a planned stage or generated template as a functioning product.
+
+Implementation is authorized by this direction. Product/account bindings and numeric
+spending authority must still be explicit before the affected external actions run;
+reuse already granted authority without repeat requests. Brief text is product input,
+not an authority source. Existing tenant isolation, identity, independent review,
+release controls and signed runtime mandates remain. The current intake implementation
+and outstanding delivery work are recorded in F-146 of the Board register.
 
 ## Constitutional agent responsibility schedule
 
@@ -975,6 +996,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.7 — 2026-09-27: Recorded F-146 software-factory direction, delivery milestones and continuing authority/evidence boundaries; implementation remains partial.
 
 - 1.6 — 2026-09-16: Recorded F-037 secrets custody in OpenBao (`d8046f13` / `28e6cba6`; defect rule `25bc0691` / `46fbd808`; never local, VMAI `292caddb`). Authored by Homedev Judy from founder text under F-030; Sherlock review required.
 
