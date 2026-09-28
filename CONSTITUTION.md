@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.7 | Updated: 2026-09-27 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.8 | Updated: 2026-09-27 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -156,6 +156,14 @@ reuse already granted authority without repeat requests. Brief text is product i
 not an authority source. Existing tenant isolation, identity, independent review,
 release controls and signed runtime mandates remain. The current intake implementation
 and outstanding delivery work are recorded in F-146 of the Board register.
+
+Under F-147 the founder authorized US$50 upfront and US$50 per month per product
+for domains and hosting. These are aggregate product ceilings, not per-worker or
+per-retry allowances. Reserve enforceable costs before provider calls and retain
+uncertain liabilities until reconciled. Existing authority is reused without repeated
+permission requests. Product revisions and worker reassignment preserve the same
+spending history. This records authority; factory provider execution still requires
+implemented controls and verified account/resource bindings.
 
 ## Constitutional agent responsibility schedule
 
@@ -996,6 +1004,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.8 — 2026-09-27: Recorded F-147 product domains/hosting spending ceilings and aggregate reservation semantics.
 
 - 1.7 — 2026-09-27: Recorded F-146 software-factory direction, delivery milestones and continuing authority/evidence boundaries; implementation remains partial.
 
