@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.12 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.13 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -184,7 +184,10 @@ Implementation and qualified deployment are recorded separately in F-149.
 PR263 installs the bounded runtime, with D013 renewal inactive until the authentic
 amendment is signed. Installed isolated tests prove the bound, not live autonomy.
 The first migrated challenge encountered a local packet-preflight defect; PR264
-follow-up and incident reconciliation remain pending. See the
+is now independently reviewed, deployed and tested against the installed code.
+An audited correction preserved the failed non-call and 8/8 spend, and the real
+judge process started. Authentic D013 activation and the challenge outcome remain
+pending; this assisted maintenance does not establish full autonomy. See the
 [release evidence](evidence/lang-judge-cycles-2026-09-28.md).
 
 ## Constitutional agent responsibility schedule
@@ -1026,6 +1029,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.13 — 2026-09-28: F-149 preflight follow-up release and assisted incident reconciliation; activation remains pending.
 
 - 1.12 — 2026-09-28: F-149 qualified runtime release, unsigned activation boundary and pending preflight follow-up.
 
