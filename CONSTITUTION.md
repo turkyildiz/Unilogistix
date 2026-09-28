@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.14 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.16 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -187,9 +187,15 @@ The first migrated challenge encountered a local packet-preflight defect; PR264
 is now independently reviewed, deployed and tested against the installed code.
 An audited correction preserved the failed non-call and 8/8 spend, and the real
 judge process returned actionable REWORK. Lang correctly held at the unsigned
-D013 gate with 8/8 spent. Authentic activation and challenge completion remain
-pending; this assisted maintenance does not establish full autonomy. See the
-[release evidence](evidence/lang-judge-cycles-2026-09-28.md).
+D013 gate with 8/8 spent. The owner subsequently supplied the authentic D013
+envelope; runtime verified and activated it, and opened cycle two from the existing
+REWORK ruling while preserving lifetime usage of eight. Challenge completion
+remains pending. PR265 subsequently repaired verified-authority handoffs and ruling
+precedence after independent review and CI, and passed installed real-grant packet
+and disposable-ledger resume proofs. The founder-directed live continuation used
+the supported resume with zero additional exchanges, preserving cycle two and
+lifetime usage of eight. This is assisted maintenance, not proof of full autonomy.
+See the [release evidence](evidence/lang-judge-cycles-2026-09-28.md).
 
 ## Constitutional agent responsibility schedule
 
@@ -1030,6 +1036,10 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.16 — 2026-09-28: Qualified authority-context repair and assisted unchanged-budget continuation.
+
+- 1.15 — 2026-09-28: Authentic D013 activation and witnessed cycle-two opening.
 
 - 1.14 — 2026-09-28: F-149 observed final-judge return and unsigned-renewal hold.
 
