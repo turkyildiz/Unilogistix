@@ -1,6 +1,6 @@
 # F-149 bounded judge cycles: release evidence
 
-Version: 1.4 | Updated: 2026-09-28 | Status: repairs deployed and D013 active; challenge completion pending
+Version: 1.5 | Updated: 2026-09-28 | Status: repairs deployed, D013 active and challenge completed after assisted continuation
 
 The founder authorized three total cycles, each at most eight repair exchanges
 plus one final judge call. Only an explicit final return with actionable findings
@@ -86,7 +86,34 @@ resume was then executed and recorded as assisted maintenance. It advanced the
 round to nine, retained cycle two with 0/8 spent and lifetime eight, and preserved
 all existing final receipts and effects. Native Cody started; Lang was active with
 zero automatic restarts. This is not an autonomous recovery or a new judge ruling.
-Challenge completion is not established.
+Cody then published challenge head `3d2b86a6ac52444dbf73b24925f027b13e24f507`
+without another signature question. Independent native Cindy ACCEPT and Garry
+CLEAR were posted on that exact head. CI36460163505 passed: 3,411 tests and 207
+subtests, three skipped and two expected failures, in 87.80 seconds. A separate
+local run of the 36 resilience-lab tests passed in 25.55 seconds.
+
+The normal CI App merged [PR262](https://github.com/turkyildiz/unilogistix-corporate-os/pull/262)
+at 2026-09-28T17:52:54Z. Installed-revision readback matched merge
+`8d0b555e60e28a489bf1d71114519cb1c8bdec33`; Lang was active with zero automatic
+restarts. The task is merged/accepted in cycle two, 2/8 exchanges used, lifetime
+ten, with the existing single actual final-judge receipt. No fourth-cycle attempt,
+budget reset or final-ruling replay was needed. This challenge passed after the
+recorded assisted maintenance; it does not establish a wholly unattended run or
+software-factory readiness.
+
+An additional offline run of that same challenge head used seed 20260928,
+10,000 operations and four logical workers. All eleven mandatory scenarios passed,
+with zero invariant failures: 200 completed, 200 reconciled, 400 retried, 4,476 denied
+and two intentionally unresolved opaque effects held. Coordinator/provider databases
+were 6,201,344 and 573,440 bytes, below their 16 MiB bounds. Runtime was 990.38 seconds
+(16.5 minutes): correctness passed at the upper bound, but scaling performance needs
+improvement. This result is not a 90-second claim for the upper-bound workload.
+A separate normal 2,000-operation/four-worker run passed all eleven scenarios with
+zero invariant failures in 23.23 seconds, within the requested 90-second target:
+40 completed, 40 reconciled, 80 retried, 906 denied and two intentionally held.
+The seeded campaign uses interleaving; the separate contention scenarios use actual
+competing processes.
+
 
 No production Board private key or passphrase was read by the agent. The signing
 kit was tested only with an unenrolled disposable key; the production signature
@@ -94,6 +121,8 @@ was supplied by the owner. The old D010 mandate, expiry, revocation and emergenc
 stops continue to constrain every renewed operation.
 
 ## Change history
+
+- 1.5 — 2026-09-28: Challenge review, CI, normal CI-App merge and installed deployment verified.
 
 - 1.4 — 2026-09-28: PR265 qualified deployment, installed proofs and assisted live continuation.
 

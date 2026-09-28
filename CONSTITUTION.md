@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.16 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.17 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -194,7 +194,10 @@ remains pending. PR265 subsequently repaired verified-authority handoffs and rul
 precedence after independent review and CI, and passed installed real-grant packet
 and disposable-ledger resume proofs. The founder-directed live continuation used
 the supported resume with zero additional exchanges, preserving cycle two and
-lifetime usage of eight. This is assisted maintenance, not proof of full autonomy.
+lifetime usage of eight. Lang then completed the challenge through ordinary Cody,
+Cindy/Garry, CI, CI-App merge and deployment: cycle two used 2/8 exchanges, lifetime
+usage ten, with the existing single final-judge receipt preserved. The challenge
+passed after assisted maintenance; this is not proof of full unattended autonomy.
 See the [release evidence](evidence/lang-judge-cycles-2026-09-28.md).
 
 ## Constitutional agent responsibility schedule
@@ -1036,6 +1039,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.17 — 2026-09-28: Witnessed challenge completion through the ordinary reviewed merge/deploy workflow.
 
 - 1.16 — 2026-09-28: Qualified authority-context repair and assisted unchanged-budget continuation.
 
