@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.13 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.14 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -186,7 +186,8 @@ amendment is signed. Installed isolated tests prove the bound, not live autonomy
 The first migrated challenge encountered a local packet-preflight defect; PR264
 is now independently reviewed, deployed and tested against the installed code.
 An audited correction preserved the failed non-call and 8/8 spend, and the real
-judge process started. Authentic D013 activation and the challenge outcome remain
+judge process returned actionable REWORK. Lang correctly held at the unsigned
+D013 gate with 8/8 spent. Authentic activation and challenge completion remain
 pending; this assisted maintenance does not establish full autonomy. See the
 [release evidence](evidence/lang-judge-cycles-2026-09-28.md).
 
@@ -1029,6 +1030,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.14 — 2026-09-28: F-149 observed final-judge return and unsigned-renewal hold.
 
 - 1.13 — 2026-09-28: F-149 preflight follow-up release and assisted incident reconciliation; activation remains pending.
 
