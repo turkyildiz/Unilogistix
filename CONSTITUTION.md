@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.10 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.11 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -173,6 +173,14 @@ This scoped maintenance does not enlarge signed standing mandates or spending po
 F-148 records the qualified PR #261 deployment, installed disposable-ledger recovery
 proof, stable service readback and assisted SH-41 resume at unchanged budget.
 These establish the scoped repair; autonomous backlog completion remains unproven.
+
+Under F-149, ordinary repair exhaustion triggers root-cause diagnosis and repair.
+A task has at most three cycles of eight repair exchanges plus one final judge
+escalation. Only an explicit judge return opens a fresh cycle; the judge-only
+allowance cannot run Cody or bypass reviews, CI, scope or spending controls.
+Earlier clarification does not consume that final escalation. Durable history
+retains lifetime counts, cycle usage and rulings; the third cycle cannot renew.
+Implementation and qualified deployment are recorded separately in F-149.
 
 ## Constitutional agent responsibility schedule
 
@@ -1013,6 +1021,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.11 — 2026-09-28: F-149 bounded recurring judge escalation and root-cause repair direction.
 
 - 1.10 — 2026-09-28: F-148 qualified release and assisted recovery readback; no mandate expansion.
 

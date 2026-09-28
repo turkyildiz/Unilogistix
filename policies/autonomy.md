@@ -1,6 +1,6 @@
 # Operational human intervention is a failure
 
-Version: 0.3 | Updated: 2026-09-10 | Status: Founder-directed requirement; implementation evidence is separate
+Version: 0.4 | Updated: 2026-09-28 | Status: Founder-directed requirement; implementation evidence is separate
 
 ## Founder requirement
 
@@ -50,6 +50,17 @@ Each failure record contains task, timestamp, ask, human action if any, root cau
 
 Close remediation only when the previously blocked scenario succeeds autonomously under the same constraints and negative cases still respect permission limits.
 
+## Bounded repair escalation (F-149)
+
+The founder directed recurring root-cause diagnosis and correction whenever a
+repair loop stalls. Three total 8+1 cycles are allowed: eight repair exchanges,
+then one final judge-only escalation. Only an explicit judge return permits the
+next cycle. Earlier clarification remains distinct. Preserve total usage and
+rulings; no fourth cycle, silent reset, ninth coding attempt, or automatic
+re-filing to evade the cap. Reviews, CI, emergency stops and all unrelated
+permissions remain binding. Report exhaustion and assisted remediation honestly.
+Runtime activation requires independently reviewed implementation and readback.
+
 ## Metrics and graduation
 
 Target operational human asks = 0 and human execution minutes = 0. Report asks per 100 eligible operations, raw asks, blocked operations, autonomous verified completion, recurrence rate, and resolution time together.
@@ -60,5 +71,6 @@ No venture graduates as fully autonomous while an operational ask remains in its
 
 ## Change history
 
+- 0.4 — 2026-09-28: F-149 root-cause remediation and three bounded judge-renewed cycles.
 - 0.3 — 2026-09-10: Recorded F-021 standing delegation for reversible work and explicit limits for money, destructive changes and external commitments; preserved existing authorization.
 - 0.2 — 2026-09-09: Added to the blueprint-aligned foundation.
