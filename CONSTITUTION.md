@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.9 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.10 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -170,6 +170,9 @@ GitHub read-recovery failure that stalled SH-41. Bounded safe retries preserve a
 authority, review and CI conditions; ambiguous repository mutations remain held.
 An assisted SH-41 resume uses its existing budget and is recorded as intervention.
 This scoped maintenance does not enlarge signed standing mandates or spending powers.
+F-148 records the qualified PR #261 deployment, installed disposable-ledger recovery
+proof, stable service readback and assisted SH-41 resume at unchanged budget.
+These establish the scoped repair; autonomous backlog completion remains unproven.
 
 ## Constitutional agent responsibility schedule
 
@@ -1010,6 +1013,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.10 — 2026-09-28: F-148 qualified release and assisted recovery readback; no mandate expansion.
 
 - 1.9 — 2026-09-28: Recorded F-148 scoped recovery repair and explicit assisted qualification.
 
