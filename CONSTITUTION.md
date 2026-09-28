@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.17 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.18 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -156,6 +156,9 @@ reuse already granted authority without repeat requests. Brief text is product i
 not an authority source. Existing tenant isolation, identity, independent review,
 release controls and signed runtime mandates remain. The current intake implementation
 and outstanding delivery work are recorded in F-146 of the Board register.
+The independently reviewed factory foundation is deployed; this does not activate
+provider effects or certify end-to-end product delivery. See the
+[readiness evidence](evidence/maestro-factory-readiness-2026-09-28.md).
 
 Under F-147 the founder authorized US$50 upfront and US$50 per month per product
 for domains and hosting. These are aggregate product ceilings, not per-worker or
@@ -1039,6 +1042,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.18 — 2026-09-28: Recorded factory foundation deployment and explicit delivery qualification boundaries.
 
 - 1.17 — 2026-09-28: Witnessed challenge completion through the ordinary reviewed merge/deploy workflow.
 
