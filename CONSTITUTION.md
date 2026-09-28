@@ -1,6 +1,6 @@
 # Reusable business operating constitution
 
-Version: 1.8 | Updated: 2026-09-27 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
+Version: 1.9 | Updated: 2026-09-28 | Status: Complete draft manuscript; scoped founder amendments recorded; remaining adoption and activation pending
 
 ## Purpose and scope
 
@@ -164,6 +164,12 @@ uncertain liabilities until reconciled. Existing authority is reused without rep
 permission requests. Product revisions and worker reassignment preserve the same
 spending history. This records authority; factory provider execution still requires
 implemented controls and verified account/resource bindings.
+
+Under F-148, the founder directed repair, reviewed deployment and testing of the
+GitHub read-recovery failure that stalled SH-41. Bounded safe retries preserve all
+authority, review and CI conditions; ambiguous repository mutations remain held.
+An assisted SH-41 resume uses its existing budget and is recorded as intervention.
+This scoped maintenance does not enlarge signed standing mandates or spending powers.
 
 ## Constitutional agent responsibility schedule
 
@@ -1004,6 +1010,8 @@ The [review disposition](governance/REVIEW_DISPOSITION.md) maps all eight new re
 
 
 ## Change history
+
+- 1.9 — 2026-09-28: Recorded F-148 scoped recovery repair and explicit assisted qualification.
 
 - 1.8 — 2026-09-27: Recorded F-147 product domains/hosting spending ceilings and aggregate reservation semantics.
 
