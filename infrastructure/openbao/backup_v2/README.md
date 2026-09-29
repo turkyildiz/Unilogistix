@@ -1,6 +1,6 @@
 # Snapshot sender v2: diagnostic and permission repair
 
-Version: 1.0 | Updated: 2026-09-29 | Status: source preservation and reviewed repair candidate
+Version: 1.1 | Updated: 2026-09-29 | Status: source preservation and reviewed repair candidate
 
 These modules preserve the installed v2 snapshot sender and its shared protocol helper, previously described by the parent README but absent from this repository. The older hyphenated scripts remain historical v1 source and are not replaced. The sender imports `backup_common.py` from its installed directory. No credential files, receiver addresses, cluster identifiers, snapshots or deployment configuration are included.
 
@@ -22,6 +22,11 @@ Five tests cover nine injected failure stages, error redaction, receipt success,
 
 The deployed common helper is imported without behavioral changes. Preserve its installed filename and independently compare it before replacement. Apply sender updates only through reviewed fleet maintenance, then invoke the existing timer/service and verify an exact fresh durable receipt. Delivery recovery does not qualify a new archive for restore; perform the existing isolated same-version restore/unseal/canary/denial procedure on the exact received archive before pinning a checkpoint. Never restore into production or discard a previously qualified checkpoint.
 
+## Restore source preservation
+
+The [received-copy restore runbook](RESTORE.md) documents the generic isolated helper, exact audit configuration requirement, explicit historical application binding profiles and real synthetic qualification. Custody collectors, host topology, native credential loaders and exact received-copy identifiers remain private. This source addition does not deploy or schedule restores.
+
 ## Change history
 
+- 1.1 — Preserve reusable restore helper/worker, explicit profile example, audit template and synthetic regressions; distinguish historical snapshot qualification from current credentials and continuous coverage.
 - 1.0 — Preserve installed v2 sender/helper; add redacted stage diagnostics and fail-closed SSH identity permissions with regression tests. No source of provider authority or secrets is added.
