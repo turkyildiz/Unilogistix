@@ -193,6 +193,17 @@ def main():
         if not isinstance(value,dict) or set(value)!={'shares','operator_token'}:raise ValueError('custody_shape')
         result=run(args.archive,args.receipt,args.config,custody)
         print(json.dumps(result));return 0
+    except DriverFailure as exc:
+        diagnostic=safe_diagnostic(exc.diagnostic)
+        if diagnostic:
+            categories=exc.diagnostic.get('log_categories',{})
+            if isinstance(categories,dict):
+                allowed={'audit_error','permission_denied','read_only_filesystem','file_missing','audit_duplicate','audit_description_mismatch','audit_options_mismatch','post_unseal_error','raft_no_peer','sealed_error'}
+                diagnostic['log_categories']={k:v for k,v in categories.items() if k in allowed and type(v) is bool}
+            print(json.dumps({'status':'FAIL',**diagnostic}))
+        else:
+            print('{"status":"FAIL","code":"isolated_restore_failed_or_cleanup_required"}')
+        return 1
     except Exception:
         print('{"status":"FAIL","code":"isolated_restore_failed_or_cleanup_required"}')
         return 1

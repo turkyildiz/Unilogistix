@@ -1,4 +1,7 @@
 import subprocess
+import json
+from pathlib import Path
+import sys
 import unittest
 from unittest.mock import patch
 import restore_worker as worker
@@ -54,6 +57,22 @@ class RestoreCandidateTests(unittest.TestCase):
  def test_diagnostics_drop_untrusted_payload(self):
   value={'stage':'original_custody_unseal','code':'http_failure','seal_metadata':{'sealed':False,'n':5,'t':3,'progress':'private-value','token':'private-value'},'unseal_step':3,'http_status':429}
   self.assertNotIn('private-value',str(host.safe_diagnostic(value)))
+ def test_cli_preserves_only_validated_driver_diagnostics(self):
+  secret='synthetic-private-body-token'
+  diagnostic={'stage':'original_custody_unseal','code':'disposable_not_ready','seal_metadata':{'sealed':False,'n':5,'t':3,'progress':0,'token':secret},'unseal_step':3,'http_status':429,'body':secret,'log_categories':{'audit_error':True,'permission_denied':secret,'token':secret,'post_unseal_error':False}}
+  for value,expected_stage in [(diagnostic,'original_custody_unseal'),(diagnostic|{'stage':secret},None),(diagnostic|{'code':secret},None)]:
+   # Real subprocess exercises argparse, bounded stdin, main's handler and exit.
+   # Only the restore operation is replaced; no credential files or Docker used.
+   program="import sys,restore_qualification as h\n"+"def fail(*args):raise h.DriverFailure("+repr(value)+")\n"+"h.run=fail\nsys.exit(h.main())\n"
+   result=subprocess.run([sys.executable,'-c',program,'--archive','/synthetic/archive','--receipt','/synthetic/receipt','--config','/synthetic/config'],cwd=Path(__file__).parent,input=json.dumps({'shares':['synthetic']*3,'operator_token':secret}).encode(),capture_output=True,timeout=10)
+   self.assertEqual(result.returncode,1);self.assertNotIn(secret.encode(),result.stdout+result.stderr)
+   output=json.loads(result.stdout)
+   self.assertEqual(output.get('stage'),expected_stage)
+   if expected_stage:
+    self.assertEqual(output['log_categories'],{'audit_error':True,'post_unseal_error':False})
+    self.assertEqual(output['seal_metadata'],{'sealed':False,'n':5,'t':3,'progress':0})
+    self.assertEqual(output['http_status'],429)
+   else:self.assertEqual(output,{'status':'FAIL','code':'isolated_restore_failed_or_cleanup_required'})
  def test_no_redirects_and_bad_custody(self):
   with self.assertRaises(ValueError):worker.NoRedirect().redirect_request()
   with patch.object(worker,'api') as api:
