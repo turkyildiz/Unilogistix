@@ -1,8 +1,10 @@
 # Board direction and activation register
 
-Version: 2.40 | Updated: 2026-09-30 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 2.41 | Updated: 2026-09-30 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-152 (2026-09-30): After remaining-work language still required G07 "real NGO custodians", the founder directed byte-verbatim: "G07 I did not request NGO custodians either". Recorded meaning: the founder never requested appointing NGO archive custodians. Design-doc language that blocks launch on sponsor-supplied or founder-appointed NGO custodians is withdrawn. Vakf holds no escrow key. Members who hold space keys can read those spaces; missing keys remain unrecoverable. Do not invent custodian names. Do not mark `production_authorization` true by JSON flip. G07 remaining work is real-register onboarding when a real NGO applies, and synthetic fixtures staying test-only.
 
 - F-151 (2026-09-30): After remaining-work language still required G03 "two independently appointed release authorities", the founder directed byte-verbatim: "G03 — two independently appointed release authorities i did not request that either, there is no independent release authoties". Recorded meaning: Vakf has no second appointed independent release authority. Design-doc Authority A/B dual-custody is withdrawn. Production signing authority is the founder/Board. Maestro owns release-engineering evidence. Sherlock double-checks the protocol (F-150) and is not a second release custodian. Do not invent appointed humans. Do not mark `production_authorization` true by JSON flip. NGO archive custodians are a different role and are not rewritten here. G03 remaining work is reproducible artifacts, client-verified updates, and founder-authorized production signing.
 
@@ -225,6 +227,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 2.41 — 2026-09-30: F-152, founder-appointed NGO archive custodians withdrawn; G07 is real-register onboarding.
 
 - 2.40 — 2026-09-30: F-151, Vakf dual appointed independent release authorities withdrawn; founder/Board is the production signing authority.
 
