@@ -1,8 +1,12 @@
 # Board direction and activation register
 
-Version: 2.41 | Updated: 2026-09-30 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 2.42 | Updated: 2026-09-30 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-154 (2026-09-30): After remaining-work still required Sherlock to double-check SEC-01–03, the founder directed byte-verbatim: "no more sherlock doubkle check, as long as its mergable and CI is green we a reok". Recorded meaning: F-150 Sherlock double-check is withdrawn as a Vakf merge or implementation gate. A PR that is mergeable with green CI may merge. Maestro does not impersonate Sherlock. Sherlock's F-031 isolation and F-105 Unilogistix register review remain. This does not set `production_authorization` true by JSON flip.
+
+- F-153 (2026-09-30): After remaining-work still required G05 "funded/staffed envelope", the founder directed byte-verbatim: "G05 I did not request a funded envelope either" and then "these are all of the things are needed after a build out is completed". Recorded meaning: funded envelope, staffed on-call, dual appointed release authorities (F-151), and founder-appointed NGO custodians (F-152) are post-build-out items. They do not block engineering or merging. Existing F-147 capacity and existing infra remain; no new purchase is inferred. Do not invent a funded envelope. Do not mark `production_authorization` true by JSON flip.
 
 - F-152 (2026-09-30): After remaining-work language still required G07 "real NGO custodians", the founder directed byte-verbatim: "G07 I did not request NGO custodians either". Recorded meaning: the founder never requested appointing NGO archive custodians. Design-doc language that blocks launch on sponsor-supplied or founder-appointed NGO custodians is withdrawn. Vakf holds no escrow key. Members who hold space keys can read those spaces; missing keys remain unrecoverable. Do not invent custodian names. Do not mark `production_authorization` true by JSON flip. G07 remaining work is real-register onboarding when a real NGO applies, and synthetic fixtures staying test-only.
 
@@ -227,6 +231,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 2.42 — 2026-09-30: F-153 funded envelope is post-build-out; F-154 Sherlock double-check withdrawn as merge gate; mergeable plus green CI is the bar.
 
 - 2.41 — 2026-09-30: F-152, founder-appointed NGO archive custodians withdrawn; G07 is real-register onboarding.
 
