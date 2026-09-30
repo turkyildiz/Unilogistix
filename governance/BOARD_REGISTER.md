@@ -1,8 +1,10 @@
 # Board direction and activation register
 
-Version: 2.39 | Updated: 2026-09-30 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 2.40 | Updated: 2026-09-30 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-151 (2026-09-30): After remaining-work language still required G03 "two independently appointed release authorities", the founder directed byte-verbatim: "G03 — two independently appointed release authorities i did not request that either, there is no independent release authoties". Recorded meaning: Vakf has no second appointed independent release authority. Design-doc Authority A/B dual-custody is withdrawn. Production signing authority is the founder/Board. Maestro owns release-engineering evidence. Sherlock double-checks the protocol (F-150) and is not a second release custodian. Do not invent appointed humans. Do not mark `production_authorization` true by JSON flip. NGO archive custodians are a different role and are not rewritten here. G03 remaining work is reproducible artifacts, client-verified updates, and founder-authorized production signing.
 
 - F-150 (2026-09-30): After Maestro treated Vakf "independent review" as a hired external security reviewer, the founder directed byte-verbatim: "i am the board, i never approved indepeendent reviewr where did that come ffrom. Independend review meant doubble checked by sherlock thats it" and then "I am the founder, remove it". Recorded meaning: for Vakf, independent review is Sherlock's double-check of the protocol and security package. The founder never approved contracting or appointing an external independent reviewer. Design-doc language that required a sponsor-supplied or contracted reviewer is withdrawn. Maestro must not impersonate Sherlock, invent a hired reviewer, or mark `production_authorization` true by JSON flip. Sherlock's F-031 isolation and F-105 register review remain. This does not close G01–G09, appoint NGO custodians, fund the envelope, merge Vakf PR #3, or authorize factory harvest merge/deploy. Vakf docs that named the invented reviewer are corrected in the same session.
 
@@ -223,6 +225,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 2.40 — 2026-09-30: F-151, Vakf dual appointed independent release authorities withdrawn; founder/Board is the production signing authority.
 
 - 2.39 — 2026-09-30: F-150, Vakf independent review is Sherlock double-check; contracted external reviewer withdrawn.
 
