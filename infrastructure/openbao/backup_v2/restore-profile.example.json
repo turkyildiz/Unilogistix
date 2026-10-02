@@ -1,0 +1,29 @@
+{
+  "qualification_bindings": [
+    {
+      "role": "example-dev-reader",
+      "path": "unilogistix/data/example/dev/us/app",
+      "expected_version": 2,
+      "expected_fields": {
+        "project_ref": "synthetic-project",
+        "environment": "dev",
+        "cell": "us",
+        "status": "active"
+      },
+      "denials": [
+        {
+          "path": "unilogistix/data/example/prod/us/app",
+          "method": null
+        },
+        {
+          "path": "unilogistix/data/example/admin/provider",
+          "method": null
+        },
+        {
+          "path": "unilogistix/metadata/example",
+          "method": "LIST"
+        }
+      ]
+    }
+  ]
+}
