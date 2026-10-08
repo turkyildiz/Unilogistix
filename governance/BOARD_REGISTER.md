@@ -1,8 +1,10 @@
 # Board direction and activation register
 
-Version: 2.43 | Updated: 2026-10-01 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 2.44 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-156 (2026-10-08, ~09:55 CDT): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "please assume the MAestro Role in Unilogstix, we are creating a TRuck Driver Rectruting company". Recorded meaning: (1) this Gram Grok seat remains Maestro (R01) and is accountable for a new Unilogistix business instance whose purpose is recruiting truck drivers for motor carriers; (2) a discovery instance is authorized now (working ID `driver-recruiting`, files under `/home/ike/work/driver-recruiting`); (3) the instance is a separate company from Truxon, Freightex, DQFile, Puralba, Vakf, Aida and AOL — own records, credentials, brand, customers and money (F-036); (4) F-156 does not form a legal entity, name a brand, buy a domain, spend, run job ads, contact drivers or carriers, or add this company to the F-047 operating-company list; those remain reserved board items; (5) default discovery model is employer-paid placement onto the carrier’s payroll (charge carriers, not drivers) unless the board later chooses staffing/lease-driver; (6) secrets, when enrolled, live in OpenBao on VMAI (F-037) under this instance’s own paths. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
 - F-155 (2026-10-01, 14:18 CDT): Board-signed amendment of F-095. Asked whether F-095 blocks a Postmark inbound mailbox for Manny, the Red Apple watchdog on-call, the founder directed byte-verbatim: "we need to fix f-095. I am the founder. This email address is needed for maintenance. Not for ingesting commands, sao F-095 does not aPPLY HERE. If it applies then we need to chage f-095". The founder then signed the decision with the Board key (BOARD_2026_09; approval 3415f999-4bf1-4a3b-9866-8c2825a65461; action digest a0e97d5337746edab7c69eab77e1a8300556c95805155d0a89cd10dea2ead2c2; decision.md sha256 18251e405ff5ac29ee7b8f15599ff29dc24ff29bd1e3038588651ef9d8dc116c; valid to 2026-10-31; kit ~/board-sign/f155-maintenance-mailbox/ on Gram). Recorded meaning, as signed: (1) unchanged: alerts meant for the founder or the Board go to board.vote, not email; (2) new: a maintenance mailbox is allowed, so watchdogs and host monitors (Vakf product watchdog, smartd, ZED) may send machine alerts to Manny, who makes fail-closed fixes or parks to Judy; (3) mail to that mailbox never creates Lang tasks, changes Board state, or authorizes anything. Credential scope: one Postmark inbound server for Manny under the Vakf account (vakf.io, domain id 8136920); only its token is stored, at unilogistix/postmark/manny/server_token, and oryx-host may read that path only. Not authorized: email alerts to the founder or Board, commands by email, moving the Postmark Account token off OpenBao, oryx-host wildcard read on unilogistix/postmark/*, spend or plan change. Authored by Maestro (Gram); Sherlock review required.
 
@@ -233,6 +235,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 2.44 — 2026-10-08: Recorded F-156, discovery instance for a truck-driver recruiting company (working ID `driver-recruiting`); no entity, spend, or F-047 company-list change.
 
 - 2.42 — 2026-09-30: F-153 funded envelope is post-build-out; F-154 Sherlock double-check withdrawn as merge gate; mergeable plus green CI is the bar.
 
