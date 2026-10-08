@@ -1,8 +1,12 @@
 # Board direction and activation register
 
-Version: 2.53 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 2.55 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-167 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim in two turns: "when you have the full build out reasy, please pass it to Big Boss on HiveMind please" and "hivemind completes the full app, you just manage it after depolyment". Recorded meaning: (1) HiveMind **BigBoss** takes the TruckerJobs Markdown spec and the factory **completes the full app** (web, iOS, Android, store records, deploy); (2) **Maestro does not implement** the product after this handoff; (3) after deployment Maestro **operates** only (exceptions, Hermes, uptime, public-store follow-through if HiveMind left binaries); (4) spec lives at `docs/BIGBOSS_SPEC.md` plus `research/02-product-architecture.md` on `turkyildiz/truckerjobs`. Authored by Maestro (Gram) from founder text; Sherlock review required.
+
+- F-166 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "use the apple id in bao and and HiveMind will create the apps. After the app creation , you be in charge of the making it available to public". Recorded meaning: (1) store **application records** (App Store Connect + Google Play for `ai.truckerjobs.app`) are **HiveMind’s** job, using the shared Unilogistix Apple ID and Play account in OpenBao `secret/freightex/platform/deploy/`; (2) after those records exist, **Maestro** owns binaries, listings, TestFlight/internal tracks, and **public** App Store / Play release; (3) no new developer enrollments; (4) this is not live Stripe/Twilio charges. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
 - F-165 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "you can find all of these under bao we use the same criteria for all of the apps because all of these companies are ours". Recorded meaning: (1) TruckerJobs uses the **same Unilogistix Apple Developer and Google Play accounts** as DQFile and Freightex — not new enrollments; (2) account-level secrets live in OpenBao `secret/freightex/platform/deploy/` (`ASC_*`, `APPLE_TEAM_ID` `PUBHTUQGH4`, `APPLE_ACCOUNT_EMAIL`, `GCP_RELEASE_SA_JSON`, `GOOGLE_PLAY_ACCOUNT_EMAIL`) and are referenced, not copied, the same way Team DQF does; (3) each app still has its own bundle/package and upload keystore (`ai.truckerjobs.app`, `unilogistix/truckerjobs/android/*`); (4) this does not mint a new Apple/Play developer program. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
@@ -253,6 +257,10 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 2.55 — 2026-10-08: Recorded F-167, HiveMind BigBoss completes the full TruckerJobs app; Maestro operates after deploy.
+
+- 2.54 — 2026-10-08: Recorded F-166, HiveMind creates store app records; Maestro owns public release.
 
 - 2.53 — 2026-10-08: Recorded F-165, shared Unilogistix Apple/Play accounts in OpenBao for all sister apps.
 
