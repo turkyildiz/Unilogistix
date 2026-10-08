@@ -1,8 +1,10 @@
 # Board direction and activation register
 
-Version: 2.55 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 2.56 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-168 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "whie Hivemind is building please have your markiting team research and come up with a 90 day gameplan , on Telegra, Twitter, Facebook , google, marketing etc. we need to be able to add as many drivers as possible". Recorded meaning: (1) while HiveMind builds the product, Maestro produces a **90-day driver-acquisition gameplan** covering Telegram, X/Twitter, Facebook, Google, and related channels; (2) the objective is **maximum listed drivers**, not carrier ads first; (3) this is a **plan and research packet**, not live ads, list-buying, or spend — paid tests wait on a named budget; (4) fee disclosure ($1.99/mo + $49.99/3 months listing) must be in every job-seeker ad because of PEA/TCPA. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
 - F-167 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim in two turns: "when you have the full build out reasy, please pass it to Big Boss on HiveMind please" and "hivemind completes the full app, you just manage it after depolyment". Recorded meaning: (1) HiveMind **BigBoss** takes the TruckerJobs Markdown spec and the factory **completes the full app** (web, iOS, Android, store records, deploy); (2) **Maestro does not implement** the product after this handoff; (3) after deployment Maestro **operates** only (exceptions, Hermes, uptime, public-store follow-through if HiveMind left binaries); (4) spec lives at `docs/BIGBOSS_SPEC.md` plus `research/02-product-architecture.md` on `turkyildiz/truckerjobs`. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
@@ -257,6 +259,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 2.56 — 2026-10-08: Recorded F-168, 90-day driver acquisition gameplan (Telegram, X, Facebook, Google).
 
 - 2.55 — 2026-10-08: Recorded F-167, HiveMind BigBoss completes the full TruckerJobs app; Maestro operates after deploy.
 
