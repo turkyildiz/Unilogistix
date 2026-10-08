@@ -1,8 +1,10 @@
 # Board direction and activation register
 
-Version: 2.51 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 2.52 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-164 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "then we need IOS and Android apps. Fully pushed and released". Recorded meaning: (1) TruckerJobs ships **native iOS and Android** clients, production App Store and Play Store, not a web wrapper as the only product; (2) own bundle/package `ai.truckerjobs.app`, never `ai.dqfile.driver`, never Truxon/Freightex ids or signing material; (3) one app, three roles (driver, owner-operator, carrier) matching F-158–F-163 (chat-only until $499.99, then video/voice); (4) Apple team `PUBHTUQGH4` is the existing Unilogistix Developer account (same F-050 pattern as DQFile); Play is the existing Unilogistix/founder Play account with a **new** upload keystore in `unilogistix/truckerjobs/android/*`; (5) no emulators on Gram; ikemac for device iOS; EAS optional; this is store production, still not live Stripe charges, ads, or an F-047 add. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
 - F-163 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "we disable the call, only chatting . after 499 we enable video calls or calls". Recorded meaning: (1) before the USD 499.99 identity unlock, matched parties have **aliased in-app chat only** — no Jitsi, no PSTN, no Twilio voice, no video; (2) after the $499.99 is authorized, that match may use video (Jitsi) and/or voice calls; (3) this supersedes F-162’s pre-unlock Jitsi interviews; SMS remains transactional from our number and still does not reveal the other party’s number; (4) still not live fees, entity, or an F-047 add. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
@@ -249,6 +251,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 2.52 — 2026-10-08: Recorded F-164, TruckerJobs iOS and Android apps, production store release.
 
 - 2.51 — 2026-10-08: Recorded F-163, chat-only until $499.99 unlock; then video or voice.
 
