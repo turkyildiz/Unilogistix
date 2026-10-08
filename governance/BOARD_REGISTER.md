@@ -1,8 +1,10 @@
 # Board direction and activation register
 
-Version: 2.52 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 2.53 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-165 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "you can find all of these under bao we use the same criteria for all of the apps because all of these companies are ours". Recorded meaning: (1) TruckerJobs uses the **same Unilogistix Apple Developer and Google Play accounts** as DQFile and Freightex — not new enrollments; (2) account-level secrets live in OpenBao `secret/freightex/platform/deploy/` (`ASC_*`, `APPLE_TEAM_ID` `PUBHTUQGH4`, `APPLE_ACCOUNT_EMAIL`, `GCP_RELEASE_SA_JSON`, `GOOGLE_PLAY_ACCOUNT_EMAIL`) and are referenced, not copied, the same way Team DQF does; (3) each app still has its own bundle/package and upload keystore (`ai.truckerjobs.app`, `unilogistix/truckerjobs/android/*`); (4) this does not mint a new Apple/Play developer program. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
 - F-164 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "then we need IOS and Android apps. Fully pushed and released". Recorded meaning: (1) TruckerJobs ships **native iOS and Android** clients, production App Store and Play Store, not a web wrapper as the only product; (2) own bundle/package `ai.truckerjobs.app`, never `ai.dqfile.driver`, never Truxon/Freightex ids or signing material; (3) one app, three roles (driver, owner-operator, carrier) matching F-158–F-163 (chat-only until $499.99, then video/voice); (4) Apple team `PUBHTUQGH4` is the existing Unilogistix Developer account (same F-050 pattern as DQFile); Play is the existing Unilogistix/founder Play account with a **new** upload keystore in `unilogistix/truckerjobs/android/*`; (5) no emulators on Gram; ikemac for device iOS; EAS optional; this is store production, still not live Stripe charges, ads, or an F-047 add. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
@@ -251,6 +253,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 2.53 — 2026-10-08: Recorded F-165, shared Unilogistix Apple/Play accounts in OpenBao for all sister apps.
 
 - 2.52 — 2026-10-08: Recorded F-164, TruckerJobs iOS and Android apps, production store release.
 
