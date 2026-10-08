@@ -1,8 +1,10 @@
 # Board direction and activation register
 
-Version: 2.44 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 2.45 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-157 (2026-10-08, ~10:00 CDT): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "domain is purchased from Cloudflare, its called TruckerJobs.ai" then "please create a github, vercel and supabase projects and connect them". Recorded meaning: (1) brand/domain for the F-156 recruiting instance is **TruckerJobs.ai** (`truckerjobs.ai`); Cloudflare Registrar on account `a5bcaeae6750e4209c7fe098cc769a26`, zone `8d06b151f07f6bdc0527910fade6e45b`, full zone, nameservers konnor/mina, registered 2026-10-08T14:56:50Z, expires 2028-10-08, auto-renew, locked, privacy redaction, add-period, Donuts/.ai; (2) Maestro is authorized to create an isolated GitHub repository, a Vercel project (team truxon), and a Supabase project (Unilogistix org, not Truxon/Freightex orgs) and to connect git→Vercel and Vercel env→this instance’s Supabase URL/anon key; (3) DNS stays on Cloudflare; do not move nameservers; do not use Truxon/Freightex/DQFile/Vakf credentials or Postmark servers; secrets go to OpenBao `unilogistix/truckerjobs/*`; (4) this is still not entity formation, job ads, driver/carrier outreach, or an F-047 company-list add. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
 - F-156 (2026-10-08, ~09:55 CDT): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "please assume the MAestro Role in Unilogstix, we are creating a TRuck Driver Rectruting company". Recorded meaning: (1) this Gram Grok seat remains Maestro (R01) and is accountable for a new Unilogistix business instance whose purpose is recruiting truck drivers for motor carriers; (2) a discovery instance is authorized now (working ID `driver-recruiting`, files under `/home/ike/work/driver-recruiting`); (3) the instance is a separate company from Truxon, Freightex, DQFile, Puralba, Vakf, Aida and AOL — own records, credentials, brand, customers and money (F-036); (4) F-156 does not form a legal entity, name a brand, buy a domain, spend, run job ads, contact drivers or carriers, or add this company to the F-047 operating-company list; those remain reserved board items; (5) default discovery model is employer-paid placement onto the carrier’s payroll (charge carriers, not drivers) unless the board later chooses staffing/lease-driver; (6) secrets, when enrolled, live in OpenBao on VMAI (F-037) under this instance’s own paths. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
@@ -235,6 +237,8 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 2.45 — 2026-10-08: Recorded F-157, TruckerJobs.ai domain plus GitHub/Vercel/Supabase project creation and connection.
 
 - 2.44 — 2026-10-08: Recorded F-156, discovery instance for a truck-driver recruiting company (working ID `driver-recruiting`); no entity, spend, or F-047 company-list change.
 
