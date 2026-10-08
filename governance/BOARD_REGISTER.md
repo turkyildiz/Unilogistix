@@ -1,8 +1,14 @@
 # Board direction and activation register
 
-Version: 2.45 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 2.48 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-160 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "Drivers can log in without paying, but in order to get listed they need to pay 49.99$ for 3 months. Same with Owner operators." Recorded meaning: (1) driver and owner-operator accounts are free to create and log into; (2) a listing that carriers can see costs USD 49.99 covering **three months**, then renews for another three months at the same price to stay listed; (3) owner-operators seeking work or a lease-on use this same listing product as drivers; an owner-operator who is hiring onto their own authority uses the F-159 carrier subscription plus F-158 hire fee; both hats are allowed as two products; (4) unlisted seekers may complete a draft profile and talk to Ops; they do not appear in search, matches, or carrier-visible contact; (5) this amends the F-158 driver charge from an unspecified access fee to a 90-day listing window. Still not live Stripe, entity, ads, or an F-047 add. Authored by Maestro (Gram) from founder text; Sherlock review required.
+
+- F-159 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "also one more addition, we will charge trucking companies 19.99$ subsricption fee , so we do not have looker not ant buyers also soliciatators". Recorded meaning: (1) motor carriers pay a USD 19.99 subscription in addition to the F-158 USD 499.99 per recruited driver; Maestro’s operating default is **USD 19.99 per month per carrier account** until the board names another period; (2) the purpose is to keep lookers, non-buyers, and solicitors off the buyer side; (3) an unpaid carrier may exist as a stub (DOT claim) and cannot see driver contact, message, post orders, join interviews, or receive matches; (4) $19.99 is a seriousness gate, not a substitute for USDOT/MC verification; (5) still not live Stripe, entity, ads, or an F-047 add. Authored by Maestro (Gram) from founder text; Sherlock review required.
+
+- F-158 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "we will charge the driver 49.99$ and 499.99$ for the trucking companies.for each driver they recruite. We will use our company called HiveMind for coding and bug fixes, Hermes for mundane tasks and communications with you. I need you to plan super smart capable , in app messaging, Jitsi for video/ conference calling, integration with our own program called DQFile app for driver backfground checkig and record keeping." Recorded meaning: (1) TruckerJobs fee model is dual-sided: USD 49.99 charged to the driver, USD 499.99 charged to the motor carrier per recruited driver; this supersedes the F-156 discovery default of charge-carriers-only; (2) HiveMind is the coding and bug-fix factory for this instance; Hermes handles mundane tasks and communications with Maestro; (3) product plan must include in-app messaging, Jitsi video/conference, and integration with DQFile.ai (Team DQF, F-039) for background checking and record keeping; (4) isolation still holds: TruckerJobs does not use DQFile, Truxon, or Freightex credentials; DQFile remains the 391 system of record and the employing carrier remains the 391 employer; (5) this is a product/operating plan, not entity formation, PEA licensing, Stripe enrollment, live fees, ads, or an F-047 add. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
 - F-157 (2026-10-08, ~10:00 CDT): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "domain is purchased from Cloudflare, its called TruckerJobs.ai" then "please create a github, vercel and supabase projects and connect them". Recorded meaning: (1) brand/domain for the F-156 recruiting instance is **TruckerJobs.ai** (`truckerjobs.ai`); Cloudflare Registrar on account `a5bcaeae6750e4209c7fe098cc769a26`, zone `8d06b151f07f6bdc0527910fade6e45b`, full zone, nameservers konnor/mina, registered 2026-10-08T14:56:50Z, expires 2028-10-08, auto-renew, locked, privacy redaction, add-period, Donuts/.ai; (2) Maestro is authorized to create an isolated GitHub repository, a Vercel project (team truxon), and a Supabase project (Unilogistix org, not Truxon/Freightex orgs) and to connect git→Vercel and Vercel env→this instance’s Supabase URL/anon key; (3) DNS stays on Cloudflare; do not move nameservers; do not use Truxon/Freightex/DQFile/Vakf credentials or Postmark servers; secrets go to OpenBao `unilogistix/truckerjobs/*`; (4) this is still not entity formation, job ads, driver/carrier outreach, or an F-047 company-list add. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
@@ -237,6 +243,12 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 2.48 — 2026-10-08: Recorded F-160, free driver/OO login; $49.99 lists them for 3 months.
+
+- 2.47 — 2026-10-08: Recorded F-159, carrier $19.99/month subscription as looker/solicitor gate.
+
+- 2.46 — 2026-10-08: Recorded F-158, TruckerJobs dual fees ($49.99 driver / $499.99 carrier per hire), HiveMind/Hermes staffing, messaging, Jitsi, DQFile integration plan.
 
 - 2.45 — 2026-10-08: Recorded F-157, TruckerJobs.ai domain plus GitHub/Vercel/Supabase project creation and connection.
 
