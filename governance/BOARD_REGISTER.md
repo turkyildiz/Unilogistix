@@ -1,8 +1,14 @@
 # Board direction and activation register
 
-Version: 2.48 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
+Version: 2.51 | Updated: 2026-10-08 | Status: Complete draft manuscript; scoped runtime mandates, first-project direction and standing autonomy recorded separately
 
 ## Recorded founder direction
+
+- F-163 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "we disable the call, only chatting . after 499 we enable video calls or calls". Recorded meaning: (1) before the USD 499.99 identity unlock, matched parties have **aliased in-app chat only** — no Jitsi, no PSTN, no Twilio voice, no video; (2) after the $499.99 is authorized, that match may use video (Jitsi) and/or voice calls; (3) this supersedes F-162’s pre-unlock Jitsi interviews; SMS remains transactional from our number and still does not reveal the other party’s number; (4) still not live fees, entity, or an F-047 add. Authored by Maestro (Gram) from founder text; Sherlock review required.
+
+- F-162 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "i have questions, How can we have drivers and companies chat without exposing each others identities to each other so we wont be bypassed? 1.99$ a month for driver seriousness fee". Recorded meaning: (1) pre-hire chat, SMS, and Jitsi must use **aliases and relays** so legal names, phones, emails, and USDOT/MC are not shown until a paid identity-unlock (DQFile proceed); (2) product and contract exist to stop off-platform bypass of the $499.99 hire fee (PII filters, 12-month tail, card-on-file); (3) seekers pay **USD 1.99 per month** as a seriousness fee, layered with free login (F-160) and $49.99 / 3-month listing; without $1.99 they draft and talk to Ops only; (4) still not live Stripe, entity, ads, or an F-047 add. Authored by Maestro (Gram) from founder text; Sherlock review required.
+
+- F-161 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "we will be using stripe for payments and twilio for text messaging." Recorded meaning: (1) TruckerJobs payments run on **Stripe** (listing $49.99/90 days, carrier $19.99/month, hire $499.99) and SMS on **Twilio**; (2) both are **this instance’s own accounts**, never Truxon, Freightex, DQFile, Puralba, Vakf, Forest, or Yazgan numbers/keys; secrets in OpenBao `unilogistix/truckerjobs/stripe/*` and `unilogistix/truckerjobs/twilio/*`; (3) in-app messaging stays the conversation system of record; Twilio is transactional SMS (OTP, listing/match/interview alerts, STOP/HELP); (4) live keys, 10DLC brand/campaign, and a dedicated number need entity, spend, and TCPA consent copy — test-mode Stripe and Twilio trial are allowed for software; (5) still not live fees, ads, or an F-047 add. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
 - F-160 (2026-10-08): Founder directed in the Maestro (Grok) session on Gram, byte-verbatim: "Drivers can log in without paying, but in order to get listed they need to pay 49.99$ for 3 months. Same with Owner operators." Recorded meaning: (1) driver and owner-operator accounts are free to create and log into; (2) a listing that carriers can see costs USD 49.99 covering **three months**, then renews for another three months at the same price to stay listed; (3) owner-operators seeking work or a lease-on use this same listing product as drivers; an owner-operator who is hiring onto their own authority uses the F-159 carrier subscription plus F-158 hire fee; both hats are allowed as two products; (4) unlisted seekers may complete a draft profile and talk to Ops; they do not appear in search, matches, or carrier-visible contact; (5) this amends the F-158 driver charge from an unspecified access fee to a 90-day listing window. Still not live Stripe, entity, ads, or an F-047 add. Authored by Maestro (Gram) from founder text; Sherlock review required.
 
@@ -243,6 +249,12 @@ Bootstrap human dependencies must be logged in the autonomy register. They do no
 - No actual business, including LondonRue, is activated by this record.
 
 ## Change history
+
+- 2.51 — 2026-10-08: Recorded F-163, chat-only until $499.99 unlock; then video or voice.
+
+- 2.50 — 2026-10-08: Recorded F-162, masked-identity chat against bypass; driver $1.99/month seriousness fee.
+
+- 2.49 — 2026-10-08: Recorded F-161, Stripe for payments and Twilio for SMS, isolated TruckerJobs accounts.
 
 - 2.48 — 2026-10-08: Recorded F-160, free driver/OO login; $49.99 lists them for 3 months.
 
